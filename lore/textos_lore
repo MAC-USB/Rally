@@ -2,12 +2,12 @@ Intrucciones del juego:
   Para jugar debe seleccionar las opciones que aparecen en pantalla.
   Dependiendo de las opciones elegidas, el final podria variar.
   Para sumar puntos, debe seleccionar las mejores opciones en cada escenario.
-  El puntaje final aparecera al finalizar el juego al final de los creditos.
+  El puntaje final aparecera al finalizar el juego despues de los creditos.
   Para leer las opciones nuevamente escriba "repetir". Para comenzar a jugar, escriba "jugar".
 
 Conversacion de bienvenida:
   La misma que tienes mas:
-  Recibiendo mensaje de auxilio...: ¡Hola! Soy un autómata programado por D...A...C...#$%#"#$"#%. Soy el servidor principal de la universidad. En estos momentos estoy bajo ataque, de una fuenta desconocida. El objetivo parece ser borrar los datos de los estudiantes de la universidad. Los atacantes son muy hábiles y no permiten que pueda respaldar esta información. Mi protocolo de emergencia ya no responde. Tampoco puedo apagar el servidor, si se apaga la información de perderá para siempre. Eres la última esperanza.Yo te guiare hast...#$%#$%#$%....h4st4 d0nd3 m3 s34 p0s1bl3...$%&$%&$%&$%...
+  Recibiendo mensaje de auxilio...: ¡Hola! Soy un autómata programado por D...A...C...#$%#"#$"#%. Soy el servidor principal de la universidad. En estos momentos estoy bajo ataque, de una fuenta desconocida. El objetivo parece ser borrar los datos de los estudiantes de la universidad. Los atacantes son muy hábiles y no permiten que pueda respaldar esta información. Mi protocolo de emergencia ya no responde. Tampoco puedo apagar el servidor, si se apaga la información se perderá para siempre. Eres la última esperanza.Yo te guiare hast...#$%#$%#$%....h4st4 d0nd3 m3 s34 p0s1bl3...$%&$%&$%&$%...
 
 Primer acertijo/reto:La direccion del atacante es "inserte direccion francesa". Es primordial identificar el país donde se encuentra el atacante. El archivo "paises_ip" tienen las direcciones IP de cada país. ¿Qué haces?
   1) Buscar archivo
@@ -40,7 +40,68 @@ Lore: *Hola estimado amigo. Me presento, me llamo Jerónimo King. Provengo de la
 
     a) b) c) d) e) f) g)
 
-Si no es correcto intenta de nuevo. Si no, continúa:
+Si no es correcto intenta de nuevo. Si lo es, continúa:
 
-Lore: *Vainas de matrix, debemos acomodar bien eso. Las elecciones son roja y azul". 
+Lore:Existe más de lo que has visto hasta ahora en ésta situación. Sientes que hay una verdad más profunda detrás, pero no la puedes ver. Yo te ofrezco una píldora azul. Si la tomas, no vas saber qué se esconde detrás de este caótico escenario, y vas a seguir intentando solventar tu problema sin mucho retraso. No tomas riesgos, y sigues usando tu ingenio para manejar la situación. También te ofrezco una píldora roja, si la tomas, te diré qué es lo que se oculta en ésta situación. Quizás tomar ésta opción consuma más tiempo que el que tienes, pero sabrás cuál es la verdad.
 
+Pildora azul:*recuperando conexión con el servidor* Hola. Se ha cortado el canal de información. Proseguimos con el objetivo de derrotar al atacante. -ESCENARIOS POSIBLES-
+   Acertijo 4/reto: Hemos contactado con la PVBC, Policía Virtual Bolivariana de Caracas para ayudarnos en nuestra misión. Sin embargo, su director, solo nos supo decir que cortar el cable de la fibra óptica principal de la universidad, lo cuál dejaría a la USB sin internet por 25 años. Contrastando ésta información con nuestra base de datos encontramos una línea en el archivo NO_HACER_NUNCA.txt escrito por el director de la DST-USB, que dice: "Nunca debes realizar ésta acción". ¿Qué curso de acción sigo?
+  1.1) Mandar a cortar el cable de fibra óptica:
+     Fin del juego 2: *Cerrando conexión*................No responde el servidor..........*Recibiendo mensaje automático*........ Los archivos de la base de datos de los estudiantes se han borrado. Un protocolo de emergencia del servidor ha reaccionado de mala manera y ha eliminado toda su información de los estudiantes y más documentos importantes.
+     .
+     .
+     .
+     *Ejecutando script automático*....%#$%#$%#$ Hola. Al eliminarse la fibra óptica, cualquier comunicación posible de esta computadora se ve imposible de realizar. Éste script fue programado para activarse en éste escenario. Gracias por tu ayuda. Había colocado un exploit en el protocolo de emergencia para que en ésta circunstancia se eliminara la base de datos completa. La USB ahora está acabada, y sin posibilidad de restaurar el internet. Lo más probable es que la universidad sea invadida para transformarla en la Escuela Venezolana de música llanera y tradicional. Sin ti no hubiese podido completar mi objetivo. Muchas gracias...Att: eL Yianero.
+     
+  1.2) Ignorar la recomendación: Yo tampoco me sentía convencido de ésta dec....$#%#$%#$%#...d3c1s10n...$"#$"#$#%$%#$... He descubierto mientras leías éste mensaje que existe la posibildiad de hacer un backdoor a la computadora del atacante. ¿Desea hacerlo?
+  1.2.1) Sí: *Intentando establecer conexión*....*Se ha establecido una conexión segura mediante TCP a través del protocolo SSH*...
+  	 Último reto: Decidir curso de acción
+	 a) Acabar la conexión: *Desconectando....*....%#$%#$%#$%....%#$%#$%...%#$%#$%#$... El atacante se ha dado cuenta de que intentamos conectador a su computador, y ahora es imposible conectarnos....Oh...Espera...*Destruyendo información del servidor...*
+	 Fin del juego: *Se recibe una comunicación* *Recibiendo mensaje...* H0l4. Mi nombre es Mister Creepy. Acabo de lograr acceso completo al servidor. He borrado la información universitada excepto la de los estudiantes del orfeón universitario. Soy un ex estudiante de Ingeniería en Computación de la USB que buscaba venganza por recibir bullying por ser parte del orfeón universitario. Ahora mi victoria está asegurada. Gracias a tu decisión pude darme cuenta de la conexión que intentaste establecer, y al desconectarla, logré infiltrarme en tu computadora y acceder en el servidor. Éste era el mejor curso de acción que podía suceder para mi causa. Hasta luego...%#$%#$%#$%#$%#$%#$%#$%....*Apagando el servidor* ---Créditos---
+	 b) Realizar ataque al atacante hasta desconectarlo: *Realizando ataque...*...%#$%#$%#%#$%#$%...%#$%#$%#$%#$%...%#$%#$%#%#$...
+	 .
+	 .
+	 .
+	 Se ha logrado acabar con la comunicación del atacante. ¡La base de datos está salvada! Gracias a ti podemos permanecer con la base de datos intacta, y al parecer, ya se pueden realizar los protocolos de emergencia. ---CREDITOS---
+	 c) Apagar la computadora del atacante: *Apagando la computadora del atacante...* *Error...* *Reintentando...* *Error...* ...%#$%#$%#$...No hemos logrado apagar la computadora del atacante... Estamos recibiendo un mensaje... Hola. Si éste mensaje aparece en su pantalla, significa que no ha podido solventar la situación. Éste ataque fue una simulación de seguridad para probar su capacidad en una situación de emergencia. Hemos detectado que, aunque ha acertado en algunas decisiones, no ha podido decidir bien qué acciones tomar... -éste mensaje ha sido escrito por el usuario Flang-. *Se finaliza la sesión con el servidor* ---Créditos-
+  1.2.2) No: $%&$%&$%&$... Hemos podido recuperar algunas funciones del protocolo de emergencia. Puedo intentar recuperar un 50% de la base de datos, si se toma esa opción, el resto de los archivos se pierde, y se le enviará una notifiación a DACE para recabar nuevamente la información del otro restante del os estudiantes. No me queda mucho tiempo. ¿Desea hacer ésto?
+  a) Sí: *Intentando...* *Eliminando 50% de la información...* La información ha sido eliminada, ahora quedamos con el 50% de la base de datos y hemos destruido la conexión del atacante. Gracias por tu trabajo.
+  b) No: * Recibiendo ataque*... *Intentando salvar los datos...* *error...*
+  .
+  .
+  .
+  *apagando el servidor*... %#$%#$%
+  %#$%#$
+  %$#%#$%
+  %#$%#$%#$
+  %#$%#$%#$%#$%#$
+
+  He visto que has fallado en tu misión de recuperar el servidor. Enhorabuena por tu fracaso. Gracias a ti, la USB ha caído en un vacío muy difícil de solucionar. No te diré cuál era nuestro objetivo real, pero no necesitas saberlo. Aprende a vivir con tus errores, y sigue tu vida pensando que gracias a ti, la USB ha caído por siempre. Mi nombre es El PhD, y ha sido un gusto conocerte... %$#%#$%"$#"#$"#$....
+
+Pildora roja: 
+ 
+  La USB ha representado por muchos años la posibilidad de lograr la excelencia educativa en Venezuela. Ingeniería en Computación es una de las carreras más importantes de la universidad, y muchos de sus graduandos terminan siendo figuras importantes en muchas de las empresas del desarrollo informático más grandes del mundo. El atacante es posiblemente un estudiante de Ingeniería en Computación de la UCV que intenta socavar la universidad porque ha pasado toda su vida siendo comparado con los estudiantes de la USB. 
+  Para vencer a éste atacante, habilidoso por demás, necesitamos demostrar que estamos a su altura, y que podemos leer sus siguientes jugadas. Para ello, es fundamental tomar las mejores decisiones posibles. 
+  Retomarás el contacto con el autómata, pero ahora conoces por qué ésta sucediendo ésta situación y cómo poder solucionarla. En mi posición no puedo resolver el problema yo mismo, pero confío en que tus habilidades deductivas e ingenio podrás solventar el problema. Éxitos. 
+
+. 
+.
+. 
+  *Recuperando conexión con el autómata* 
+  Reto 4: 
+  ¡Hola! Es hora de acabar con ésto. He logrado determinar un número de páginas de internet posibles que permitirán acceder al computador del atacante. Puedes seleccionar la página más sospechosa para ésto. ¿A cuál desea acceder? 
+  a) www.google.com: *Conectando...* *Desconectando...* ¿En serio ésta fue tu mejor idea? ¡IGNORANTE! ¡AHORA NO PODRÁS...3sp3r4........
+  *Se ha acabado el tiempo* *Reconectando...* *Conectado con el autómata* Se ha logrado recuperar la conexión de la universidad, pero hemos perdido para siempre la base de datos de los estudiantes. Tu esfuerzo no ha sido suficiente para lograr resolver la situación. Ahora la USB tendrá que parar sus activiades por un tiempo mientras recupera nuevamente la información de los estudiantes.
+  b) www.habbo.com: Mismo mensaje anterior
+  c) www.maincraft.com: Mismo mensaje que el anterior
+  d) www.whiterose.com: .... *Conectando a la página* --- Aquí podemos poner unas referencias a MrRobot y que es un pendejo por intentar acceder a su página --- 
+  Hola, intruso. He detectado tus intentos de hackearme. Estoy recibiendo mensajes de tu servidor...Ah...Así que solo eres un inexperto. Entiendo...He recibido la información completa. He decidido ayudarte a solventar el ataque de ese atacante. Solo accederé a ayudarte si puedes resolver el siguiente acertijo de criptografía: 
+  *poner acertijo de criptografía para el mensaje "
+  Si lo hace mal:
+  Muy bien. He decidido ayudarte... Espera un segundo... Listo. No volverás a tener problemas de estos hackers. Sí, así de fácil... Sin embargo, he decidido juzgar tu incompetencia, y destruir la base de datos de todas formas...*Destruyendo base de datos...* ---Créditos---
+  Si lo hace bien:
+  ¡Excelente! Has demostrado tu ingenio. Pero no te preocupes, ésto solo era una prueba, ya se había cerrado la conexión del atacante. En realidad, uno de mis compañeros, al que me referiré como Gfecito, perteneció a la USB. Él ha monitoreado desde un principio todo el ataque, y ha esperado hasta el último momento para actuar. Has hecho un excelente trabajo contactando con nosotros. ¡Enhonrabuena por tu intuición! ---Créditos---
+  e) www.aprenderaprogramarcomoenlaUCV.com: *Ingresando en la página*... ¡Ésta es la página! Ahora podemos intentar hacer un ataque... La probabilidad de éxito es mayor si conocemos la ubicación del atacante...
+  si elegiste Francia: *Realizando ataque...* *Ataque completado...* *Recuperando la base de datos...* *Logrado.* ¡Excelente! Gracias a ti hemos podido solventar el ataque de la mejor manera posible. Muchas gracias por tus servicios.---Créditos---
+  Si elegiste otro: *Realizando el ataque...* *Error en ubicación...* El ataque no ha sido completado. *Se intenta solventar el ataque...* *Borrando la base de datos...* *Salvando archivos...* Se ha recuperado el 80% de la base de datos. Quizás no ha sido el 100%, pero ha sido importante no perder más porcentaje de la base de datos. Gracias por tus esfuerzos...
+  Si elegiste preguntar a los técnicos en la primera opción: *Intentando contactar nuevamente con los técnicos...* *Recibiendo mensaje...* "Hola! Estoy de vacaciones chamo, puedes dejar de fastidiar? coño mano son las primeras vacaciones que tengo en 3 años bro respeta. Intenta resolver como puedas bro"...*Fin del mensaje* ... *Realizar el ataque...* *Intentar cortar la conexión...* *Fin del ataque*. Hemos perdido el 40% de la base de datos. Lastimosamente, no se ha podido rescatar más... ---CRÉDITOS---
