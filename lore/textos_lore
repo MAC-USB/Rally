@@ -1,0 +1,46 @@
+Intrucciones del juego:
+  Para jugar debe seleccionar las opciones que aparecen en pantalla.
+  Dependiendo de las opciones elegidas, el final podria variar.
+  Para sumar puntos, debe seleccionar las mejores opciones en cada escenario.
+  El puntaje final aparecera al finalizar el juego al final de los creditos.
+  Para leer las opciones nuevamente escriba "repetir". Para comenzar a jugar, escriba "jugar".
+
+Conversacion de bienvenida:
+  La misma que tienes mas:
+  Recibiendo mensaje de auxilio...: ¡Hola! Soy un autómata programado por D...A...C...#$%#"#$"#%. Soy el servidor principal de la universidad. En estos momentos estoy bajo ataque, de una fuenta desconocida. El objetivo parece ser borrar los datos de los estudiantes de la universidad. Los atacantes son muy hábiles y no permiten que pueda respaldar esta información. Mi protocolo de emergencia ya no responde. Tampoco puedo apagar el servidor, si se apaga la información de perderá para siempre. Eres la última esperanza.Yo te guiare hast...#$%#$%#$%....h4st4 d0nd3 m3 s34 p0s1bl3...$%&$%&$%&$%...
+
+Primer acertijo/reto:La direccion del atacante es "inserte direccion francesa". Es primordial identificar el país donde se encuentra el atacante. El archivo "paises_ip" tienen las direcciones IP de cada país. ¿Qué haces?
+  1) Buscar archivo
+    1.1)Leer archivo
+    	Muestra un archivo con ejemplos de las IP de Francia, Estados Unidos, Colombia, Venezuela, Paraguay, ARgentina, Rusia, China, Japón, Alemania, España, Italia. Se hace evidente que la IP es francesa. Valor P.
+    1.2)¡El archivo de las IP se ha eliminado! ¡Ahora nunca sabremos de donde procede la fuente! ¿Estoy ante un usuario inteligente? Ahora solo nos queda intentar frenar el ataque, pero las esperanzas de lograrlo acaban de bajar significativamente...#$"#%"$"$"#$. -SALTAMOS A ACERTIJO 2-
+  2) ¿Asumimos que la IP proviene de China?
+  3) ¿Asumimos que nos ataca el FBI?
+  4) ¿Asumimos que nos atacan los rusos?
+  5) Llamar a los técinicos: *activando protocolo de comunicación con la oficina de los técnicos* ... (RET) ... (RET) ... (RET)... no contestan.
+
+Lore: Ahora hemos identificado que los atacantes son _______ (dinámico o franceses).Su objetivo posiblemente sea destruir la estabilida de la USB, y esperaron hasta su aniversario 50 para realizar éste ataque.
+
+Segundo acertijo/reto: Necesitamos prevenir que siga el ataque. Necesitamos desconex....$"$"$%#$%#$%....d3sc0n3ct4rl0s...Tenemos varias opciones. ¿Cuál es su idea?
+  1) Apagar el servidor:
+    1.1) Sí: ¡NO PODEMOS APAGAR EL SERVIDOR! De hacer eso la base de datos de los estudiantes sería destruida...¿Acaso eres un atacante también? *Activando protocolo de emer....%$#%#$%* *no se puede*...Por ahora, asumiré que no eres un atacante. No pareces muy inteligente.
+    1.2) No: -regresa al menu inicial del acertijo-
+  2) LLamar a los técnicos: -mismo mensaje que el acertijo 1-
+  3) Martillazo: *recibiendo mensaje de alerta*...¿Seguro quieres destruir el servidor? -NO: repetir el menu anterior. -SI: sigue con esto. ¿Es que acaso tienes criterio para solventar esta situación?...$#$#$%#$%$#%#$%#$...
+     Big F: *recibiendo mensaje de fuente desconocida* Hola. Soy el atacante. Acabas de ayudarme a lograr mi objetivo. Realmente no tenía las herramientas para destruir por completo el servidor. Si no hubieses actuado, no habría podido terminar mi misión. Gracias a ti he logrado mis objetivos de destruir a la USB. Muchas gracias. Se despide ... -Kmaleon. -*ingrese logo del atacanque y siga con los créditos*-
+  4) Revisar las interfaces de red:
+    4.1) Apagar la interfaz: *Intentando apagar la interfaz...* #$%#$%#$%#$%#$%#$%#$%3...*No se recibe respuesta* Al parecer el atacante impide que pueda desactivar la interfaz de red... Espera, he detectado una forma de hacerlo...*recibiendo mensaje de... la....*
+    4.2) Borrar la interfaz de red: -mismo mensaje que el anterior pero se acaba la palabra apagar/desactivar con la palabra borrar-
+    4.3) No hacer nada: -muestre el menu 4 otra vez-
+
+Lore: *recibiendo un mensaje de la Matrix*...Se me está enviando una información por un canal de información secundario. Al parecer, el atacante no tiene acceso a éste canal de información, por lo que el mensaje parece seguro... Pasaré a...%#$%#$%#$....*P4s4r3 a m0str4rlo p0r p4ntall4*
+
+Acertijo 3 trampa: -es una mariquera- ¿qué es verde y huele a pintura? *ingrese respuesta*. Si responden correctamente (pintura verde): "Así que no eres tan estúpido. Podemos seguir entonces." Si responden mal: "¿Todo bien en casa? Bueno, proseguimos sin demora."
+Lore: *Hola estimado amigo. Me presento, me llamo Jerónimo King. Provengo de la Matrix. Debo provar tu valía. Necesito que respondas el siguiente acertijo:
+
+    a) b) c) d) e) f) g)
+
+Si no es correcto intenta de nuevo. Si no, continúa:
+
+Lore: *Vainas de matrix, debemos acomodar bien eso. Las elecciones son roja y azul". 
+
