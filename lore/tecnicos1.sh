@@ -88,7 +88,7 @@ clear
 cat $PHONE | pv -qL2222
 
 echo -en "\n$PROMPT "
-echo -e "${YELLOW}Llamando a los técnicos...${NC}" | pv -qL8
+echo -e "${YELLOW}Llamando a los técnicos...${NC}" | pv -qL10
 
 sleep 1
 
@@ -139,7 +139,7 @@ echo -e "${RED}ERROR:${NC} The connection has not been established"
 sleep 1
 
 echo -en "$PROMPT "
-echo -en "${YELLOW}No contestan...${NC}" | pv -qL8
+echo -en "${YELLOW}No contestan...${NC}" | pv -qL10
 echo -e "\n"
 
 sleep 1

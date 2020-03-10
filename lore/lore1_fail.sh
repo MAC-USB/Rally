@@ -88,14 +88,14 @@ clear
 cat $DISCORD | pv -qL2222
 
 echo -en "\n$PROMPT "
-echo -en "${RED_R}¡El archivo de las IP se ha eliminado!${NC}" | pv -qL15
+echo -en "${RED_R}¡El archivo de las IP se ha eliminado!${NC}" | pv -qL20
 
 echo -en "\n$PROMPT "
-echo -en "${RED}¡Ahora nunca sabremos de donde procede la fuente! ¿Estoy ante unos usuarios inteligentes?${NC}" | pv -qL15
+echo -en "${RED}¡Ahora nunca sabremos de donde procede la fuente! ¿Estoy ante unos usuarios inteligentes?${NC}" | pv -qL20
 
 echo -en "\n$PROMPT "
-echo -en "Ahora solo nos queda intentar frenar el ataque, pero las esperanzas de lograrlo acaban de bajar significativamente" | pv -qL15
-echo -en "..." | pv -qL2
+echo -en "Ahora solo nos queda intentar frenar el ataque, pero las esperanzas de lograrlo acaban de bajar significativamente" | pv -qL20
+echo -en "..." | pv -qL5
 
 sleep 1
 
@@ -115,14 +115,14 @@ echo -e "$PROMPT ${RED}¡Ahora nunca sabremos de donde procede la fuente! ¿Esto
 echo -e "$PROMPT Ahora solo nos queda intentar frenar el ataque, pero las esperanzas de lograrlo acaban de bajar significativamente..."
 
 echo -en "$PROMPT "
-echo -e "$%^&!@#$..." | pv -qL10
+echo -e "$%^&!@#$..." | pv -qL15
 
 echo -en "$PROMPT "
-echo -en "Lo están haciendo mal " | pv -qL15
+echo -en "Lo están haciendo mal " | pv -qL20
 echo -en "$RED"
-echo -en "$GROUPNAME" | pv -qL15
+echo -en "$GROUPNAME" | pv -qL20
 echo -en "$NC"
-echo -en "..." | pv -qL15
+echo -en "..." | pv -qL10
 echo -e "\n"
 
 sleep 1

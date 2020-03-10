@@ -190,11 +190,11 @@ function bienvenida {
     
     clear
     
-    primerReto
+    bandersnatch
     
 }
 
-function primerReto {
+function bandersnatch {
     
     source $RETO1_SH $GROUPNAME
     

@@ -80,9 +80,9 @@ MENSAJE_READ=$(echo -e "${bold}[Presiona enter para continuar]${NC}")
 
 clear
 
-echo -en "${GREEN}Recibiendo mensaje de auxilio" | pv -qL8
+echo -en "${GREEN}Recibiendo mensaje de auxilio" | pv -qL10
 echo -en "$GREEN"
-echo -en "..." | pv -qL4
+echo -en "..." | pv -qL5
 echo -e "$NC"
 
 sleep 1
@@ -90,32 +90,32 @@ sleep 1
 cat $DISCORD | pv -qL2222
 
 echo -en "\n${PROMPT} "
-echo -en "¡Hola! Soy un autómata programado por " | pv -qL10
-echo -en "${bold}D${NC}...${bold}A${NC}...${bold}C${NC}...\$%^&${bold}E${NC}@#\$." | pv -qL15
+echo -en "¡Hola! Soy un autómata programado por " | pv -qL15
+echo -en "${bold}D${NC}...${bold}A${NC}...${bold}C${NC}...\$%^&${bold}E${NC}@#\$." | pv -qL20
 
 
 echo -en "\n${PROMPT} "
-echo -en "Soy el servidor principal de la universidad. En estos momentos estoy bajo ataque proveniente de una fuente desconocida." | pv -qL15
+echo -en "Soy el servidor principal de la universidad. En estos momentos estoy bajo ataque proveniente de una fuente desconocida." | pv -qL20
 
 echo -en "\n${PROMPT} "
-echo -en "El objetivo parece ser borrar los datos de los estudiantes de la universidad." | pv -qL15
+echo -en "El objetivo parece ser borrar los datos de los estudiantes de la universidad." | pv -qL20
 
 echo -en "\n${PROMPT} "
-echo -en "Los atacantes son muy hábiles y no permiten que pueda respaldar esta información." | pv -qL15
+echo -en "Los atacantes son muy hábiles y no permiten que pueda respaldar esta información." | pv -qL20
 
 echo -en "\n${PROMPT} "
-echo -en "Mi protocolo de emergencia ya no responde. Tampoco puedo apagar el servidor, si se apaga, la información se perderá para siempre." | pv -qL15
+echo -en "Mi protocolo de emergencia ya no responde. Tampoco puedo apagar el servidor, si se apaga, la información se perderá para siempre." | pv -qL20
 
 sleep 2
 
 echo -en "\n${PROMPT} "
-echo -en "Eres la última esperanza." | pv -qL8
+echo -en "Eres la última esperanza." | pv -qL10
 
 sleep 2
 
 echo -en "\n${PROMPT} "
-echo -en "Yo te guiare hasta" | pv -qL8
-echo -en "..." | pv -qL2
+echo -en "Yo te guiare hasta" | pv -qL10
+echo -en "..." | pv -qL5
 
 sleep 1
 
@@ -141,7 +141,7 @@ echo -e "$PROMPT Eres la última esperanza."
 
 echo -en "$PROMPT Yo te guiare hasta..."
 echo -en "$bold"
-echo -en "$%^&!@#$...h4st4 d0nd3 m3 s34 p0s1bl3...$%^&!@#$..." | pv -qL12
+echo -en "$%^&!@#$...h4st4 d0nd3 m3 s34 p0s1bl3...$%^&!@#$..." | pv -qL15
 echo -e "$NC\n"
 
 sleep 1

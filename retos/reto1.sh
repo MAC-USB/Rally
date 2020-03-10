@@ -56,11 +56,6 @@ DIR=$(pwd)
 # Archivo de paises
 PAISES_IP=$DIR/paises_ip
 
-# Jumpscares
-# JUMPSCARES=$DIR/jumpscares
-# GLITCH=$JUMPSCARES/glitch.ascii
-# GLITCH_INVERTED=$JUMPSCARES/glitch_inverted.ascii
-
 # Characters
 CHARACTERS=$DIR/characters
 DISCORD=$CHARACTERS/discord.ascii
@@ -176,12 +171,12 @@ finish(){
 retocompletado(){
     while true
     do
-        echo -en "${GREEN}${GROUPNAME}${PROMPT} "
+        echo -en "${PROMPT_PC} "
         read re
         if [ $re = "francia" -o $re = "Francia" ]
         then
             
-            ATACANTE=Francia
+            ATACANTE=FRANCIA
             
             source $LORE_BUENO $GROUPNAME $ATACANTE
             
@@ -202,7 +197,7 @@ retocompletado(){
 
 dynamic() {
     echo -en "$PROMPT " | pv -qL15
-    echo -en "Está bien. Asumiremos que el atacante es de $ATACANTE\n" | pv -qL15
+    echo -en "Está bien. Asumiremos que el atacante es de $ATACANTE\n" | pv -qL20
     
     reto2
 }
@@ -249,6 +244,7 @@ reto1() {
             elif [ $OPTION = 5 ]; then
             
             source $CALL_TECNICOS $GROUPNAME
+            VAL_TECNICOS=active
             continue
             
             elif [ $OPTION = 'a' ]; then
@@ -278,7 +274,7 @@ reto1() {
 }
 
 reto2(){
-    # source $RETO2 $GROUPNAME $ATACANTE
+    source $RETO2 $GROUPNAME $ATACANTE $VAL_TECNICOS
     echo 'FALTA CONEXION'
 }
 
