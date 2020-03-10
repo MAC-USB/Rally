@@ -150,8 +150,9 @@ function bienvenida {
 
 function primerReto {
     
-    source $RETO1_SH $GROUPNAME
-    
+    # source $RETO1_SH $GROUPNAME
+    source $DIR/lore/lore1.sh
+    source $DIR/lore/lore1_fail.sh
 }
 
 
