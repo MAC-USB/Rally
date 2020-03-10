@@ -100,7 +100,7 @@ Pildora roja:
   Problema de criptografía:
   La criptografía es el arte de encriptar mensajes. Esto significa que cualquier persona ajena que vea el mensaje no podría entender su contenido. Usualmente, se tiene una llave para entender los mensajes. Por ejemplo, si usamos la siguiente llave:
   h->r, o->u, l->j,a->l
-  El mensaje "hola" sería transformado al mensaje "rujl". Esta clase de criptografía se llama criptografía simétrica porque ambas partes usan la misma llave. Para recuperar el mensaje debe devolver el cambio, es decir, hacer lo inverso que dice la clave.
+  El mensaje "hola" sería transformado al mensaje "rujl". Esta clase de criptografía se llama criptografía simétrica porque ambas partes usan la misma llave. Para recuperar el mensaje debe devolver el cambio, es decir, hacer lo inverso que dice la llave.
 
   Dada la siguiente llave: Dado el abecedario en español, las letras desde la 'a' hasta la 'l' se intercambian por las letras dos posiciones después. Por ejemplo, 'a' pasa a ser 'c' y 'l' pasa a ser 'n'. Las letras desde la 'r' hasta la z' cambian por sus letras 3 posiciones antes. Es decir, la 'r' es ahora la 'o', y la 'z' es la 'w'. Las letras entre 'm' y 'q' quedan inalteradas. Cuidado con ésto último.
 
