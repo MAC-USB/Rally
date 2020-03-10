@@ -1,19 +1,19 @@
 Intrucciones del juego:
   Para jugar debe seleccionar las opciones que aparecen en pantalla.
-  Dependiendo de las opciones elegidas, el final podria variar.
+  Dependiendo de las opciones elegidas el final podria variar.
   Para sumar puntos, debe seleccionar las mejores opciones en cada escenario.
   El puntaje final aparecera al finalizar el juego despues de los creditos.
   Para leer las opciones nuevamente escriba "repetir". Para comenzar a jugar, escriba "jugar".
 
 Conversacion de bienvenida:
   La misma que tienes mas:
-  Recibiendo mensaje de auxilio...: ¡Hola! Soy un autómata programado por D...A...C...#$%#"#$"#%. Soy el servidor principal de la universidad. En estos momentos estoy bajo ataque, de una fuenta desconocida. El objetivo parece ser borrar los datos de los estudiantes de la universidad. Los atacantes son muy hábiles y no permiten que pueda respaldar esta información. Mi protocolo de emergencia ya no responde. Tampoco puedo apagar el servidor, si se apaga la información se perderá para siempre. Eres la última esperanza.Yo te guiare hast...#$%#$%#$%....h4st4 d0nd3 m3 s34 p0s1bl3...$%&$%&$%&$%...
+  Recibiendo mensaje de auxilio...: ¡Hola! Soy un autómata programado por D...A...C...#$%#"#$"#%. Soy el servidor principal de la universidad. En estos momentos estoy bajo ataque proveniente de una fuenta desconocida. El objetivo parece ser borrar los datos de los estudiantes de la universidad. Los atacantes son muy hábiles y no permiten que pueda respaldar esta información. Mi protocolo de emergencia ya no responde. Tampoco puedo apagar el servidor, si se apaga, la información se perderá para siempre. Eres la última esperanza.Yo te guiare hast...#$%#$%#$%....h4st4 d0nd3 m3 s34 p0s1bl3...$%&$%&$%&$%...
 
-Primer acertijo/reto:La direccion del atacante es "inserte direccion francesa". Es primordial identificar el país donde se encuentra el atacante. El archivo "paises_ip" tienen las direcciones IP de cada país. ¿Qué haces?
+Primer acertijo/reto: Te recuerdo que una dirección IP es un identificador que necesita cualquier computadora para acceder a la red. Usualmente,los países tienen rangos de direcciones IP que pueden utilizar. La direccion del atacante es "inserte direccion francesa". Es primordial identificar el país donde se encuentra el atacante. El archivo "paises_ip" tienen las direcciones IP de cada país. ¿Qué haces?
   1) Buscar archivo
     1.1)Leer archivo
     	Muestra un archivo con ejemplos de las IP de Francia, Estados Unidos, Colombia, Venezuela, Paraguay, ARgentina, Rusia, China, Japón, Alemania, España, Italia. Se hace evidente que la IP es francesa. Valor P.
-    1.2)¡El archivo de las IP se ha eliminado! ¡Ahora nunca sabremos de donde procede la fuente! ¿Estoy ante un usuario inteligente? Ahora solo nos queda intentar frenar el ataque, pero las esperanzas de lograrlo acaban de bajar significativamente...#$"#%"$"$"#$. -SALTAMOS A ACERTIJO 2-
+    1.2)¡El archivo de las IP se ha eliminado! ¡Ahora nunca sabremos de donde proviene el ataque! ¿Estoy ante un usuario inteligente? Ahora solo nos queda intentar frenar el ataque, pero las esperanzas de lograrlo acaban de bajar significativamente...#$"#%"$"$"#$. -SALTAMOS A ACERTIJO 2-
   2) ¿Asumimos que la IP proviene de China?
   3) ¿Asumimos que nos ataca el FBI?
   4) ¿Asumimos que nos atacan los rusos?
@@ -97,6 +97,19 @@ Pildora roja:
   d) www.whiterose.com: .... *Conectando a la página* --- Aquí podemos poner unas referencias a MrRobot y que es un pendejo por intentar acceder a su página --- 
   Hola, intruso. He detectado tus intentos de hackearme. Estoy recibiendo mensajes de tu servidor...Ah...Así que solo eres un inexperto. Entiendo...He recibido la información completa. He decidido ayudarte a solventar el ataque de ese atacante. Solo accederé a ayudarte si puedes resolver el siguiente acertijo de criptografía: 
   *poner acertijo de criptografía para el mensaje "
+  Problema de criptografía:
+  La criptografía es el arte de encriptar mensajes. Esto significa que cualquier persona ajena que vea el mensaje no podría entender su contenido. Usualmente, se tiene una llave para entender los mensajes. Por ejemplo, si usamos la siguiente llave:
+  h->r, o->u, l->j,a->l
+  El mensaje "hola" sería transformado al mensaje "rujl". Esta clase de criptografía se llama criptografía simétrica porque ambas partes usan la misma llave. Para recuperar el mensaje debe devolver el cambio, es decir, hacer lo inverso que dice la llave.
+
+  Dada la siguiente llave: Dado el abecedario en español, las letras desde la 'a' hasta la 'l' se intercambian por las letras dos posiciones después. Por ejemplo, 'a' pasa a ser 'c' y 'l' pasa a ser 'n'. Las letras desde la 'r' hasta la z' cambian por sus letras 3 posiciones antes. Es decir, la 'r' es ahora la 'o', y la 'z' es la 'w'. Las letras entre 'm' y 'q' quedan inalteradas. Cuidado con ésto último.
+
+Escriba el significado del siguiente mensaje:
+
+Feliz aniversario USB.
+El mensaje que se muestra al usuario:
+Hgnkw cnksgopcoko RPD.
+
   Si lo hace mal:
   Muy bien. He decidido ayudarte... Espera un segundo... Listo. No volverás a tener problemas de estos hackers. Sí, así de fácil... Sin embargo, he decidido juzgar tu incompetencia, y destruir la base de datos de todas formas...*Destruyendo base de datos...* ---Créditos---
   Si lo hace bien:
@@ -105,3 +118,4 @@ Pildora roja:
   si elegiste Francia: *Realizando ataque...* *Ataque completado...* *Recuperando la base de datos...* *Logrado.* ¡Excelente! Gracias a ti hemos podido solventar el ataque de la mejor manera posible. Muchas gracias por tus servicios.---Créditos---
   Si elegiste otro: *Realizando el ataque...* *Error en ubicación...* El ataque no ha sido completado. *Se intenta solventar el ataque...* *Borrando la base de datos...* *Salvando archivos...* Se ha recuperado el 80% de la base de datos. Quizás no ha sido el 100%, pero ha sido importante no perder más porcentaje de la base de datos. Gracias por tus esfuerzos...
   Si elegiste preguntar a los técnicos en la primera opción: *Intentando contactar nuevamente con los técnicos...* *Recibiendo mensaje...* "Hola! Estoy de vacaciones chamo, puedes dejar de fastidiar? coño mano son las primeras vacaciones que tengo en 3 años bro respeta. Intenta resolver como puedas bro"...*Fin del mensaje* ... *Realizar el ataque...* *Intentar cortar la conexión...* *Fin del ataque*. Hemos perdido el 40% de la base de datos. Lastimosamente, no se ha podido rescatar más... ---CRÉDITOS---
+
