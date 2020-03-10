@@ -202,7 +202,7 @@ retocompletado(){
 
 dynamic() {
     echo -en "$PROMPT " | pv -qL15
-    echo -en "Está bien. Asumiremos que el atacante es de $ATACANTE/n" | pv -qL15
+    echo -en "Está bien. Asumiremos que el atacante es de $ATACANTE\n" | pv -qL15
     
     reto2
 }
