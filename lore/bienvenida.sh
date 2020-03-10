@@ -132,7 +132,7 @@ clear
 
 echo -e "${GREEN}Recibiendo mensaje de auxilio...${NC}"
 cat $DISCORD
-echo -e "$PROMPT ¡Hola! Soy un autómata programado por ${bold}D${NC}...${bold}A${NC}...${bold}C${NC}...\$%^&${bold}E${NC}@#\$."
+echo -e "\n$PROMPT ¡Hola! Soy un autómata programado por ${bold}D${NC}...${bold}A${NC}...${bold}C${NC}...\$%^&${bold}E${NC}@#\$."
 echo -e "$PROMPT Soy el servidor principal de la universidad. En estos momentos estoy bajo ataque, de una fuente desconocida."
 echo -e "$PROMPT El objetivo parece ser borrar los datos de los estudiantes de la universidad."
 echo -e "$PROMPT Los atacantes son muy hábiles y no permiten que pueda respaldar esta información."
@@ -142,7 +142,7 @@ echo -e "$PROMPT Eres la última esperanza."
 echo -en "$PROMPT Yo te guiare hasta..."
 echo -en "$bold"
 echo -en "$%^&!@#$...h4st4 d0nd3 m3 s34 p0s1bl3...$%^&!@#$..." | pv -qL12
-echo -e "$NC"
+echo -e "$NC\n"
 
 sleep 1
 

@@ -156,9 +156,13 @@ finish(){
     echo -e "$PROMPT ¿Dhé unprf? ${bold}[Cbe snibe, vagebqhpr ry aúzreb qr gh ryrppvóa.]${NC}"
     sleep 0.5
     echo -e "\t${bold}(?@!#)${NC} Ohfpne ry nepuvib"
+    sleep 0.25
     echo -e "\t${bold}(?@!#)${NC} ¿Nfhzvzbf dhr yn VC cebivrar qr Puvan?"
+    sleep 0.25
     echo -e "\t${bold}(?@!#)${NC} ¿Nfhzvzbf dhr abf ngnpn ry SOV?"
+    sleep 0.25
     echo -e "\t${bold}(?@!#)${NC} ¿Nfhzvzbf dhr abf ngnpna ybf ehfbf?"
+    sleep 0.25
     echo -e "\t${bold}(?@!#)${NC} Yynzne n ybf gépavpbf"
     sleep 3
     echo -e "\t${bold}(Francia)${NC} %^!&@#$%^@&#^*."
@@ -178,6 +182,8 @@ retocompletado(){
         then
             
             ATACANTE=Francia
+            
+            source $LORE_BUENO $GROUPNAME $ATACANTE
             
             reto2
             
@@ -249,7 +255,6 @@ reto1() {
             
             cat $PAISES_IP
             sleep 10
-            echo -e "\n"
             read -p "$MENSAJE_READ"
             finish
             break
