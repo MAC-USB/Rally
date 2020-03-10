@@ -50,7 +50,7 @@ echo -en "${bold}D${NC}...${bold}A${NC}...${bold}C${NC}...\$%^&${bold}E${NC}@#\$
 
 
 echo -en "\n${PROMPT} "
-echo -en "Soy el servidor principal de la universidad. En estos momentos estoy bajo ataque de una fuente desconocida." | pv -qL15
+echo -en "Soy el servidor principal de la universidad. En estos momentos estoy bajo ataque proveniente de una fuente desconocida." | pv -qL15
 
 echo -en "\n${PROMPT} "
 echo -en "El objetivo parece ser borrar los datos de los estudiantes de la universidad." | pv -qL15
@@ -59,7 +59,7 @@ echo -en "\n${PROMPT} "
 echo -en "Los atacantes son muy hábiles y no permiten que pueda respaldar esta información." | pv -qL15
 
 echo -en "\n${PROMPT} "
-echo -en "Mi protocolo de emergencia ya no responde. Tampoco puedo apagar el servidor, si se apaga la información se perderá para siempre." | pv -qL15
+echo -en "Mi protocolo de emergencia ya no responde. Tampoco puedo apagar el servidor, si se apaga, la información se perderá para siempre." | pv -qL15
 
 sleep 2
 
