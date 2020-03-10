@@ -1,62 +1,62 @@
 #!/bin/bash
 
-# Colors
-txtblk='\e[0;30m' # Black - Regular
-txtred='\e[0;31m' # Red
-txtgrn='\e[0;32m' # Green
-txtylw='\e[0;33m' # Yellow
-txtblu='\e[0;34m' # Blue
-txtpur='\e[0;35m' # Purple
-txtcyn='\e[0;36m' # Cyan
-txtwht='\e[0;37m' # White
-bldblk='\e[1;30m' # Black - Bold
-bldred='\e[1;31m' # Red
-bldgrn='\e[1;32m' # Green
-bldylw='\e[1;33m' # Yellow
-bldblu='\e[1;34m' # Blue
-bldpur='\e[1;35m' # Purple
-bldcyn='\e[1;36m' # Cyan
-bldwht='\e[1;37m' # White
-unkblk='\e[4;30m' # Black - Underline
-undred='\e[4;31m' # Red
-undgrn='\e[4;32m' # Green
-undylw='\e[4;33m' # Yellow
-undblu='\e[4;34m' # Blue
-undpur='\e[4;35m' # Purple
-undcyn='\e[4;36m' # Cyan
-undwht='\e[4;37m' # White
-bakblk='\e[40m'   # Black - Background
-bakred='\e[41m'   # Red
-bakgrn='\e[42m'   # Green
-bakylw='\e[43m'   # Yellow
-bakblu='\e[44m'   # Blue
-bakpur='\e[45m'   # Purple
-bakcyn='\e[46m'   # Cyan
-bakwht='\e[47m'   # White
-txtrst='\e[0m'    # Text Reset
+### Colors ###
 
-GREEN='\e[1;32m'
-GREEN_R='\e[0;32m'
-CYAN_R='\e[0;36m'
-RED_R='\e[0;31m'
-PURPLE_R='\e[0;35m'
+# Regular
+BLACK_R='\e[0;30m' # Black
+RED_R='\e[0;31m' # Red
+GREEN_R='\e[0;32m' # Green
+YELLOW_R='\e[0;33m' # Yellow
+BLUE_R='\e[0;34m' # Blue
+PURPLE_R='\e[0;35m' # Purple
+CYAN_R='\e[0;36m' # Cyan
+WHITE_R='\e[0;37m' # White
+
+# Bold
+BLACK='\e[1;30m' # Black
+RED='\e[1;31m' # Red
+GREEN='\e[1;32m' # Green
+YELLOW='\e[1;33m' # Yellow
+BLUE='\e[1;34m' # Blue
+PURPLE='\e[1;35m' # Purple
+CYAN='\e[1;36m' # Cyan
+WHITE='\e[1;37m' # White
+
+# Underline
+BLACK_U='\e[4;30m' # Black
+RED_U='\e[4;31m' # Red
+GREEN_U='\e[4;32m' # Green
+YELLOW_U='\e[4;33m' # Yellow
+BLUE_U='\e[4;34m' # Blue
+PURPLE_U='\e[4;35m' # Purple
+CYAN_U='\e[4;36m' # Cyan
+WHITE_U='\e[4;37m' # White
+
+# Background
+BLACK_BACK='\e[40m'   # Black
+RED_BACK='\e[41m'   # Red
+GREEN_BACK='\e[42m'   # Green
+YELLOW_BACK='\e[43m'   # Yellow
+BLUE_BACK='\e[44m'   # Blue
+PURPLE_BACK='\e[45m'   # Purple
+CYAN_BACK='\e[46m'   # Cyan
+WITHE_BACK='\e[47m'   # White
+
+# Others
 NC='\033[0m' # No Color
-bold='\033[1m'
+bold='\033[1m' # Bold
 
+####################################################################################################
 
-# Dirs
+### Dirs ###
+
+# Dir
 DIR=$(pwd)
-
 
 # Jumpscares
 JUMPSCARES=$DIR/jumpscares
 GLITCH=$JUMPSCARES/glitch.ascii
 GLITCH_INVERTED=$JUMPSCARES/glitch_inverted.ascii
-
-
-# Mensajes Reutilizables
-PROMPT=$(echo -e "${GREEN_R}automata@DACE${NC}:${CYAN_R}~${NC}\$")
-
 
 # Characters
 CHARACTERS=$DIR/characters
@@ -64,6 +64,17 @@ BENDER=$CHARACTERS/bender.ascii
 BENDER_CHIQUITO=$CHARACTERS/bender_chiquito.ascii
 DISCORD=$CHARACTERS/discord.ascii
 
+####################################################################################################
+
+### Mensajes Reutilizables ###
+
+# Automata
+PROMPT=$(echo -e "${GREEN_R}automata@DACE${NC}:${CYAN_R}~${NC}\$")
+
+# Prompt de espera
+MENSAJE_READ=$(echo -e "${bold}[Presiona enter para continuar]${NC}")
+
+####################################################################################################
 
 ### MAIN ###
 
@@ -112,9 +123,9 @@ sleep 1
 for i in {1..5}
 do
     cat $GLITCH
-    sleep 0.025
+    sleep 0.015
     cat $GLITCH_INVERTED
-    sleep 0.025
+    sleep 0.015
 done
 
 clear
@@ -132,3 +143,7 @@ echo -en "$PROMPT Yo te guiare hasta..."
 echo -en "$bold"
 echo -en "$%^&!@#$...h4st4 d0nd3 m3 s34 p0s1bl3...$%^&!@#$..." | pv -qL12
 echo -e "$NC"
+
+sleep 1
+
+read -p "$MENSAJE_READ"
