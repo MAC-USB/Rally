@@ -375,10 +375,6 @@ do
         echo -en "\n$WROSE "
         echo -en "Te daré otra oportunidad más" | pv -qL20
         
-        echo -en "\n$WROSE "
-        echo -e "Solo tienes que encriptar este mensaje: ${bold}Feliz aniversario USB.${NC}" | pv -qL20
-        
-        echo -en "${PROMPT_PC} "
         read OPTION1
         
         sleep 2
