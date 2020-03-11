@@ -162,7 +162,44 @@ function eleccionDePildora {
             
             elif [[ $re = "roja" || $re = "Roja" || $re = "ROJA" ]]; then ### ROJA ###
             
+            clear
+            
+            cat $MRROBOT | pv -qL2222
+            
+            echo -en "$PROMPT "
+            echo -en "La USB ha representado por muchos años la posibilidad de lograr la excelencia educativa en Venezuela." | pv -qL20
+            
+            echo -en "\n$PROMPT "
+            echo -en "Ingeniería de la Computación es una de las carreras más importantes de la universidad, y muchos de sus graduandos terminan siendo figuras importantes en muchas de las empresas del desarrollo informático más grandes del mundo." | pv -qL20
+            
+            echo -en "\n$PROMPT "
+            echo -en "El atacante es posiblemente un estudiante de Licenciatura de la Computación de la UCV que intenta socavar la universidad porque ha pasado toda su vida siendo comparado con los estudiantes de la USB." | pv -qL20
+            
+            echo -en "\n$PROMPT "
+            echo -en "Para vencer a este atacante, habilidoso por demás, necesitamos demostrar que estamos a su altura, y que podemos leer sus siguientes jugadas." | pv -qL20
+            
+            echo -en "\n$PROMPT "
+            echo -en "Ustedes, los ${bold}Simonbobos${NC}, podrán derrotarlo, independientemente que carrera estén estudiando." | pv -qL20
+            
+            echo -en "\n$PROMPT "
+            echo -en "Para ello, es fundamental tomar las mejores decisiones posibles." | pv -qL20
+            
+            echo -en "\n$PROMPT "
+            echo -en "Retomarás el contacto con el autómata, pero ahora conoces por qué está sucediendo esta situación y cómo poder solucionarla." | pv -qL20
+            
+            echo -en "\n$PROMPT "
+            echo -en "En mi posición no puedo resolver el problema yo mismo, pero confío en que tus habilidades deductivas e ingenio podrán solventar el problema." | pv -qL20
+            
             sleep 1
+            
+            echo -en "\n$PROMPT "
+            echo -en "Éxitos." | pv -qL15
+            
+            sleep 2
+            
+            echo -en "${PURPLE}[Recuperando conexión con el autómata]${NC}"
+            
+            sleep 3
             
             read -p "$MENSAJE_READ"
             
