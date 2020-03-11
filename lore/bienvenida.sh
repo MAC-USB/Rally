@@ -101,6 +101,9 @@ echo -en "\n${PROMPT} "
 echo -en "El objetivo parece ser borrar los datos de los estudiantes de la universidad." | pv -qL20
 
 echo -en "\n${PROMPT} "
+echo -en "A pesar de que el servidor donde me encuentro corre un buen sistema operativo, Linux." | pv -qL22
+
+echo -en "\n${PROMPT} "
 echo -en "Los atacantes son muy hábiles y no permiten que pueda respaldar esta información." | pv -qL20
 
 echo -en "\n${PROMPT} "
@@ -135,6 +138,7 @@ cat $DISCORD
 echo -e "\n$PROMPT ¡Hola! Soy un autómata programado por ${bold}D${NC}...${bold}A${NC}...${bold}C${NC}...\$%^&${bold}E${NC}@#\$."
 echo -e "$PROMPT Soy el servidor principal de la universidad. En estos momentos estoy bajo ataque, de una fuente desconocida."
 echo -e "$PROMPT El objetivo parece ser borrar los datos de los estudiantes de la universidad."
+echo -e "$PROMPT A pesar de que el servidor donde me encuentro corre un buen sistema operativo, Linux."
 echo -e "$PROMPT Los atacantes son muy hábiles y no permiten que pueda respaldar esta información."
 echo -e "$PROMPT Mi protocolo de emergencia ya no responde. Tampoco puedo apagar el servidor, si se apaga la información se perderá para siempre."
 echo -e "$PROMPT Eres la última esperanza."

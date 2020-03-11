@@ -162,8 +162,8 @@ finish(){
     echo -e "\t${bold}(?@!#)${NC} ¿Nfhzvzbf dhr abf ngnpna ybf ehfbf?"
     sleep 0.25
     echo -e "\t${bold}(?@!#)${NC} Yynzne n ybf gépavpbf"
-    sleep 3
-    echo -e "\t${bold}(Francia)${NC} %^!&@#$%^@&#^*."
+    sleep 2
+    echo -e "\t${GREEN_BACK}(Francia)${NC} %^!&@#$%^@&#^*."
     sleep 0.25
     
     retocompletado
@@ -176,8 +176,7 @@ retocompletado(){
     do
         echo -en "${PROMPT_PC} "
         read re
-        if [ $re = "francia" -o $re = "Francia" ]
-        then
+        if [[ $re = "francia" || $re = "Francia" || $re = "FRANCIA" ]]; then
             
             ATACANTE=FRANCIA
             
@@ -254,6 +253,7 @@ reto1() {
             
             cat $PAISES_IP
             sleep 10
+            echo -e ""
             read -p "$MENSAJE_READ"
             finish
             break

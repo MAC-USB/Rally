@@ -170,7 +170,13 @@ begining() {
 
 retocompletado(){
     
+    echo -e ""
+    
+    read -p "$MENSAJE_READ"
+    
     source $LORE_BUENO $GROUPNAME $ATACANTE
+    
+    read -p "$MENSAJE_READ"
     reto3
     
 }
@@ -229,15 +235,69 @@ reto2() {
             
             elif [ $OPTION = 'a' ]; then
             
-            echo -en "$PROMPT " | pv -qL15
-            echo -en "*Intentando apagar la interfaz...* #$%#$%#$%#$%#$%#$%#$%3...*No se recibe respuesta* Al parecer el atacante impide que pueda desactivar la interfaz de red... Espera, he detectado una forma de hacerlo...*recibiendo mensaje de... la....* \n" | pv -qL20
+            echo -en "$PROMPT "
+            echo -en "Intentaré apagar la interfaz..." | pv -qL20
+            
+            sleep 1
+            echo -en "\n$PROMPT "
+            sleep 0.5
+            echo -en "\n$PROMPT  "
+            sleep 0.5
+            echo -e "\n$PROMPT   "
+            sleep 0.5
+            echo -e "${RED}[No se recibe respuesta]${NC}"
+            sleep 1
+            echo -en "$PROMPT "
+            sleep 0.5
+            echo -en "\n$PROMPT  "
+            sleep 0.5
+            echo -en "\n$PROMPT   "
+            sleep 1
+            
+            echo -en "\n$PROMPT "
+            echo -en "Al parecer el atacante impide que pueda desactivar la interfaz de red..." | pv -qL20
+            
+            echo -en "\n$PROMPT "
+            echo -en "Espera, he detectado una forma de hacerlo..." | pv -qL20
+            
+            echo -en "\n$PROMPT "
+            echo -e "!*^#!*&@$%, estoy recibiendo mensaje de... la...." | pv -qL20
+            
+            sleep 1
             retocompletado
             break
             
             elif [ $OPTION = 'b' ]; then
             
-            echo -en "$PROMPT " | pv -qL15
-            echo -en "*Intentando borrar la interfaz...* #$%#$%#$%#$%#$%#$%#$%3...*No se recibe respuesta* Al parecer el atacante impide que pueda borrar la interfaz de red... Espera, he detectado una forma de hacerlo...*recibiendo mensaje de... la....* \n" | pv -qL20
+            echo -en "$PROMPT "
+            echo -en "Intentaré borrar la interfaz..." | pv -qL20
+            
+            sleep 1
+            echo -en "\n$PROMPT "
+            sleep 0.5
+            echo -en "\n$PROMPT  "
+            sleep 0.5
+            echo -e "\n$PROMPT   "
+            sleep 0.5
+            echo -e "${RED}[No se recibe respuesta]${NC}"
+            sleep 1
+            echo -en "$PROMPT "
+            sleep 0.5
+            echo -en "\n$PROMPT  "
+            sleep 0.5
+            echo -en "\n$PROMPT   "
+            sleep 1
+            
+            echo -en "\n$PROMPT "
+            echo -en "Al parecer el atacante impide que pueda borrar la interfaz de red..." | pv -qL20
+            
+            echo -en "\n$PROMPT "
+            echo -en "Espera, he detectado una forma de hacerlo..." | pv -qL20
+            
+            echo -en "\n$PROMPT "
+            echo -e "*!*@#@!, estoy recibiendo un mensaje de... la...." | pv -qL20
+            
+            sleep 1
             retocompletado
             break
             
@@ -252,7 +312,7 @@ reto2() {
 reto3(){
     
     # El reto 3 es el acertijo trampa
-    source $RETO3_SH $GROUPNAME $ATACANTES
+    source $RETO3_SH $GROUPNAME $ATACANTES $VAL_TECNICOS
 }
 
 reto2

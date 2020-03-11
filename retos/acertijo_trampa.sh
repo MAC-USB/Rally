@@ -150,7 +150,7 @@ echo -en "\n$PROMPT "
 echo -en "Me presento, me llamo ${bold}J${NC}erónimo ${bold}K${NC}ing." | pv -qL20
 
 echo -en "\n$PROMPT "
-echo -en "Provengo de la Matrix y debo provar tu valía." | pv -qL20
+echo -en "Provengo de la Matrix y debo probar tu valía." | pv -qL20
 
 echo -en "\n$PROMPT "
 echo -en "Necesito que respondas el siguiente acertijo:" | pv -qL20
@@ -222,7 +222,7 @@ do
         cat $MRROBOT
         echo -e "\n$PROMPT ${bold}HELLO FRIEND.${NC}"
         echo -e "$PROMPT Me presento, me llamo ${bold}J${NC}erónimo ${bold}K${NC}ing."
-        echo -e "$PROMPT Provengo de la Matrix y debo provar tu valía."
+        echo -e "$PROMPT Provengo de la Matrix y debo probar tu valía."
         echo -e "$PROMPT Necesito que respondas el siguiente acertijo:"
         echo -e "$PROMPT ${bold}¿Cuál es el mejor sistema operativo del mundo?${NC}"
         
