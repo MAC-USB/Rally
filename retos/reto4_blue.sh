@@ -68,17 +68,8 @@ DISCORD=$CHARACTERS/discord.ascii
 # Carpeta de lore
 LORE=$DIR/lore
 
-# Archivo paises_ip
-PAISES_IP=$LORE/paises_ip.txt
-
-# Llamar a los tecnicos
-CALL_TECNICOS=$LORE/tecnicos1.sh
-
-# Lore bueno
-LORE_BUENO=$LORE/lore1.sh
-
-# Lore malo
-LORE_MALO=$LORE/lore1_fail.sh
+# Finales
+FINAL_ELYIANERO=$LORE/final_elyianero.sh
 
 ####################################################################################################
 
@@ -219,8 +210,9 @@ final_azul2(){
 
 elyianero() {
     
-    echo "Final ElYianero"
+    sleep 1
     
+    source $FINAL_ELYIANERO
     
 }
 
@@ -315,11 +307,6 @@ reto4_blue() {
             continue
         fi
     done
-}
-
-retox(){
-    # source $RETO2 $GROUPNAME $ATACANTE
-    echo 'FALTA CONEXION'
 }
 
 reto4_blue
