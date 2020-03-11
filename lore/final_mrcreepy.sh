@@ -113,6 +113,10 @@ echo -en "...]${NC}" | pv -qL5
 
 clear
 
+echo -e "${RED}[Cerrando conexión]${NC}"
+
+sleep 2.5
+
 cat $CARMEN | pv -qL2222
 
 echo -en "\n${CREEPY} "
