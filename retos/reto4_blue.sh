@@ -72,6 +72,8 @@ LORE=$DIR/lore
 FINAL_ELYIANERO=$LORE/final_elyianero.sh
 FINAL_POSITIVO1=$LORE/final_positivo_azul.sh
 FINAL_FLANG=$LORE/final_flang.sh
+FINAL_MISTER=$LORE/final_mrcreepy.sh
+FINAL_PHD=$LORE/final_phd.sh
 
 ####################################################################################################
 
@@ -221,7 +223,10 @@ elyianero() {
 }
 
 phd() {
-    echo "final El PhD"
+
+    sleep 1
+
+    source $FINAL_PHD
     
 }
 
@@ -235,7 +240,9 @@ flang() {
 
 mrcrepy() {
     
-    echo "final Mr Creepy"
+    sleep 1
+
+    $FINAL_MISTER
     
     
 }
