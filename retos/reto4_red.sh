@@ -80,6 +80,9 @@ LORE_BUENO=$LORE/lore1.sh
 # Lore malo
 LORE_MALO=$LORE/lore1_fail.sh
 
+# Final tecnicos
+FINAL_TECNICOS=$LORE/final_tecnicos.sh
+
 ####################################################################################################
 
 ### Variables de entorno necesarias ###
@@ -155,6 +158,14 @@ begining() {
     echo -e "\t${bold}(5)${NC} www.aprenderaprogramarcomoenlaUCV.com"
     sleep 0.25
     
+}
+
+final_tecnicos() {
+
+    sleep 1
+
+    source $FINAL_TECNICOS
+
 }
 
 finish(){
@@ -234,7 +245,7 @@ finalFrancia(){
 
 finalTECNICOS(){
     
-    echo "final tecnicos"
+    final_tecnicos
 }
 
 finalOTROS(){
