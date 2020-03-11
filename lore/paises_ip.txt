@@ -1,4 +1,4 @@
-En este archivo de colocan ejemplos de direcciones IP de algunos paises. Cuando aparezca X significa cualquier número entre 1 y 255 
+En este archivo se colocan ejemplos de direcciones IP de algunos países. Cuando aparezca X significa cualquier número entre 1 y 255 
 
 Alemania           195.43.X.X
 Australia          1.0.4.X
