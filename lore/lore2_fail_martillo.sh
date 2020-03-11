@@ -87,22 +87,19 @@ FINAL_KMALEON=$DIR/lore/final_kmaleon.sh
 # Funcion del final kmaleon
 
 kmaleon() {
-
-    sleep 1
-
+    
     source $FINAL_KMALEON
 }
 
 ### Main ###
 
-# echo -en  ...$#$#$%#$%$#%#$%#$...\n" | pv -qL15
-#
-
 clear
 
-cat $DISCORD | pv -qL2222
+echo -e "${RED}[Recibiendo mensaje de alerta]${NC}"
 
-echo -en "\n${RED}[Recibiendo mensaje de alerta]${NC}"
+sleep 2
+
+cat $DISCORD | pv -qL2222
 
 sleep 1
 

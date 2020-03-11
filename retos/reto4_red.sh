@@ -56,6 +56,11 @@ DIR=$(pwd)
 # Archivo de paises
 PAISES_IP=$DIR/paises_ip
 
+# Jumpscares
+JUMPSCARES=$DIR/jumpscares
+GLITCH=$JUMPSCARES/glitch.ascii
+GLITCH_INVERTED=$JUMPSCARES/glitch_inverted.ascii
+
 # Characters
 CHARACTERS=$DIR/characters
 DISCORD=$CHARACTERS/discord.ascii
@@ -95,9 +100,6 @@ VAL_TECNICOS=$3
 # Automata
 PROMPT=$(echo -e "${GREEN_R}automata@DACE${NC}:${CYAN_R}~${NC}\$")
 
-# JK
-PROMPT=$(echo -e "${BLUE_R}jk@MAC${NC}:${CYAN_R}~${NC}\$")
-
 # Rally-PC
 PROMPT_PC=$(echo -e "${GREEN}${GROUPNAME}${GREEN_R}@Rally-PC${NC}:${CYAN_R}~${NC}\$")
 
@@ -112,40 +114,33 @@ clear
 
 cat $DISCORD | pv -qL2222
 
-#Colocar prompt de jk
+echo -en "\n$PROMPT "
+echo -en "Es hora de acabar con esto." | pv -qL20
+
+sleep 0.2
 
 echo -en "\n$PROMPT "
-echo -en "La USB ha representado por muchos años la posibilidad de lograr la excelencia educativa en Venezuela. Ingeniería de la Computación es una de las carreras más importantes de la universidad, y muchos de sus graduandos terminan siendo figuras importantes en muchas de las empresas del desarrollo informático más grandes del mundo." | pv -qL20
+echo -en "He logrado determinar un número de páginas de internet que permitirán acceder al computador del atacante." | pv -qL20
 
 echo -en "\n$PROMPT "
-echo -en "El atacante es posiblemente un estudiante de Licenciatura de la Computación de la UCV que intenta socavar la universidad porque ha pasado toda su vida siendo comparado con los estudiantes de la USB." | pv -qL20
+echo -en "Puedes seleccionar la página más sospechosa para esto." | pv -qL20
+
+sleep 0.2
 
 echo -en "\n$PROMPT "
-echo -en "Para vencer a este atacante, habilidoso por demás, necesitamos demostrar que estamos a su altura, y que podemos leer sus siguientes jugadas. Para ello, es fundamental tomar las mejores decisiones posibles." | pv -qL20
-
-echo -en "\n$PROMPT "
-echo -en "Retomarás el contacto con el autómata, pero ahora conoces por qué está sucediendo esta situación y cómo poder solucionarla. En mi posición no puedo resolver el problema yo mismo, pero confío en que tus habilidades deductivas e ingenio podrán solventar el problema. Éxitos." | pv -qL20
-
-echo -en "\n$PROMPT .\n$PROMPT .\n$PROMPT .\n " | pv -qL20
-echo -en "*Recuperando conexión con el autómata*" | pv -qL20
-echo -en "Es hora de acabar con esto. He logrado determinar un número de páginas de internet que permitirán acceder al computador del atacante. Puedes seleccionar la página más sospechosa para esto." | pv -qL20
-
-echo -en "¿A cuál desea acceder?" | pv -qL20
+echo -en "¿A cuál desea acceder?" | pv -qL15
 echo -e " ${bold}[Por favor, introduce el número de tu elección.]${NC}"
-
 
 
 dialog(){
     clear
     
     cat $DISCORD
-    echo -e "\n$PROMPT Es hora de acabar con esto. He logrado determinar un número de páginas de internet posibles que permitirán acceder al computador del atacante. Puedes seleccionar la página más sospechosa para esto."
-    echo -e "$PROMPT  ¿A cuál desea acceder?${bold}[Por favor, introduce el número de tu elección.]${NC}"
+    echo -e "\n$PROMPT Es hora de acabar con esto."
+    echo -e "$PROMPT He logrado determinar un número de páginas de internet posibles que permitirán acceder al computador del atacante."
+    echo -e "$PROMPT Puedes seleccionar la página más sospechosa para esto."
+    echo -e "$PROMPT ¿A cuál desea acceder? ${bold}[Por favor, introduce el número de tu elección.]${NC}"
 }
-
-
-# Función de inicio (y reinicio)
-# Gracias a ella es posible regresar en el script
 
 begining() {
     sleep 0.25
@@ -155,46 +150,62 @@ begining() {
     sleep 0.25
     echo -e "\t${bold}(3)${NC} www.minecraft.com"
     sleep 0.25
-    echo -e "\t${bold}(4)${NC} www.whiterose.com"
+    echo -e "\t${bold}(4)${NC} www.reserva.dii.usb.ve"
     sleep 0.25
     echo -e "\t${bold}(5)${NC} www.aprenderaprogramarcomoenlaUCV.com"
+    sleep 0.25
+    
 }
 
 finish(){
+    
+    for i in {1..5}
+    do
+        cat $GLITCH
+        sleep 0.015
+        cat $GLITCH_INVERTED
+        sleep 0.015
+    done
+    
+    clear
+    
+    cat $DISCORD
+    
     sleep 0.25
-    echo -e "$PROMPT ¿Dhé unprf? ${bold}[Cbe snibe, vagebqhpr ry aúzreb qr gh ryrppvóa.]${NC}"
+    echo -e "\n$PROMPT ¿N pháy qrfrn npprqre? ${bold}[Cbe snibe, vagebqhpr ry aúzreb qr gh ryrppvóa.]${NC}"
     sleep 0.5
-    echo -e "\t${bold}(?@!#)${NC} Ohfpne ry nepuvib"
+    echo -e "\t${bold}(?@!#)${NC}  jjj.erfrein.qvv.hfo.ir"
     sleep 0.25
-    echo -e "\t${bold}(?@!#)${NC} ¿Nfhzvzbf dhr yn VC cebivrar qr Puvan?"
+    echo -e "\t${bold}(^$&#)${NC} www.aprenderaprogramarcomoenlaUCV.com"
     sleep 0.25
-    echo -e "\t${bold}(?@!#)${NC} ¿Nfhzvzbf dhr abf ngnpn ry SOV?"
+    echo -e "\t${bold}(?@!#)${NC} jjj.tbbtyr.pbz"
     sleep 0.25
-    echo -e "\t${bold}(?@!#)${NC} ¿Nfhzvzbf dhr abf ngnpna ybf ehfbf?"
+    echo -e "\t${bold}(^$&#)${NC} www.reserva.dii.usb.ve"
     sleep 0.25
-    echo -e "\t${bold}(?@!#)${NC} Yynzne n ybf gépavpbf"
-    sleep 3
-    echo -e "\t${bold}(Francia)${NC} %^!&@#$%^@&#^*."
+    echo -e "\t${bold}(?@!#)${NC} jjj.unoob.pbz"
     sleep 0.25
+    echo -e "\t${YELLOW_BACK}(Hack)${NC} www.wh1t3r0se.com"
+    sleep 0.25
+    echo -e "\t${bold}(?@!#)${NC} jjj.zvarpensg.pbz"
+    sleep 0.25
+    echo -e "\t${bold}(^$&#)${NC} www.minecraft.com"
+    sleep 0.25
+    echo -e "\t${bold}(?@!#)${NC} jjj.juvgrebfr.pbz"
+    sleep 0.25
+    echo -e "\t${bold}(^$&#)${NC} www.habbo.com"
+    sleep 0.25
+    echo -e "\t${bold}(?@!#)${NC} jjj.nceraqrencebtenznepbzbraynHPI.pbz"
+    sleep 0.25
+    echo -e "\t${bold}(^$&#)${NC} www.google.com"
+    sleep 1
     
-    retocompletado
-    
-}
-
-
-retocompletado(){
     while true
     do
-        echo -en "${GREEN}${GROUPNAME}${PROMPT} "
+        echo -en "${PROMPT_PC} "
         read re
-        if [ $re = "francia" -o $re = "Francia" ]
-        then
+        if [[ $re = "hack" || $re = "Hack" || $re = "HACK" ]]; then
             
-            ATACANTE=Francia
-            
-            source $LORE_BUENO $GROUPNAME $ATACANTE
-            
-            reto2
+            whiterose
             
             break
             
@@ -205,7 +216,47 @@ retocompletado(){
     
 }
 
-# Evaluación de casos para cada opción particular
+
+finalErroneo() {
+    
+    echo "FINAL PAGINAS ERRONEAS"
+}
+
+whiterose() {
+    
+    echo "WHITEROSE CRIPTOGRAFIA"
+}
+
+finalFrancia(){
+    
+    echo "FINAL FRANCIA"
+}
+
+finalTECNICOS(){
+    
+    echo "final tecnicos"
+}
+
+finalOTROS(){
+    echo "final otros paises"
+}
+
+ubicacion(){
+    
+    if [ $ATACANTES = "FRANCIA" ]; then
+        
+        finalFrancia
+        
+        elif [[ $VAL_TECNICOS = "active" || $VAL_TECNICOS = 'active2' ]]; then #esto pasa si seleccionaron a los tecnicos en el acertijo 2 y es un f xD
+        
+        finalTECNICOS
+        
+    else
+        
+        finalOTROS
+    fi
+    
+}
 
 reto4_red() {
     
@@ -221,32 +272,26 @@ reto4_red() {
         
         if [[ $OPTION = 1 || $OPTION = 2 || $OPTION = 3 ]]; then
             
-            echo "Final chimborojo"
+            finalErroneo
             break
             
             elif [ $OPTION = 4 ]; then
             
-            echo "Acertijo MrRobot"
+            finish
             break
             
             elif [ $OPTION = '5' ]; then
             
-            sleep 0.25
-            echo -en "\n$PROMPT "
-            echo -en "*Ingresando en la página*... ¡Esta es la página! Ahora podemos intentar hacer un ataque... La probabilidad de éxito es mayor si conocemos la ubicación del atacante..." | pv -qL20
+            echo -en "$PROMPT "
+            echo -en "*Ingresando en la página*..." | pv -qL20
             
-            if [ $ATACANTES = "FRANCIA" ]; then
-                
-                echo "Final positivo rojo"
-                break
-                
-                elif [ $ATACANTES = "active" -o $ATACANTES = 'active2' ]; then #esto pasa si seleccionaron a los tecnicos en el acertijo 2 y es un f xD
-                echo "Final técnico de vacaciones"
-                break
-            else
-                echo "Final país distinto a francia"
-                break
-            fi
+            echo -en "\n$PROMPT "
+            echo -e "¡Esta es la página! Ahora podemos intentar hacer un ataque... La probabilidad de éxito es mayor si conocemos la ubicación del atacante..." | pv -qL20
+            
+            sleep 2
+            ubicacion
+            break
+            
             
             elif [ $OPTION = 0 ]; then
             continue
