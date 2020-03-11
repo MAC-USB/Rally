@@ -80,6 +80,12 @@ LORE_BUENO=$LORE/lore1.sh
 # Lore malo
 LORE_MALO=$LORE/lore1_fail.sh
 
+# Carpeta de retos/acertijos
+RETOS=$DIR/retos
+
+# Finales
+CRIPTO=$RETOS/criptografia.sh
+
 ####################################################################################################
 
 ### Variables de entorno necesarias ###
@@ -224,7 +230,10 @@ finalErroneo() {
 
 whiterose() {
     
-    echo "WHITEROSE CRIPTOGRAFIA"
+    source $CRIPTO
+    
+    sleep 1
+    
 }
 
 finalFrancia(){
