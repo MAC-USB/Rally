@@ -383,7 +383,7 @@ do
         
         sleep 2
         
-        if [[ $OPTION1 = 'Hgnkw cnksgopcoko RPD' || $OPTION1 = 'HGNKW CNKSGOPCOKO RPD' || $OPTION1 = 'hgnkw cnksgopcoko rpd' ]]; then
+        if [[ $OPTION = 'Feliz aniversario USB' || $OPTION = 'FELIZ ANIVERSARIO USB' || $OPTION = 'feliz aniversario USB' || $OPTION = 'feliz aniversario usb' ]]; then
             
             
             echo -en "$WROSE "
