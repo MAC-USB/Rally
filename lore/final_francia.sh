@@ -130,6 +130,7 @@ sleep 2
 clear
 
 echo -en "${YELLOW}[LOGRADO]${NC}" | pv -qL20
+echo -en "\n"
 
 sleep 1
 
@@ -139,6 +140,9 @@ echo -en "\n${PROMPT} "
 echo -en "¡Excelente! Gracias a ti hemos podido solventar el ataque de la mejor manera posible." | pv -qL20
 echo -en "\n${PROMPT} "
 echo -en "Muchas gracias por tus servicios." | pv -qL20
+echo -en "\n"
+echo -en "\n"
+
 
 sleep 2
 
