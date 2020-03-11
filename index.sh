@@ -61,7 +61,7 @@ RALLY_LOGO=$DIR/logos/rallylogo.ascii
 LORE=$DIR/lore
 
 # Instrucciones
-INSTRUCCIONES_SH=$LORE/instrucciones.sh
+INTRUCCIONES_SH=$LORE/intrucciones.sh
 
 # Bienvenida
 BIENVENIDA_SH=$LORE/bienvenida.sh
@@ -157,7 +157,7 @@ function start {
 
 function instrucciones {
     
-    source $INSTRUCCIONES_SH
+    source $INTRUCCIONES_SH
     
     while true
     do
