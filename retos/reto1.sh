@@ -273,7 +273,7 @@ reto1() {
             
             # Error.
         else
-            echo -e "${RED}Opción invalida.${NC}"
+            echo -e "${RED}Opción inválida.${NC}"
             continue
         fi
     done

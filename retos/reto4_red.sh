@@ -115,20 +115,20 @@ cat $DISCORD | pv -qL2222
 #Colocar prompt de jk
 
 echo -en "\n$PROMPT "
-echo -en "La USB ha representado por muchos años la posibilidad de lograr la excelencia educativa en Venezuela. Ingeniería en Computación es una de las carreras más importantes de la universidad, y muchos de sus graduandos terminan siendo figuras importantes en muchas de las empresas del desarrollo informático más grandes del mundo." | pv -qL20
+echo -en "La USB ha representado por muchos años la posibilidad de lograr la excelencia educativa en Venezuela. Ingeniería de la Computación es una de las carreras más importantes de la universidad, y muchos de sus graduandos terminan siendo figuras importantes en muchas de las empresas del desarrollo informático más grandes del mundo." | pv -qL20
 
 echo -en "\n$PROMPT "
-echo -en "El atacante es posiblemente un estudiante de Ingeniería en Computación de la UCV que intenta socavar la universidad porque ha pasado toda su vida siendo comparado con los estudiantes de la USB." | pv -qL20
+echo -en "El atacante es posiblemente un estudiante de Licenciatura de la Computación de la UCV que intenta socavar la universidad porque ha pasado toda su vida siendo comparado con los estudiantes de la USB." | pv -qL20
 
 echo -en "\n$PROMPT "
-echo -en "Para vencer a éste atacante, habilidoso por demás, necesitamos demostrar que estamos a su altura, y que podemos leer sus siguientes jugadas. Para ello, es fundamental tomar las mejores decisiones posibles." | pv -qL20
+echo -en "Para vencer a este atacante, habilidoso por demás, necesitamos demostrar que estamos a su altura, y que podemos leer sus siguientes jugadas. Para ello, es fundamental tomar las mejores decisiones posibles." | pv -qL20
 
 echo -en "\n$PROMPT "
-echo -en "Retomarás el contacto con el autómata, pero ahora conoces por qué ésta sucediendo ésta situación y cómo poder solucionarla. En mi posición no puedo resolver el problema yo mismo, pero confío en que tus habilidades deductivas e ingenio podrás solventar el problema. Éxitos." | pv -qL20
+echo -en "Retomarás el contacto con el autómata, pero ahora conoces por qué está sucediendo esta situación y cómo poder solucionarla. En mi posición no puedo resolver el problema yo mismo, pero confío en que tus habilidades deductivas e ingenio podrán solventar el problema. Éxitos." | pv -qL20
 
 echo -en "\n$PROMPT .\n$PROMPT .\n$PROMPT .\n " | pv -qL20
 echo -en "*Recuperando conexión con el autómata*" | pv -qL20
-echo -en "Es hora de acabar con ésto. He logrado determinar un número de páginas de internet que permitirán acceder al computador del atacante. Puedes seleccionar la página más sospechosa para ésto." | pv -qL20
+echo -en "Es hora de acabar con esto. He logrado determinar un número de páginas de internet que permitirán acceder al computador del atacante. Puedes seleccionar la página más sospechosa para esto." | pv -qL20
 
 echo -en "¿A cuál desea acceder?" | pv -qL20
 echo -e " ${bold}[Por favor, introduce el número de tu elección.]${NC}"
@@ -139,7 +139,7 @@ dialog(){
     clear
     
     cat $DISCORD
-    echo -e "\n$PROMPT Es hora de acabar con ésto. He logrado determinar un número de páginas de internet posibles que permitirán acceder al computador del atacante. Puedes seleccionar la página más sospechosa para ésto."
+    echo -e "\n$PROMPT Es hora de acabar con esto. He logrado determinar un número de páginas de internet posibles que permitirán acceder al computador del atacante. Puedes seleccionar la página más sospechosa para esto."
     echo -e "$PROMPT  ¿A cuál desea acceder?${bold}[Por favor, introduce el número de tu elección.]${NC}"
 }
 
@@ -233,7 +233,7 @@ reto4_red() {
             
             sleep 0.25
             echo -en "\n$PROMPT "
-            echo -en "*Ingresando en la página*... ¡Ésta es la página! Ahora podemos intentar hacer un ataque... La probabilidad de éxito es mayor si conocemos la ubicación del atacante..." | pv -qL20
+            echo -en "*Ingresando en la página*... ¡Esta es la página! Ahora podemos intentar hacer un ataque... La probabilidad de éxito es mayor si conocemos la ubicación del atacante..." | pv -qL20
             
             if [ $ATACANTES = "FRANCIA" ]; then
                 
@@ -241,10 +241,10 @@ reto4_red() {
                 break
                 
                 elif [ $ATACANTES = "active" -o $ATACANTES = 'active2' ]; then #esto pasa si seleccionaron a los tecnicos en el acertijo 2 y es un f xD
-                echo "Final tecnico de vacaciones"
+                echo "Final técnico de vacaciones"
                 break
             else
-                echo "Final pais distinto a francia"
+                echo "Final país distinto a francia"
                 break
             fi
             
@@ -253,7 +253,7 @@ reto4_red() {
             
             # Error.
         else
-            echo -e "${RED}Opción invalida.${NC}"
+            echo -e "${RED}Opción inválida.${NC}"
             continue
         fi
     done
