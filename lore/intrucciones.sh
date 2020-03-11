@@ -50,7 +50,7 @@ bold='\033[1m' # Bold
 
 ### Main ###
 
-echo -e "\n${bold}Intrucciones del juego:${NC}\n"
+echo -e "\n${bold}Instrucciones del juego:${NC}\n"
 echo -e "${BLACK}${GREEN_BACK} * ${NC}${bold} Para jugar debe seleccionar las opciones que aparecen en pantalla.\n"
 echo -e "${BLACK}${GREEN_BACK} * ${NC}${bold} Dependiendo de las opciones elegidas, el final podria variar.\n"
 echo -e "${BLACK}${GREEN_BACK} * ${NC}${bold} Ten cuidado al elegir tus opciones, si cometes un error eso se verá afectado en tu puntuación final.\n"

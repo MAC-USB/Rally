@@ -95,9 +95,9 @@ Lore:
 
 Pildora azul: "Recuperando conexión con el servidor* Hola. Se ha cortado el canal de información. Proseguimos con el objetivo de derrotar al atacante."
 
-Acertijo 4/reto:
+Acertijo 4azul /reto:
 
-"Hemos contactado con la PVBC, Policía Virtual Bolivariana de Caracas para ayudarnos en nuestra misión. Sin embargo, su director, solo nos supo decir que cortar el cable de la fibra óptica principal de la universidad, lo cuál dejaría a la USB sin internet por 25 años. Contrastando ésta información con nuestra base de datos encontramos una línea en el archivo NO_HACER_NUNCA.txt escrito por el director de la DST-USB, que dice: "Nunca debes realizar ésta acción". ¿Qué curso de acción sigo?"
+"Hemos contactado con la PVBC, Policía Virtual Bolivariana de Caracas para ayudarnos en nuestra misión. Sin embargo, su director, solo nos supo decir que cortar el cable de la fibra óptica principal de la universidad, lo cuál dejaría a la USB sin internet por 25 años. Contrastando ésta información con nuestra base de datos encontramos una línea en el archivo NO_HACER_NUNCA.txt escrito por el director de la DST-USB, que dice: "Nunca debes realizar ésta acción o destruirás la universidad". ¿Qué curso de acción sigo?"
 
 1.1) Mandar a cortar el cable de fibra óptica:
 
@@ -106,13 +106,15 @@ Acertijo 4/reto:
      .
      .
      *Ejecutando script automático*....%#$%#$%#$ Hola. Al eliminarse la fibra óptica, cualquier comunicación posible de esta computadora se ve imposible de realizar. Éste script fue programado para activarse en éste escenario. Gracias por tu ayuda. Había colocado un exploit en el protocolo de emergencia para que en ésta circunstancia se eliminara la base de datos completa. La USB ahora está acabada, y sin posibilidad de restaurar el internet. Lo más probable es que la universidad sea invadida para transformarla en la Escuela Venezolana de música llanera y tradicional. Sin ti no hubiese podido completar mi objetivo. Muchas gracias...Att: eL Yianero."
+
+---CREDITOS---
      
   1.2) Ignorar la recomendación: "Yo tampoco me sentía convencido de ésta dec....$#%#$%#$%#...d3c1s10n...$"#$"#$#%$%#$... He descubierto mientras leías éste mensaje que existe la posibildiad de hacer un backdoor a la computadora del atacante. ¿Desea hacerlo?"
   
   1.2.1) Sí: *Intentando establecer conexión*....*Se ha establecido una conexión segura mediante TCP a través del protocolo SSH*..."
 
 
-  	 Acertijo 5: "Debes decicir que acciones tomar. ¡No nos queda mucho tiempo!"
+  	  "Debes decicir que acciones tomar. ¡No nos queda mucho tiempo!"
 
  	 a) Acabar la conexión:
 
@@ -124,13 +126,13 @@ Acertijo 4/reto:
 	 .
 	 .
 	 .
-	 Se ha logrado acabar con la comunicación del atacante. ¡La base de datos está salvada! Gracias a ti podemos permanecer con la base de datos intacta, y al parecer, ya se pueden realizar los protocolos de emergencia. ---CREDITOS---
+	 Se ha logrado acabar con la comunicación del atacante. ¡La base de datos está salvada! Gracias a ti podemos permanecer con la base de datos intacta, y al parecer, ya se pueden realizar los protocolos de emergencia. ---CREDITOS--- FINAL POSITIVO 1
 
 	 c) Apagar la computadora del atacante: *Apagando la computadora del atacante...* *Error...* *Reintentando...* *Error...* ...%#$%#$%#$...No hemos logrado apagar la computadora del atacante... Estamos recibiendo un mensaje... Hola. Si éste mensaje aparece en su pantalla, significa que no ha podido solventar la situación. Éste ataque fue una simulación de seguridad para probar su capacidad en una situación de emergencia. Hemos detectado que, aunque ha acertado en algunas decisiones, no ha podido decidir bien qué acciones tomar... -éste mensaje ha sido escrito por el usuario Flang-. *Se finaliza la sesión con el servidor* ---Créditos---
 
   1.2.2) No: $%&$%&$%&$... Hemos podido recuperar algunas funciones del protocolo de emergencia. Puedo intentar recuperar un 50% de la base de datos, si se toma esa opción, el resto de los archivos se pierde, y se le enviará una notificación a DACE para recabar nuevamente la información del otro restante del os estudiantes. No me queda mucho tiempo. ¿Desea hacer ésto?
  
- a) Sí: *Intentando...* *Eliminando 50% de la información...* La información ha sido eliminada, ahora quedamos con el 50% de la base de datos y hemos destruido la conexión del atacante. Gracias por tu trabajo.
+ a) Sí: *Intentando...* *Eliminando 50% de la información...* La información ha sido eliminada, ahora quedamos con el 50% de la base de datos y hemos destruido la conexión del atacante. Tu trabajo no ha sido suficiente, pero has evitado un fracaso total. --Creditos--
 
   b) No: * Recibiendo ataque*... *Intentando salvar los datos...* *error...*
   .
@@ -164,7 +166,7 @@ Reto 4:
   a) www.google.com: *Conectando...* *Desconectando...* ¿En serio ésta fue tu mejor idea? ¡IGNORANTE! ¡AHORA NO PODRÁS...3sp3r4........
   *Se ha acabado el tiempo* *Reconectando...* *Conectado con el autómata* Se ha logrado recuperar la conexión de la universidad, pero hemos perdido para siempre la base de datos de los estudiantes. Tu esfuerzo no ha sido suficiente para lograr resolver la situación. Ahora la USB tendrá que parar sus activiades por un tiempo mientras recupera nuevamente la información de los estudiantes.
   b) www.habbo.com: Mismo mensaje anterior
-  c) www.maincraft.com: Mismo mensaje que el anterior
+  c) www.minecraft.com: Mismo mensaje que el anterior
   d) www.whiterose.com: .... *Conectando a la página* --- Aquí podemos poner unas referencias a MrRobot y que es un pendejo por intentar acceder a su página --- 
 
   "Hola, intruso. He detectado tus intentos de hackearme. Estoy recibiendo mensajes de tu servidor...Ah...Así que solo eres un inexperto. Entiendo...He recibido la información completa. He decidido ayudarte a solventar el ataque de ese atacante. Solo accederé a ayudarte si puedes resolver el siguiente acertijo de criptografía:"
