@@ -117,7 +117,7 @@ echo -en "Eres la última esperanza." | pv -qL10
 sleep 2
 
 echo -en "\n${PROMPT} "
-echo -en "Yo te guiare hasta" | pv -qL10
+echo -en "Yo te guiaré hasta" | pv -qL10
 echo -en "..." | pv -qL5
 
 sleep 1
@@ -143,7 +143,7 @@ echo -e "$PROMPT Los atacantes son muy hábiles y no permiten que pueda respalda
 echo -e "$PROMPT Mi protocolo de emergencia ya no responde. Tampoco puedo apagar el servidor, si se apaga la información se perderá para siempre."
 echo -e "$PROMPT Eres la última esperanza."
 
-echo -en "$PROMPT Yo te guiare hasta..."
+echo -en "$PROMPT Yo te guiaré hasta..."
 echo -en "$bold"
 echo -en "$%^&!@#$...h4st4 d0nd3 m3 s34 p0s1bl3...$%^&!@#$..." | pv -qL15
 echo -e "$NC\n"

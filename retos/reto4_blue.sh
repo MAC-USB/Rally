@@ -112,10 +112,10 @@ echo -en "\n$PROMPT "
 echo -en "Sin embargo, su director, solo nos supo decir que cortar el cable de la fibra óptica principal de la universidad, lo cuál dejaría a la USB sin internet por 25 años." | pv -qL20
 
 echo -en "\n$PROMPT "
-echo -en "Contrastando ésta información con nuestra base de datos encontramos una línea en el archivo ${bold}\'NO_HACER_NUNCA.txt\'${NC} escrito por el director de la DST-USB, que dice:" | pv -qL20
+echo -en "Contrastando esta información con nuestra base de datos encontramos una línea en el archivo ${bold}\'NO_HACER_NUNCA.txt\'${NC} escrito por el director de la DST-USB, que dice:" | pv -qL20
 
 echo -en "\n$PROMPT "
-echo -en "${bold}Nunca debes realizar ésta acción o destruirás la universidad.${NC}" | pv -qL20
+echo -en "${bold}Nunca debes realizar esta acción o destruirás la universidad.${NC}" | pv -qL20
 
 echo -en "\n$PROMPT "
 echo -en "¿Cómo vas a proceder?" | pv -qL20
@@ -129,8 +129,8 @@ dialog(){
     cat $DISCORD
     echo -e "\n$PROMPT Hemos contactado con la PVBC, Policía Virtual Bolivariana de Caracas para ayudarnos en nuestra misión."
     echo -e "$PROMPT Sin embargo, su director, solo nos supo decir que cortar el cable de la fibra óptica principal de la universidad, lo cuál dejaría a la USB sin internet por 25 años.${NC}"
-    echo -e "$PROMPT Contrastando ésta información con nuestra base de datos encontramos una línea en el archivo ${bold}\'NO_HACER_NUNCA.txt\'${NC} escrito por el director de la DST-USB, que dice:"
-    echo -e "$PROMPT ${bold}Nunca debes realizar ésta acción o destruirás la universidad.${NC}"
+    echo -e "$PROMPT Contrastando esta información con nuestra base de datos encontramos una línea en el archivo ${bold}\'NO_HACER_NUNCA.txt\'${NC} escrito por el director de la DST-USB, que dice:"
+    echo -e "$PROMPT ${bold}Nunca debes realizar esta acción o destruirás la universidad.${NC}"
     echo -e "$PROMPT ¿Cómo vas a proceder? ${bold}[Por favor, introduce el número de tu elección.]${NC}"
 }
 
@@ -166,7 +166,7 @@ negativoelprocedimiento(){
     sleep 0.5
     
     echo -en "\n$PROMPT "
-    echo -e "¿Quiere hacer ésto?" | pv -qL20
+    echo -e "¿Quiere hacer esto?" | pv -qL20
     
     sleep 1
     echo -e "\t${bold}(Si)${NC} Si"
@@ -254,16 +254,16 @@ reto4_blue() {
             elif [ $OPTION = 2 ]; then
             
             echo -en "$PROMPT "
-            echo -en "Yo tampoco me sentía convencido de ésta dec....${BLACK_R}${WITHE_BACK}%#$%#$%#$...d3c1s10n...$%$^#%^#@...${NC}" | pv -qL20
+            echo -en "Yo tampoco me sentía convencido de esta dec....${BLACK_R}${WITHE_BACK}%#$%#$%#$...d3c1s10n...$%$^#%^#@...${NC}" | pv -qL20
             
             echo -en "\n$PROMPT "
-            echo -en "He descubierto, mientras leías éste mensaje, que existe la posibildiad de ingresar a la computadora del atacante." | pv -qL20
+            echo -en "He descubierto, mientras leías este mensaje, que existe la posibildiad de ingresar a la computadora del atacante." | pv -qL20
             
             echo -en "\n$PROMPT "
             echo -e "¿Desea hacerlo?" | pv -qL20
             
             sleep 0.25
-            echo -e "\t${bold}(Si)${NC} Si"
+            echo -e "\t${bold}(Si)${NC} Sí"
             sleep 0.25
             echo -e "\t${bold}(No)${NC} No"
             

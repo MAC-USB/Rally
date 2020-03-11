@@ -140,7 +140,7 @@ echo -en "\n${PROMPT} "
 echo -en "Al eliminarse la fibra óptica, cualquier comunicación posible de esta computadora se ve imposible de realizar." | pv -qL20
 
 echo -en "\n${PROMPT} "
-echo -en "Este script fue programado para activarse en éste escenario." | pv -qL20
+echo -en "Este script fue programado para activarse en este escenario." | pv -qL20
 
 sleep 2
 
