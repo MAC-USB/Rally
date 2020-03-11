@@ -200,7 +200,9 @@ function bandersnatch {
     
     source $RETO1_SH $GROUPNAME
     
-    echo 'FINAL'
+    
+    sleep 1
+    cat $CREDITOS pv -qL1000
 }
 
 
@@ -209,4 +211,3 @@ start
 
 sleep 1
 
-cat $CREDITOS pv -qL1000

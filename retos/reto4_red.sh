@@ -82,6 +82,7 @@ LORE_MALO=$LORE/lore1_fail.sh
 
 # Final tecnicos
 FINAL_TECNICOS=$LORE/final_tecnicos.sh
+
 # Carpeta de retos/acertijos
 RETOS=$DIR/retos
 

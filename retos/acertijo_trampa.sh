@@ -197,7 +197,7 @@ function eleccionDePildora {
             
             sleep 2
             
-            echo -en "${PURPLE}[Recuperando conexión con el autómata]${NC}"
+            echo -en "\n${PURPLE}[Recuperando conexión con el autómata]${NC}"
             
             sleep 3
             
