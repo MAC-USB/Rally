@@ -80,16 +80,13 @@ LORE_BUENO=$LORE/lore1.sh
 # Lore malo
 LORE_MALO=$LORE/lore1_fail.sh
 
-<<<<<<< HEAD
 # Final tecnicos
 FINAL_TECNICOS=$LORE/final_tecnicos.sh
-=======
 # Carpeta de retos/acertijos
 RETOS=$DIR/retos
 
 # Finales
 CRIPTO=$RETOS/criptografia.sh
->>>>>>> 2cf23965d7cef3d05317acb9f942166c53aec6fe
 
 ####################################################################################################
 
@@ -169,11 +166,11 @@ begining() {
 }
 
 final_tecnicos() {
-
+    
     sleep 1
-
+    
     source $FINAL_TECNICOS
-
+    
 }
 
 finish(){
