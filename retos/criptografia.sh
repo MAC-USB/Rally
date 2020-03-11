@@ -331,7 +331,7 @@ echo -en "\n$WROSE "
 echo -en "Escriba el significado del siguiente mensaje:" | pv -qL20
 
 echo -en "\n$WROSE "
-echo -e "Feliz aniversario USB." | pv -qL20
+echo -e "Hgnkw cnksgopcoko RPD." | pv -qL20
 
 
 sleep 2
@@ -341,7 +341,7 @@ do
     echo -en "${PROMPT_PC} "
     read OPTION
     
-    if [[ $OPTION = 'Hgnkw cnksgopcoko RPD' || $OPTION = 'HGNKW CNKSGOPCOKO RPD' || $OPTION = 'hgnkw cnksgopcoko rpd' ]]; then
+    if [[ $OPTION = 'Feliz aniversario USB' || $OPTION = 'FELIZ ANIVERSARIO USB' || $OPTION = 'feliz aniversario USB' ]]; then
         
         echo -en "\n$WROSE "
         echo -en "${YELLOW}...${NC}" | pv -qL5
