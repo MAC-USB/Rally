@@ -60,8 +60,8 @@ RALLY_LOGO=$DIR/logos/rallylogo.ascii
 # Carpeta de lore
 LORE=$DIR/lore
 
-# Intrucciones
-INTRUCCIONES_SH=$LORE/intrucciones.sh
+# Instrucciones
+INSTRUCCIONES_SH=$LORE/instrucciones.sh
 
 # Bienvenida
 BIENVENIDA_SH=$LORE/bienvenida.sh
@@ -151,13 +151,13 @@ function start {
     
     sleep 3
     
-    # goto intrucciones.
-    intrucciones
+    # goto instrucciones.
+    instrucciones
 }
 
-function intrucciones {
+function instrucciones {
     
-    source $INTRUCCIONES_SH
+    source $INSTRUCCIONES_SH
     
     while true
     do
@@ -176,7 +176,7 @@ function intrucciones {
             echo -e "${GREEN}${bold}Ha salido del script.${NC}"
             break
         else
-            echo -e "${RED}${bold}Opcion invalida.\n${NC}"
+            echo -e "${RED}${bold}Opción inválida.\n${NC}"
             continue
         fi
     done

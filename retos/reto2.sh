@@ -181,7 +181,7 @@ reto2() {
             echo -e "¿Seguro que quieres apagar el SV?" | pv -qL20
             
             sleep 0.25
-            echo -e "\t${bold}(Si)${NC} Si"
+            echo -e "\t${bold}(Si)${NC} Sí"
             sleep 0.25
             echo -e "\t${bold}(No)${NC} No"
             sleep 0.25
@@ -285,7 +285,7 @@ reto2() {
             
             # Error.
         else
-            echo -e "${RED}Opción invalida.${NC}"
+            echo -e "${RED}Opción inválida.${NC}"
             continue
         fi
     done

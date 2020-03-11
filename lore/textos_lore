@@ -72,7 +72,7 @@ Big F: *recibiendo mensaje de fuente desconocida* Hola. Soy el atacante. Acabas 
 
 Lore 3:
 
-*recibiendo un mensaje de la Matrix*...Se me está enviando una información por un canal de información secundario. Al parecer, el atacante no tiene acceso a éste canal de información, por lo que el mensaje parece seguro... Pasaré a...%#$%#$%#$....*P4s4r3 a m0str4rlo p0r p4ntall4*
+*recibiendo un mensaje de la MACtrix*...Se me está enviando una información por un canal de información secundario. Al parecer, el atacante no tiene acceso a éste canal de información, por lo que el mensaje parece seguro... Pasaré a...%#$%#$%#$....*P4s4r3 a m0str4rlo p0r p4ntall4*
 
 
 Acertijo 3 trampa:
@@ -82,7 +82,7 @@ Si responden correctamente (pintura verde): "Así que no eres tan estúpido. Pod
 
 Si responden mal: "¿Todo bien en casa? Bueno, proseguimos sin demora."
 
-Lore: *Hola estimado amigo. Me presento, me llamo Jerónimo King. Provengo de la Matrix. Debo provar tu valía. Necesito que respondas el siguiente acertijo:
+Lore: *Hola estimado amigo. Me presento, me llamo Jerónimo King. Provengo de la MACtrix. Debo provar tu valía. Necesito que respondas el siguiente acertijo:
 
   "¿Cuál es el mejor sistema operativo del mundo?" Respuesta: Linux
 
@@ -194,7 +194,11 @@ Hgnkw cnksgopcoko RPD.
 
 Si lo hace bien:
 
-  ¡Excelente! Has demostrado tu ingenio. Pero no te preocupes, ésto solo era una prueba, ya se había cerrado la conexión del atacante. En realidad, uno de mis compañeros, al que me referiré como Gfecito, perteneció a la USB. Él ha monitoreado desde un principio todo el ataque, y ha esperado hasta el último momento para actuar. Has hecho un excelente trabajo contactando con nosotros. ¡Enhonrabuena por tu intuición! ---Créditos---
+  ¡Excelente! Has demostrado tu ingenio. Pero no te preocupes, ésto solo era una prueba, ya se había cerrado la conexión del atacante. En realidad, uno de mis compañeros, al que me referiré como Gfecito, perteneció a la USB. Él ha monitoreado desde un principio todo el ataque, y ha esperado hasta el último momento para actuar.
+
+#Aparece Gfesito con el ascii de Ricardo Millos
+
+Has hecho un excelente trabajo contactando con nosotros. ¡Enhonrabuena por tu intuición! ---Créditos---
   
   e) www.aprenderaprogramarcomoenlaUCV.com: *Ingresando en la página*... ¡Ésta es la página! Ahora podemos intentar hacer un ataque... La probabilidad de éxito es mayor si conocemos la ubicación del atacante...
   si elegiste Francia: *Realizando ataque...* *Ataque completado...* *Recuperando la base de datos...* *Atacando a Francia...¡Esa es su ubicación!* *Logrado.* ¡Excelente! Gracias a ti hemos podido solventar el ataque de la mejor manera posible. Muchas gracias por tus servicios.---Créditos---

@@ -239,7 +239,7 @@ do
     if [ $OPTION = 'linux' -o $OPTION = 'Linux' -o $OPTION = 'LINUX' ]; then
         
         echo -en "$PROMPT "
-        echo -en "Existe más de lo que has visto hasta ahora en ésta situación." | pv -qL20
+        echo -en "Existe más de lo que has visto hasta ahora en esta situación." | pv -qL20
         
         echo -en "\n$PROMPT "
         echo -e "Sientes que hay una verdad más profunda detrás, pero no la puedes ver." | pv -qL20
@@ -273,7 +273,7 @@ do
         sleep 0.5
         
         echo -en "\n$PROMPT "
-        echo -e "Si la tomas, te diré qué es lo que se oculta en ésta situación. Quizás tomar ésta opción consuma más tiempo que el que tienes, pero sabrás cuál es la verdad." | pv -qL20
+        echo -e "Si la tomas, te diré qué es lo que se oculta en esta situación. Quizás tomar esta opción consuma más tiempo que el que tienes, pero sabrás cuál es la verdad." | pv -qL20
         
         sleep 2
         

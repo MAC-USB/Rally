@@ -56,11 +56,6 @@ DIR=$(pwd)
 # Archivo de paises
 PAISES_IP=$DIR/paises_ip
 
-# Jumpscares
-# JUMPSCARES=$DIR/jumpscares
-# GLITCH=$JUMPSCARES/glitch.ascii
-# GLITCH_INVERTED=$JUMPSCARES/glitch_inverted.ascii
-
 # Characters
 CHARACTERS=$DIR/characters
 DISCORD=$CHARACTERS/discord.ascii
@@ -87,12 +82,21 @@ LORE_MALO=$LORE/lore1_fail.sh
 # Nombre del grupo
 GROUPNAME=$1
 
+# Nombre de los atacantes
+ATACANTES=$2
+
+# Valor de los tecnicos
+VAL_TECNICOS=$3
+
 ####################################################################################################
 
 ### Mensajes Reutilizables ###
 
 # Automata
 PROMPT=$(echo -e "${GREEN_R}automata@DACE${NC}:${CYAN_R}~${NC}\$")
+
+# JK
+PROMPT=$(echo -e "${BLUE_R}jk@MAC${NC}:${CYAN_R}~${NC}\$")
 
 # Rally-PC
 PROMPT_PC=$(echo -e "${GREEN}${GROUPNAME}${GREEN_R}@Rally-PC${NC}:${CYAN_R}~${NC}\$")
@@ -227,30 +231,30 @@ reto4_red() {
         if [[ $OPTION = 1 || $OPTION = 2 || $OPTION = 3 ]]; then
             
             echo "Final chimborojo"
-	    break
+            break
             
-        elif [ $OPTION = 4 ]; then
-
-	    echo "Acertijo MrRobot"
-	    break
+            elif [ $OPTION = 4 ]; then
+            
+            echo "Acertijo MrRobot"
+            break
             
             elif [ $OPTION = '5' ]; then
-
-	    sleep 0.25
-	    echo -en "\n$PROMPT "
-	    echo -en "*Ingresando en la página*... ¡Ésta es la página! Ahora podemos intentar hacer un ataque... La probabilidad de éxito es mayor si conocemos la ubicación del atacante..." | pv -qL20
-
-	    if [ $ATACANTE = "Francia" ]; then #aca falta el regex de francia por si acaso
-		echo "Final positivo rojo"
-		break
-	    elif [ $ATACANTE = "NULL" ]; then #esto pasa si seleccionaron a los tecnicos en el acertijo 2 y es un f xD
-		echo "Final tecnico de vacaciones"
-		break
-	    else
-		echo "Final pais distinto a francia"
-		break
-	    fi
-		
+            
+            sleep 0.25
+            echo -en "\n$PROMPT "
+            echo -en "*Ingresando en la página*... ¡Ésta es la página! Ahora podemos intentar hacer un ataque... La probabilidad de éxito es mayor si conocemos la ubicación del atacante..." | pv -qL20
+            
+            if [ $ATACANTE = "Francia" ]; then #aca falta el regex de francia por si acaso
+                echo "Final positivo rojo"
+                break
+                elif [ $ATACANTE = "NULL" ]; then #esto pasa si seleccionaron a los tecnicos en el acertijo 2 y es un f xD
+                echo "Final tecnico de vacaciones"
+                break
+            else
+                echo "Final pais distinto a francia"
+                break
+            fi
+            
             elif [ $OPTION = 0 ]; then
             continue
             
