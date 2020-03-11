@@ -101,7 +101,7 @@ echo -en "\n${PROMPT} "
 echo -en "Estoy recibiendo unos paquetes con mensajes por un canal de información secundario." | pv -qL20
 
 echo -en "\n${PROMPT} "
-echo -en "Al parecer, el atacante no tiene acceso a éste canal de información, por lo que el mensaje parece seguro..." | pv -qL20
+echo -en "Al parecer, el atacante no tiene acceso a este canal de información, por lo que el mensaje parece seguro..." | pv -qL20
 
 sleep 1
 
@@ -122,7 +122,7 @@ clear
 echo -e "${GREEN}Recibiendo un mensaje de la Matrix${NC}"
 cat $DISCORD
 echo -e "\n$PROMPT Estoy recibiendo unos paquetes con mensajes por un canal de información secundario."
-echo -e "$PROMPT Al parecer, el atacante no tiene acceso a éste canal de información, por lo que el mensaje parece seguro..."
+echo -e "$PROMPT Al parecer, el atacante no tiene acceso a este canal de información, por lo que el mensaje parece seguro..."
 
 echo -en "$PROMPT Pasaré a..."
 echo -en "$bold"
