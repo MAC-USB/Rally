@@ -62,7 +62,10 @@ FUCKYOU_INVERTED=$JUMPSCARES/fuckyou_inverted.ascii
 CHARACTERS=$DIR/characters
 DISCORD=$CHARACTERS/discord.ascii
 PHONE=$CHARACTERS/phone.ascii
-TECNICOS=$CHARACTERS/tecnicos.ascii
+
+#Logo
+LOGO=$DIR/logos
+USBP=$LOGO/usbpeque.ascii
 
 ####################################################################################################
 
@@ -87,55 +90,15 @@ PROMPT=$(echo -e "${GREEN_R}automata@DACE${NC}:${CYAN_R}~${NC}\$")
 # Prompt de espera
 MENSAJE_READ=$(echo -e "${bold}[Presiona enter para continuar]${NC}")
 
-# Prompt de los Técnicos
-
-PROMPT_TECNICOS=$(echo -e "${YELLOW_R}cr@MAC${NC}:${CYAN_R}~${NC}$")
 
 ####################################################################################################
 
 ### Main ###
 
 clear
-
 cat $DISCORD | pv -qL2222
 
-echo -en "\n${PROMPT} "
-echo -en "${YELLOW}[Intentando contactar nuevamente con los técnicos" | pv -qL20
-echo -en "...]${NC}" | pv -qL5
 
-sleep 0.75
 
-echo -en "\n${PROMPT} "
-echo -en "${YELLOW}[Recibiendo mensaje"
-echo -en "...]" | pv -qL5
+#a) Sí: *Intentando...* *Eliminando 50% de la información...* La información ha sido eliminada, ahora quedamos con el 50% de la base de datos y hemos destruido la conexión del atacante. Tu trabajo no ha sido suficiente, pero has evitado un fracaso total. --Creditos--
 
-### Entran los técnicos
-
-# cat $TECNICOS | pv -2222
-
-echo -en "\n${PROMPT_TECNICOS} "
-echo -en "¡Hola! Estoy de vacaciones chamo, ¿Puedes dejar de fastidiar?"
-
-echo -en "\n${PROMPT_TECNICOS} "
-echo -en "C*ño mano son las primeras vacaciones que tengo en 3 años, bro respeta." | pv -qL20
-
-echo -en "\n${PROMPT_TECNICOS} "
-echo -en "Intenta solventar como puedas." | pv -qL20
-echo -en "\n${YELLOW}[Fin del mensaje]" | pv -qL20
-
-sleep 2
-
-## Salen los técnicos
-
-echo -en "\n${PROMPT} "
-echo -en "${BLUE_R}[]"
-
-echo -en "\n${PROMPT} "
-
-echo -en "\n${PROMPT} "
-
-echo -en "\n${PROMPT} "
-
-echo -en "\n${PROMPT} "
-
-##  Si elegiste preguntar a los técnicos en la primera opción: *Intentando contactar nuevamente con los técnicos...* *Recibiendo mensaje...* "Hola! Estoy de vacaciones chamo, puedes dejar de fastidiar? coño mano son las primeras vacaciones que tengo en 3 años bro respeta. Intenta resolver como puedas bro"...*Fin del mensaje* ... *Realizar el ataque...* *Intentar cortar la conexión...* *Fin del ataque*. Hemos perdido el 40% de la base de datos. Lastimosamente, no se ha podido rescatar más... ---CRÉDITOS---
