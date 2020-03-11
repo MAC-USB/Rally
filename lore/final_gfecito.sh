@@ -57,6 +57,7 @@ DIR=$(pwd)
 CHARACTERS=$DIR/characters
 GFECITO=$CHARACTERS/ricardo.ascii
 
+
 ####################################################################################################
 
 ### Variables de entorno necesarias ###
@@ -97,7 +98,7 @@ echo -e "\n${RED}[Recibiendo mensaje del Gfecito]${NC}\n"
 
 sleep 1
 
-echo -en "${PROMPT} "
+echo -en "\n${PROMPT} "
 echo -en "${bold}¡Excelente!${NC}" | pv -qL10
 
 echo -en "\n${PROMPT} "
