@@ -131,7 +131,7 @@ function eleccionDePildora {
     do
         echo -en "${PROMPT_PC} "
         read re
-        if [[ $re = "azul" || $re = "Azul" || $re = "AZUL" ]]; then
+        if [[ $re = "azul" || $re = "Azul" || $re = "AZUL" ]]; then ### AZUL ###
             
             clear
             
@@ -160,7 +160,11 @@ function eleccionDePildora {
             
             break
             
-            elif [[ $re = "roja" || $re = "Roja" || $re = "ROJA" ]]; then
+            elif [[ $re = "roja" || $re = "Roja" || $re = "ROJA" ]]; then ### ROJA ###
+            
+            sleep 1
+            
+            read -p "$MENSAJE_READ"
             
             source $PILDORA_ROJA $GROUPNAME $ATACANTES $VAL_TECNICOS
             
