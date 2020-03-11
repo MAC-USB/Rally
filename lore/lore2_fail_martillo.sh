@@ -79,7 +79,19 @@ PROMPT=$(echo -e "${GREEN_R}automata@DACE${NC}:${CYAN_R}~${NC}\$")
 # Prompt de espera
 MENSAJE_READ=$(echo -e "${bold}[Presiona enter para continuar]${NC}")
 
+# Final
+FINAL_KMALEON=$DIR/lore/final_kmaleon.sh
+
 ####################################################################################################
+
+# Funcion del final kmaleon
+
+kmaleon() {
+
+    sleep 1
+
+    source $FINAL_KMALEON
+}
 
 ### Main ###
 
@@ -90,7 +102,7 @@ clear
 
 cat $DISCORD | pv -qL2222
 
-echo -en "${RED}[Recibiendo mensaje de alerta]${NC}"
+echo -en "\n${RED}[Recibiendo mensaje de alerta]${NC}"
 
 sleep 1
 
@@ -116,3 +128,5 @@ echo -e "\n"
 sleep 1
 
 read -p "$MENSAJE_READ"
+
+kmaleon

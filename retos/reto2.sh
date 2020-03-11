@@ -48,6 +48,7 @@ bold='\033[1m' # Bold
 
 ####################################################################################################
 
+
 ### Dirs ###
 
 # Dir
@@ -132,7 +133,6 @@ dialog(){
     echo -e "\n$PROMPT Necesitamos prevenir que siga el ataque. Necesitamos desconex....(@#$%#$%#$%....d3sc0n3ct4rl0s...Tenemos varias opciones."
     echo -e "$PROMPT ¿Qué haces? ${bold}[Por favor, introduce el número de tu elección.]${NC}"
 }
-
 
 # Función de inicio (y reinicio)
 # Gracias a ella es posible regresar en el script
