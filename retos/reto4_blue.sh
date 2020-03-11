@@ -67,10 +67,10 @@ DISCORD=$CHARACTERS/discord.ascii
 
 # Carpeta de lore
 LORE=$DIR/lore
-
 # Finales
 FINAL_ELYIANERO=$LORE/final_elyianero.sh
 FINAL_POSITIVO1=$LORE/final_positivo_azul.sh
+FINAL_POSITIVO2=$LORE/fubal_positivo1.sh
 FINAL_FLANG=$LORE/final_flang.sh
 FINAL_MISTER=$LORE/final_mrcreepy.sh
 FINAL_PHD=$LORE/final_phd.sh
@@ -210,7 +210,8 @@ final_azul1(){
 
 final_azul2(){
     
-    echo "final positivo_azul2"
+    sleep 1
+    source $FINAL_POSITIVO2
 }
 
 
