@@ -207,15 +207,6 @@ retocompletado(){
 
 # Evaluación de casos para cada opción particular
 
-
-
-dynamic() {
-    echo -en "$PROMPT " | pv -qL15
-    echo -en "Está bien. Asumiremos que el atacante es de $ATACANTE\n" | pv -qL15
-    
-    reto2
-}
-
 reto4_red() {
     
     while true
@@ -244,10 +235,12 @@ reto4_red() {
             echo -en "\n$PROMPT "
             echo -en "*Ingresando en la página*... ¡Ésta es la página! Ahora podemos intentar hacer un ataque... La probabilidad de éxito es mayor si conocemos la ubicación del atacante..." | pv -qL20
             
-            if [ $ATACANTE = "Francia" ]; then #aca falta el regex de francia por si acaso
+            if [ $ATACANTES = "FRANCIA" ]; then
+                
                 echo "Final positivo rojo"
                 break
-                elif [ $ATACANTE = "NULL" ]; then #esto pasa si seleccionaron a los tecnicos en el acertijo 2 y es un f xD
+                
+                elif [ $ATACANTES = "active" -o $ATACANTES = 'active2' ]; then #esto pasa si seleccionaron a los tecnicos en el acertijo 2 y es un f xD
                 echo "Final tecnico de vacaciones"
                 break
             else
@@ -264,11 +257,6 @@ reto4_red() {
             continue
         fi
     done
-}
-
-retox(){
-    # source $RETO2 $GROUPNAME $ATACANTE
-    echo 'FALTA CONEXION'
 }
 
 reto4_red
