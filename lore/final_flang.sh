@@ -60,6 +60,7 @@ FUCKYOU_INVERTED=$JUMPSCARES/fuckyou_inverted.ascii
 
 # Characters
 CHARACTERS=$DIR/characters
+DISCORD=$CHARACTERS/discord.ascii
 PHONE=$CHARACTERS/phone.ascii
 KEVIN=$CHARACTERS/kevin.ascii
 
@@ -69,6 +70,12 @@ KEVIN=$CHARACTERS/kevin.ascii
 
 # Nombre del grupo
 GROUPNAME=$1
+
+# Nombre de los atacantes
+ATACANTES=$2
+
+# Valor de los tecnicos
+VAL_TECNICOS=$3
 
 ####################################################################################################
 
@@ -90,94 +97,102 @@ FLANG=$(echo -e "${PURPLE}cr@MAC${NC}:${CYAN_R}~${NC}$")
 
 clear
 
-echo -en "${PROMPT} "
+cat $DISCORD | pv -qL2222
 
-echo -en "${YELLOW}[Apagando la computadora del atacante...]${NC} " | pv -qL12
+sleep 0.5
+
+echo -en "\n${YELLOW}[Apagando la computadora del atacante...]${NC} "
+
+sleep 1.5
+
+echo -en "\n${PROMPT} "
+echo -en "$RED"
+echo -en "ERROR" | pv -qL15
+echo -en "..." | pv -qL5
+echo -e "$NC"
+
+sleep 1.5
+
+echo -en "${YELLOW}[Reintentando...]${NC}"
+
+sleep 1.5
+
+echo -en "\n${PROMPT} "
+echo -en "$RED"
+echo -en "ERROR" | pv -qL15
+echo -en "..." | pv -qL5
+echo -en "$NC"
 
 sleep 1.5
 
 echo -en "\n${PROMPT} "
 
-echo -en "${RED}[ERROR" | pv -qL12
-
-echo -en "${RED}...]${NC}" | pv -qL5
-
-sleep 1.5
+echo -en "${RED_R}...%#$%#$%#$...${NC}" | pv -qL20
 
 echo -en "\n${PROMPT} "
+echo -en "No hemos logrado apagar la computadora del atacante..." | pv -qL20
 
-echo -en "${YELLOW}[Reintentando...]${NC}" | pv -qL12
-
-sleep 1.5
-
-echo -en "\n${PROMPT} "
-
-echo -en "${RED}[ERROR" | pv -qL12
-
-echo -en "${RED}...]${NC}" | pv -qL5
-
-sleep 1.5
-
-echo -en "\n${PROMPT} "
-
-echo -en "${RED_R}...%#$%#$%#$...${NC}" | pv -qL15
-
-echo -en "\n${PROMPT} "
-
-echo -en "No hemos logrado apagar la computadora del atacante..." | pv -qL12
-
-sleep 2
+sleep 3
 
 clear
 
 cat $KEVIN | pv -qL2222
 
 echo -en "\n${FLANG} "
-
 echo -en "${YELLOW}..." | pv -qL5
-
-echo -en "${YELLOW}[Mensaje programado]${NC}" | pv -qL15
-
-sleep 1
-
-echo -en "\n${FLANG} "
-
-echo -en "${YELLOW}[Finalizando simulación 1369]${NC}" | pv -qL15
+echo -en "\n[Mensaje programado]"
+echo -en "${NC}"
 
 sleep 1
 
 echo -en "\n${FLANG} "
-
-echo -en "... ${bold}Hola.${NC}" | pv -qL12
+echo -en "${YELLOW}..." | pv -qL5
+echo -en "\n[Finalizando simulación 1369]"
+echo -en "$NC"
 
 sleep 1
 
 echo -en "\n${FLANG} "
+echo -en "... ${bold}Hola.${NC}" | pv -qL15
 
-echo -en "Si este mensaje aparece en su pantalla, significa que no ha podido solventar la situación. " | pv -qL12
+sleep 1
 
 echo -en "\n${FLANG} "
+echo -en "Si este mensaje aparece en su pantalla, significa que no ha podido solventar la situación. " | pv -qL20
 
-echo -en "Este ataque fue una simulación de seguridad para probar su capacidad en una situación de emergencia. Hemos detectado que, aunque ha acertado en algunas decisiones, no ha cumplido con los requerimientos mínimos del desafío..." | pv -qL12
+echo -en "\n${FLANG} "
+echo -en "Este ataque fue una simulación de seguridad para probar su capacidad en una situación de emergencia." | pv -qL20
+
+echo -en "\n${FLANG} "
+echo -en "Hemos detectado que, aunque ha acertado en algunas decisiones, no ha cumplido con los requerimientos mínimos del desafío..." | pv -qL20
 
 sleep 1.5
 
 echo -en "\n${FLANG} "
+echo -en "Tal parece que usted no posee las aptitudes que buscamos. " | pv -qL20
 
-echo -en "Tal parece que usted no posee las aptitudes que buscamos. Sin lugar a dudas, sus habilidades como administrador de sistemas" | pv -qL12
+echo -en "\n${FLANG} "
+echo -en "Sin lugar a dudas, sus habilidades como administrador de sistemas " | pv -qL20
 
-echo -en "${bold} no valen la pena.${NC}" | pv -qL5
+
+echo -en "$bold"
+echo -en "no valen la pena." | pv -qL5
+echo -en "$NC"
 
 sleep 1.5
 
 echo -en "\n${FLANG} "
-
-echo -en "${CYAN_R}-Mensaje del jefe del Laboratorio F de Aulas computarizadas,${NC}" | pv -qL12
+echo -en "${CYAN_R}- Mensaje del jefe del Laboratorio F de Aulas Computarizadas,${NC}" | pv -qL10
 
 echo -en "${BLUE} FLANG${CYAN_R}-${NC}" | pv -qL5
 
 echo -en "\n${FLANG} "
+echo -en "${RED}..." | pv -qL5
 
-echo -en "${RED}[Fin de la conección con el servidor]${NC}\n" | pv -qL15
+sleep 1
+
+echo -e "\n[Fin de la conexión con el servidor]${NC}\n"
+
+sleep 3
 
 read -p "$MENSAJE_READ"

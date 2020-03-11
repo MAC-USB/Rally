@@ -71,6 +71,7 @@ LORE=$DIR/lore
 # Finales
 FINAL_ELYIANERO=$LORE/final_elyianero.sh
 FINAL_POSITIVO1=$LORE/final_positivo_azul.sh
+FINAL_FLANG=$LORE/final_flang.sh
 
 ####################################################################################################
 
@@ -199,7 +200,7 @@ negativoelprocedimiento(){
 final_azul1(){
     
     sleep 1
-
+    
     source $FINAL_POSITIVO1
     
     
@@ -226,7 +227,9 @@ phd() {
 
 flang() {
     
-    echo "final Flang"
+    sleep 1
+    
+    source $FINAL_FLANG
     
 }
 

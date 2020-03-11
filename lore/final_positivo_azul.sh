@@ -111,8 +111,9 @@ echo -en "¡La base de datos está salvada!" | pv -qL20
 echo -en "\n${PROMPT} "
 echo -en "Gracias a ti podemos permanecer con la base de datos intacta, y al parecer, ya se pueden realizar los protocolos de emergencia." | pv -qL20
 
-echo -en "\n\n${PROMPT} "
-echo -en "${bold}¡Lo has conseguido! ¡Enhorabuena! ${NC}\n"
+echo -en "\n${PROMPT} "
+echo -e "${bold}¡Lo has conseguido! ¡Enhorabuena! ${NC}\n"
+
 sleep 2
 
 read -p "$MENSAJE_READ"
