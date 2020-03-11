@@ -75,6 +75,9 @@ LORE_BUENO=$LORE/lore1.sh
 # Lore malo
 LORE_MALO=$LORE/lore1_fail.sh
 
+# Segundo reto
+RETO2_SH=$RETOS/reto2.sh
+
 ####################################################################################################
 
 ### Variables de entorno necesarias ###
@@ -274,8 +277,7 @@ reto1() {
 }
 
 reto2(){
-    source $RETO2 $GROUPNAME $ATACANTE $VAL_TECNICOS
-    echo 'FALTA CONEXION'
+    source $RETO2_SH $GROUPNAME $ATACANTE $VAL_TECNICOS
 }
 
 reto1
