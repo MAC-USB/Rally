@@ -70,6 +70,7 @@ LORE=$DIR/lore
 
 # Finales
 FINAL_ELYIANERO=$LORE/final_elyianero.sh
+FINAL_POSITIVO1=$LORE/final_positivo_azul.sh
 
 ####################################################################################################
 
@@ -197,7 +198,9 @@ negativoelprocedimiento(){
 
 final_azul1(){
     
-    echo "final positivo_azul1"
+    sleep 1
+
+    source $FINAL_POSITIVO1
     
     
 }
