@@ -195,7 +195,6 @@ reto2() {
             elif [ $OPTION = 3 ]; then
             
             source $LORE_MALO_MARTILLO $GROUPNAME $ATACANTES
-            reto3
             break
             
             elif [ $OPTION = 4 ]; then

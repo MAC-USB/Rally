@@ -80,7 +80,7 @@ VAL_TECNICOS=$3
 PROMPT_AUTOMATA=$(echo -e "${GREEN_R}automata@DACE${NC}:${CYAN_R}~${NC}\$")
 
 # Kmaleon
-PROMPT=$(echo -e "${CYAN_R}JT@MAC${NC}:${CYAN_R}~${NC}\$")
+PROMPT=$(echo -e "${CYAN_R}jt@MAC${NC}:${CYAN_R}~${NC}\$")
 
 # Prompt de espera
 MENSAJE_READ=$(echo -e "${bold}[Presiona enter para continuar]${NC}")
@@ -110,7 +110,7 @@ echo -e "..." | pv -qL5
 sleep 1
 
 echo -en "${PROMPT} "
-echo -en "${bold} Hola. ${NC} " | pv -qL10
+echo -en "${bold}Hola. ${NC}" | pv -qL10
 
 echo -en "\n${PROMPT} "
 echo -en "Soy el atacante. Acabas de ayudarme a lograr mi objetivo." | pv -qL20
@@ -130,12 +130,12 @@ echo -en "\n${PROMPT} "
 echo -en "Y podré seguir durmiendo en paz." | pv -qL20
 
 echo -en "\n${PROMPT} "
-echo -en "Se despide ..." | pv -qL20
+echo -en "Se despide ..." | pv -qL10
 
 sleep 2
 
 echo -en "\n${PROMPT} "
-echo -e "Att: ${CYAN} el Kmaleon.${NC}\n" | pv -qL5
+echo -e "Att: ${CYAN}el Kmaleon.${NC}\n" | pv -qL5
 
 sleep 2
 

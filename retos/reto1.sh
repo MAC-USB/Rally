@@ -165,7 +165,7 @@ finish(){
     echo -e "\t${bold}(?@!#)${NC} ¿Nfhzvzbf dhr abf ngnpna ybf ehfbf?"
     sleep 0.25
     echo -e "\t${bold}(?@!#)${NC} Yynzne n ybf gépavpbf"
-    sleep 2
+    sleep 1
     echo -e "\t${GREEN_BACK}(Francia)${NC} %^!&@#$%^@&#^*."
     sleep 0.25
     
@@ -203,6 +203,8 @@ retocompletado(){
 dynamic() {
     echo -en "$PROMPT " | pv -qL15
     echo -en "Está bien. Asumiremos que el atacante es de $ATACANTE\n" | pv -qL20
+    
+    ATACANTE=NA
     
     reto2
 }
