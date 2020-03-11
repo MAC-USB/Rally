@@ -186,7 +186,7 @@ function criptoErroneo {
     
     sleep 5
     
-    echo -en "$WROSE "
+    echo -en "\n$WROSE "
     echo -en "Listo." | pv -qL20
     
     echo -en "\n$WROSE "
@@ -195,19 +195,21 @@ function criptoErroneo {
     echo -en "\n$WROSE "
     echo -en "Sí, así de fácil..." | pv -qL15
     
-    echo -en "$WROSE "
-    echo -en "Sin embargo, he decidido juzgar tu incompetencia, y destruir la base de datos de todas formas..." | pv -qL20
+    echo -en "\n$WROSE "
+    echo -e "Sin embargo, he decidido juzgar tu incompetencia, y destruir la base de datos de todas formas...\n" | pv -qL20
     
     sleep 3
     
     read -p "$MENSAJE_READ"
+    
+    clear
     
     echo -en "\n$WROSE "
     echo -en "${RED}[Destruyendo base de datos]${NC}" | pv -qL20
     
     sleep 1
     
-    cat $DELETEALL | pv -qL3333
+    cat $LOG | pv -qL3333
     
     
 }
@@ -329,7 +331,7 @@ echo -en "\n$WROSE "
 echo -en "Escriba el significado del siguiente mensaje:" | pv -qL20
 
 echo -en "\n$WROSE "
-echo -en "Feliz aniversario USB." | pv -qL20
+echo -e "Feliz aniversario USB." | pv -qL20
 
 
 sleep 2
@@ -339,7 +341,7 @@ do
     echo -en "${PROMPT_PC} "
     read OPTION
     
-    if [ $OPTION = 'Hgnkw cnksgopcoko RPD' -o $OPTION = 'HGNKW CNKSGOPCOKO RPD' -o $OPTION = 'hgnkw cnksgopcoko rpd' ]; then
+    if [[ $OPTION = 'Hgnkw cnksgopcoko RPD' || $OPTION = 'HGNKW CNKSGOPCOKO RPD' || $OPTION = 'hgnkw cnksgopcoko rpd' ]]; then
         
         echo -en "\n$WROSE "
         echo -en "${YELLOW}...${NC}" | pv -qL5
@@ -355,7 +357,7 @@ do
         
     else
         
-        echo -en "\n$WROSE "
+        echo -en "$WROSE "
         echo -en "${RED}¡ERROR!" | pv -qL15
         
         sleep 2
@@ -364,14 +366,17 @@ do
         echo -en "Te daré otra oportunidad más" | pv -qL20
         
         echo -en "\n$WROSE "
-        echo -en "Solo tienes que encriptar este mensaje: ${bold}Feliz aniversario USB.${NC}" | pv -qL20
+        echo -e "Solo tienes que encriptar este mensaje: ${bold}Feliz aniversario USB.${NC}" | pv -qL20
+        
+        echo -en "${PROMPT_PC} "
+        read OPTION1
         
         sleep 2
         
-        if [ $OPTION = 'Hgnkw cnksgopcoko RPD' -o $OPTION = 'HGNKW CNKSGOPCOKO RPD' -o $OPTION = 'hgnkw cnksgopcoko rpd' ]; then
+        if [[ $OPTION1 = 'Hgnkw cnksgopcoko RPD' || $OPTION1 = 'HGNKW CNKSGOPCOKO RPD' || $OPTION1 = 'hgnkw cnksgopcoko rpd' ]]; then
             
             
-            echo -en "\n$WROSE "
+            echo -en "$WROSE "
             echo -en "${YELLOW}...${NC}" | pv -qL5
             
             sleep 0.5
@@ -385,7 +390,7 @@ do
             
         else
             
-            echo -en "\n$WROSE "
+            echo -en "$WROSE "
             echo -en "${YELLOW}...${NC}" | pv -qL5
             
             sleep 0.5
@@ -405,3 +410,9 @@ do
         
     fi
 done
+
+echo -e "\n"
+
+sleep 3
+
+read -p "$MENSAJE_READ"
