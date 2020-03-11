@@ -72,6 +72,8 @@ RETOS=$DIR/retos
 # Primer reto
 RETO1_SH=$RETOS/reto1.sh
 
+CREDITOS=$DIR/creditos.ascii
+
 ####################################################################################################
 
 ### Mensajes Reutilizables###
@@ -204,3 +206,7 @@ function bandersnatch {
 
 ### Inicio del script ###
 start
+
+sleep 1
+
+cat $CREDITOS pv -qL1000
