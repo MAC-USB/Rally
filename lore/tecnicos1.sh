@@ -122,7 +122,7 @@ echo -e "${bold}debug1:${NC} expecting SSH2_MSG_KEX_ECDH_REPLY"
 sleep 1
 echo -e "${bold}debug1:${NC} Server host key: ecdsa-sha2-nistp256 SHA256:tnkilUeNkSiY29NYEUJfIX15Rux5yeB0WaJl8"
 echo -e "${bold}debug1:${NC} Host '159.90.9.130' is known and matches the ECDSA host key."
-echo -e "${bold}debug1:${NC} Found key in /home/${GROUPNAME}/.ssh/known_hosts:12"
+ppecho -e "${bold}debug1:${NC} Found key in /home/${GROUPNAME}/.ssh/known_hosts:12"
 echo -e "${bold}debug1:${NC} rekey out after 13427728 blocks"
 echo -e "${bold}debug1:${NC} SSH2_MSG_NEWKEYS sent"
 sleep 1
@@ -137,7 +137,6 @@ echo -e "${bold}debug1:${NC} SSH2_MSG_SERVICE_ACCEPT received"
 sleep 2
 echo -e "${RED}ERROR:${NC} The connection has not been established"
 sleep 1
-
 echo -en "$PROMPT "
 echo -en "${YELLOW}No contestan...${NC}" | pv -qL10
 echo -e "\n"
