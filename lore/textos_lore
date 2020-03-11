@@ -1,19 +1,19 @@
-Intrucciones del juego:
+Instrucciones del juego:
 
   Para jugar debe seleccionar las opciones que aparecen en pantalla.
-  Dependiendo de las opciones elegidas el final podria variar.
+  Dependiendo de las opciones elegidas el final podría variar.
   Para sumar puntos, debe seleccionar las mejores opciones en cada escenario.
-  El puntaje final aparecera al finalizar el juego despues de los creditos.
+  El puntaje final aparecerá al finalizar el juego después de los créditos.
   Para leer las opciones nuevamente escriba "repetir". Para comenzar a jugar, escriba "jugar".
 
-Conversacion de bienvenida:
+Conversación de bienvenida:
   Mensaje contenido en bienvenida.sh +
   
-  Recibiendo mensaje de auxilio...: ¡Hola! Soy un autómata programado por D...A...C...#$%#"#$"#%. Soy el servidor principal de la universidad. En estos momentos estoy bajo ataque proveniente de una fuenta desconocida. El objetivo parece ser borrar los datos de los estudiantes de la universidad. Los atacantes son muy hábiles y no permiten que pueda respaldar esta información. Mi protocolo de emergencia ya no responde. Tampoco puedo apagar el servidor, si se apaga, la información se perderá para siempre. Eres la última esperanza.Yo te guiare hast...#$%#$%#$%....h4st4 d0nd3 m3 s34 p0s1bl3...$%&$%&$%&$%...
+  Recibiendo mensaje de auxilio...: ¡Hola! Soy un autómata programado por D...A...C...#$%#"#$"#%. Soy el servidor principal de la universidad. En estos momentos estoy bajo ataque proveniente de una fuenta desconocida. El objetivo parece ser borrar los datos de los estudiantes de la universidad. Los atacantes son muy hábiles y no permiten que pueda respaldar esta información. Mi protocolo de emergencia ya no responde. Tampoco puedo apagar el servidor, si se apaga, la información se perderá para siempre. Eres la última esperanza.Yo te guiaré hast...#$%#$%#$%....h4st4 d0nd3 m3 s34 p0s1bl3...$%&$%&$%&$%...
 
 Primer acertijo/reto:
 
-  "Te recuerdo que una dirección IP es un identificador que necesita cualquier computadora para acceder a la red. Usualmente,los países tienen rangos de direcciones IP que pueden utilizar. La direccion del atacante es "inserte direccion francesa". Es primordial identificar el país donde se encuentra el atacante. El archivo "paises_ip" tienen las direcciones IP de cada país. ¿Qué haces?"
+  "Te recuerdo que una dirección IP es un identificador que necesita cualquier computadora para acceder a la red. Usualmente,los países tienen rangos de direcciones IP que pueden utilizar. La direccion del atacante es "inserte dirección francesa". Es primordial identificar el país donde se encuentra el atacante. El archivo "paises_ip" tienen las direcciones IP de cada país. ¿Qué haces?"
   
 1) Buscar archivo:
 
@@ -25,7 +25,7 @@ Primer acertijo/reto:
         ¡El archivo de las IP se ha eliminado! ¡Ahora nunca sabremos de donde proviene el ataque! ¿Estoy ante un usuario inteligente? Ahora solo nos queda intentar frenar el ataque, pero las esperanzas de lograrlo acaban de bajar significativamente...#$"#%"$"$"#$.
 	#SE SALTA AL LORE2#
 
-2) ¿Asumimos que la IP proviene de China? Asumiremos que el atacante es de ____ (pais correspondiente) #SE SALTA AL LORE2#
+2) ¿Asumimos que la IP proviene de China? Asumiremos que el atacante es de ____ (país correspondiente) #SE SALTA AL LORE2#
 
 3) ¿Asumimos que nos ataca el FBI? Mismo mensaje anterior pero con FBI #SE SALTA AL LORE2#
 
@@ -35,7 +35,7 @@ Primer acertijo/reto:
 
   #SE SALTA AL LORE2#
 
-Lore: Ahora hemos identificado que los atacantes son _______ (dinámico o franceses).Su objetivo posiblemente sea destruir la estabilida de la USB, y esperaron hasta su aniversario 50 para realizar éste ataque.
+Lore: Ahora hemos identificado que los atacantes son _______ (dinámico o franceses).Su objetivo posiblemente sea destruir la estabilida de la USB, y esperaron hasta su aniversario 50 para realizar este ataque.
 
 Segundo acertijo/reto:
 
@@ -47,7 +47,7 @@ Segundo acertijo/reto:
     1.1) Sí: ¡NO PODEMOS APAGAR EL SERVIDOR! De hacer eso la base de datos de los estudiantes sería destruida...¿Acaso eres un atacante también? *Activando protocolo de emer....%$#%#$%* *no se puede*...Por ahora, asumiré que no eres un atacante. No pareces muy inteligente.
     #SE SALTA AL LORE 3#
 
-    1.2) No: -regresa al menu inicial del acertijo-
+    1.2) No: -regresa al menú inicial del acertijo-
 
 2) LLamar a los técnicos: -mismo mensaje que el acertijo 1- -Luego aparece el mensaje *Recibiendo mensaje de ...* #SE SALTA AL LORE3#
 
@@ -147,11 +147,11 @@ Acertijo 4azul /reto:
   He visto que has fallado en tu misión de recuperar el servidor. Enhorabuena por tu fracaso. Gracias a ti, la USB ha caído en un vacío muy difícil de solucionar. No te diré cuál era nuestro objetivo real, pero no necesitas saberlo. Aprende a vivir con tus errores, y sigue tu vida pensando que gracias a ti, la USB ha caído por siempre. Mi nombre es El PhD, y ha sido un gusto conocerte... %$#%#$%"$#"#$"#$....
 
 
-Pildora roja: 
+Píldora roja: 
  
- "La USB ha representado por muchos años la posibilidad de lograr la excelencia educativa en Venezuela. Ingeniería en Computación es una de las carreras más importantes de la universidad, y muchos de sus graduandos terminan siendo figuras importantes en muchas de las empresas del desarrollo informático más grandes del mundo. El atacante es posiblemente un estudiante de Ingeniería en Computación de la UCV que intenta socavar la universidad porque ha pasado toda su vida siendo comparado con los estudiantes de la USB. "
- " Para vencer a éste atacante, habilidoso por demás, necesitamos demostrar que estamos a su altura, y que podemos leer sus siguientes jugadas. Para ello, es fundamental tomar las mejores decisiones posibles. "
-  "Retomarás el contacto con el autómata, pero ahora conoces por qué ésta sucediendo ésta situación y cómo poder solucionarla. En mi posición no puedo resolver el problema yo mismo, pero confío en que tus habilidades deductivas e ingenio podrás solventar el problema. Éxitos. "
+ "La USB ha representado por muchos años la posibilidad de lograr la excelencia educativa en Venezuela. Ingeniería en Computación es una de las carreras más importantes de la universidad, y muchos de sus graduandos terminan siendo figuras importantes en muchas de las empresas del desarrollo informático más grandes del mundo. El atacante es posiblemente un estudiante de Licenciatura en Computación de la UCV que intenta socavar la universidad porque ha pasado toda su vida siendo comparado con los estudiantes de la USB. "
+ " Para vencer a este atacante, habilidoso por demás, necesitamos demostrar que estamos a su altura, y que podemos leer sus siguientes jugadas. Para ello, es fundamental tomar las mejores decisiones posibles. "
+  "Retomarás el contacto con el autómata, pero ahora conoces por qué está sucediendo esta situación y cómo poder solucionarla. En mi posición no puedo resolver el problema yo mismo, pero confío en que tus habilidades deductivas e ingenio podrán solventar el problema. Éxitos. "
 
 . 
 .
@@ -178,7 +178,7 @@ Reto 4:
   
   El mensaje "hola" sería transformado al mensaje "rujl". Esta clase de criptografía se llama criptografía simétrica porque ambas partes usan la misma llave. Para recuperar el mensaje debe devolver el cambio, es decir, hacer lo inverso que dice la llave.
 
-  Dada la siguiente llave: Dado el abecedario en español, las letras desde la 'a' hasta la 'l' se intercambian por las letras dos posiciones después. Por ejemplo, 'a' pasa a ser 'c' y 'l' pasa a ser 'n'. Las letras desde la 'r' hasta la z' cambian por sus letras 3 posiciones antes. Es decir, la 'r' es ahora la 'o', y la 'z' es la 'w'. Las letras entre 'm' y 'q' quedan inalteradas. Cuidado con ésto último.
+  Dada la siguiente llave: Dado el abecedario en español, las letras desde la 'a' hasta la 'l' se intercambian por las letras dos posiciones después. Por ejemplo, 'a' pasa a ser 'c' y 'l' pasa a ser 'n'. Las letras desde la 'r' hasta la z' cambian por sus letras 3 posiciones antes. Es decir, la 'r' es ahora la 'o', y la 'z' es la 'w'. Las letras entre 'm' y 'q' quedan inalteradas. Cuidado con esto último.
 
 Escriba el significado del siguiente mensaje:
 
@@ -194,13 +194,13 @@ Hgnkw cnksgopcoko RPD.
 
 Si lo hace bien:
 
-  ¡Excelente! Has demostrado tu ingenio. Pero no te preocupes, ésto solo era una prueba, ya se había cerrado la conexión del atacante. En realidad, uno de mis compañeros, al que me referiré como Gfecito, perteneció a la USB. Él ha monitoreado desde un principio todo el ataque, y ha esperado hasta el último momento para actuar.
+  ¡Excelente! Has demostrado tu ingenio. Pero no te preocupes, esto solo era una prueba, ya se había cerrado la conexión del atacante. En realidad, uno de mis compañeros, al que me referiré como Gfecito, perteneció a la USB. Él ha monitoreado desde un principio todo el ataque, y ha esperado hasta el último momento para actuar.
 
 #Aparece Gfesito con el ascii de Ricardo Millos
 
 Has hecho un excelente trabajo contactando con nosotros. ¡Enhonrabuena por tu intuición! ---Créditos---
   
-  e) www.aprenderaprogramarcomoenlaUCV.com: *Ingresando en la página*... ¡Ésta es la página! Ahora podemos intentar hacer un ataque... La probabilidad de éxito es mayor si conocemos la ubicación del atacante...
+  e) www.aprenderaprogramarcomoenlaUCV.com: *Ingresando en la página*... ¡Esta es la página! Ahora podemos intentar hacer un ataque... La probabilidad de éxito es mayor si conocemos la ubicación del atacante...
   si elegiste Francia: *Realizando ataque...* *Ataque completado...* *Recuperando la base de datos...* *Atacando a Francia...¡Esa es su ubicación!* *Logrado.* ¡Excelente! Gracias a ti hemos podido solventar el ataque de la mejor manera posible. Muchas gracias por tus servicios.---Créditos---
   
   Si elegiste otro: *Realizando el ataque...* *Error en ubicación...* El ataque no ha sido completado. *Se intenta solventar el ataque...* *Borrando la base de datos...* *Salvando archivos...* Se ha recuperado el 80% de la base de datos. Quizás no ha sido el 100%, pero ha sido importante no perder más porcentaje de la base de datos. Gracias por tus esfuerzos...

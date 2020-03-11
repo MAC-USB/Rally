@@ -53,80 +53,90 @@ bold='\033[1m' # Bold
 # Dir
 DIR=$(pwd)
 
-# Jumpscares
-JUMPSCARES=$DIR/jumpscares
-FUCKYOU=$JUMPSCARES/fuckyou.ascii
-FUCKYOU_INVERTED=$JUMPSCARES/fuckyou_inverted.ascii
-
 # Characters
 CHARACTERS=$DIR/characters
-DISCORD=$CHARACTERS/discord.ascii
+KMALEON=$CHARACTERS/kmaleon.ascii
 
 ####################################################################################################
+
+### Variables de entorno necesarias ###
 
 ### Variables de entorno necesarias ###
 
 # Nombre del grupo
 GROUPNAME=$1
 
+# Nombre de los atacantes
+ATACANTES=$2
+
+# Valor de los tecnicos
+VAL_TECNICOS=$3
+
 ####################################################################################################
 
 ### Mensajes Reutilizables ###
 
 # Automata
-PROMPT=$(echo -e "${GREEN_R}automata@DACE${NC}:${CYAN_R}~${NC}\$")
+PROMPT_AUTOMATA=$(echo -e "${GREEN_R}automata@DACE${NC}:${CYAN_R}~${NC}\$")
+
+# Kmaleon
+PROMPT=$(echo -e "${CYAN_R}JT@MAC${NC}:${CYAN_R}~${NC}\$")
 
 # Prompt de espera
 MENSAJE_READ=$(echo -e "${bold}[Presiona enter para continuar]${NC}")
 
-# Final
-FINAL_KMALEON=$DIR/lore/final_kmaleon.sh
-
 ####################################################################################################
-
-# Funcion del final kmaleon
-
-kmaleon() {
-
-    sleep 1
-
-    source $FINAL_KMALEON
-}
 
 ### Main ###
 
-# echo -en  ...$#$#$%#$%$#%#$%#$...\n" | pv -qL15
-#
-
 clear
 
-cat $DISCORD | pv -qL2222
+echo -e "${RED}[Cerrando conexión]${NC}"
 
-echo -en "\n${RED}[Recibiendo mensaje de alerta]${NC}"
+sleep 3
 
-sleep 1
+cat $KMALEON | pv -qL2222
 
-echo -en "\n$PROMPT "
-echo -en "${bold}¿Seguro quieres destruir el servidor?${NC}" | pv -qL20
-
-echo -en "\n$PROMPT "
-echo -en "¿Es que acaso tienes criterio para solventar esta situación?" | pv -qL20
-
-echo -en "\n$PROMPT "
-echo -e "...\$#\$#\$%#\$%!\$#%#\#$%#\$..." | pv -qL20
+echo -e "\n${RED}[Recibiendo mensaje de fuente desconocida...]${NC}\n"
 
 sleep 1
 
-echo -en "$PROMPT "
-echo -en "Lo están haciendo mal " | pv -qL20
-echo -en "$RED"
-echo -en "$GROUPNAME" | pv -qL20
-echo -en "$NC"
-echo -en "..." | pv -qL10
-echo -e "\n"
+echo -en "\n${PROMPT} "
 
 sleep 1
+
+echo -e "..." | pv -qL5
+
+sleep 1
+
+echo -en "${PROMPT} "
+echo -en "${bold} Hola. ${NC} " | pv -qL10
+
+echo -en "\n${PROMPT} "
+echo -en "Soy el atacante. Acabas de ayudarme a lograr mi objetivo." | pv -qL20
+
+echo -en "\n${PROMPT} "
+echo -en "Realmente no tenía las herramientas para destruir por completo el servidor." | pv -qL20
+
+sleep 2
+
+echo -en "\n${PROMPT} "
+echo -en "Si no hubieses actuado, no habría podido terminar mi misión." | pv -qL20
+
+echo -en "\n${PROMPT} "
+echo -en "Gracias a ti he logrado mis objetivos de destruir a la USB." | pv -qL20
+
+echo -en "\n${PROMPT} "
+echo -en "Y podré seguir durmiendo en paz." | pv -qL20
+
+echo -en "\n${PROMPT} "
+echo -en "Se despide ..." | pv -qL20
+
+sleep 2
+
+echo -en "\n${PROMPT} "
+echo -e "Att: ${CYAN} el Kmaleon.${NC}\n" | pv -qL5
+
+sleep 2
 
 read -p "$MENSAJE_READ"
-
-kmaleon
