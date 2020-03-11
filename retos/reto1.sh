@@ -75,6 +75,9 @@ LORE_BUENO=$LORE/lore1.sh
 # Lore malo
 LORE_MALO=$LORE/lore1_fail.sh
 
+# Carpeta de retos/acertijos
+RETOS=$DIR/retos
+
 # Segundo reto
 RETO2_SH=$RETOS/reto2.sh
 
