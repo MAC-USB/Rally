@@ -53,6 +53,10 @@ bold='\033[1m' # Bold
 # Dir
 DIR=$(pwd)
 
+#Final bueno
+
+
+
 # Characters
 CHARACTERS=$DIR/characters
 DISCORD=$CHARACTERS/discord.ascii
@@ -69,6 +73,10 @@ WINDOWS_INVERTED=$JUMPSCARES/windows_inverted.ascii
 
 # Carpeta de lore
 LORE=$DIR/lore
+
+#FINAL BUENO DE TODOS
+
+FINAL_BUENO_DE_TODOS=$LORE/final_gfecito.sh
 
 # Archivo paises_ip
 PAISES_IP=$LORE/paises_ip.txt
@@ -126,7 +134,9 @@ MENSAJE_READ=$(echo -e "${bold}[Presiona enter para continuar]${NC}")
 
 function FINAL_BUENO_DE_TODOS {
     
-    echo "FINAL BUENO"
+    sleep 1
+
+    source $FINAL_BUENO_DE_TODOS
 }
 
 function criptoExitoso {
@@ -341,7 +351,7 @@ do
     echo -en "${PROMPT_PC} "
     read OPTION
     
-    if [[ $OPTION = 'Feliz aniversario USB' || $OPTION = 'FELIZ ANIVERSARIO USB' || $OPTION = 'feliz aniversario USB' ]]; then
+    if [[ $OPTION = 'Feliz aniversario USB' || $OPTION = 'FELIZ ANIVERSARIO USB' || $OPTION = 'feliz aniversario USB' || $OPTION = 'feliz aniversario usb' ]]; then
         
         echo -en "\n$WROSE "
         echo -en "${YELLOW}...${NC}" | pv -qL5
