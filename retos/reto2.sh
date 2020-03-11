@@ -78,6 +78,9 @@ LORE_MALO_SV_SHUTDOWN=$LORE/lore2_fail_sv_shutdown.sh
 # Lore malo 2
 LORE_MALO_MARTILLO=$LORE/lore2_fail_martillo.sh
 
+# Carpeta de retos/acertijos
+RETOS=$DIR/retos
+
 # Tercer reto
 RETO3_SH=$RETOS/acertijo_trampa.sh
 
@@ -145,27 +148,6 @@ begining() {
     echo -e "\t${bold}(4)${NC} Revisar las interfaces de red"
     sleep 0.25
 }
-
-# finish(){
-#     sleep 0.25
-#     echo -e "$PROMPT ¿Dhé unprf? ${bold}[Cbe snibe, vagebqhpr ry aúzreb qr gh ryrppvóa.]${NC}"
-#     sleep 0.5
-#     echo -e "\t${bold}(?@!#)${NC} Ohfpne ry nepuvib"
-#     sleep 0.25
-#     echo -e "\t${bold}(?@!#)${NC} ¿Nfhzvzbf dhr yn VC cebivrar qr Puvan?"
-#     sleep 0.25
-#     echo -e "\t${bold}(?@!#)${NC} ¿Nfhzvzbf dhr abf ngnpn ry SOV?"
-#     sleep 0.25
-#     echo -e "\t${bold}(?@!#)${NC} ¿Nfhzvzbf dhr abf ngnpna ybf ehfbf?"
-#     sleep 0.25
-#     echo -e "\t${bold}(?@!#)${NC} Yynzne n ybf gépavpbf"
-#     sleep 3
-#     echo -e "\t${bold}(Francia)${NC} %^!&@#$%^@&#^*."
-#     sleep 0.25
-
-#     retocompletado
-
-# }
 
 
 retocompletado(){

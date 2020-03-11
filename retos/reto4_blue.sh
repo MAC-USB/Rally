@@ -87,6 +87,12 @@ LORE_MALO=$LORE/lore1_fail.sh
 # Nombre del grupo
 GROUPNAME=$1
 
+# Nombre de los atacantes
+ATACANTES=$2
+
+# Valor de los tecnicos
+VAL_TECNICOS=$3
+
 ####################################################################################################
 
 ### Mensajes Reutilizables ###
@@ -109,13 +115,16 @@ clear
 cat $DISCORD | pv -qL2222
 
 echo -en "\n$PROMPT "
-echo -en "Hemos contactado con la PVBC, Policía Virtual Bolivariana de Caracas para ayudarnos en nuestra misión." | pv -qL20
+echo -en "Hemos contactado con la PVBC, Policía Virtual Bolivariana de Caracas, para ayudarnos en nuestra misión." | pv -qL20
 
 echo -en "\n$PROMPT "
 echo -en "Sin embargo, su director, solo nos supo decir que cortar el cable de la fibra óptica principal de la universidad, lo cuál dejaría a la USB sin internet por 25 años." | pv -qL20
 
 echo -en "\n$PROMPT "
-echo -en "Contrastando ésta información con nuestra base de datos encontramos una línea en el archivo NO_HACER_NUNCA.txt escrito por el director de la DST-USB, que dice: ${bold}Nunca debes realizar ésta acción o destruirás la universidad${NC}." | pv -qL20
+echo -en "Contrastando ésta información con nuestra base de datos encontramos una línea en el archivo ${bold}\'NO_HACER_NUNCA.txt\'${NC} escrito por el director de la DST-USB, que dice:" | pv -qL20
+
+echo -en "\n$PROMPT "
+echo -en "${bold}Nunca debes realizar ésta acción o destruirás la universidad.${NC}" | pv -qL20
 
 echo -en "\n$PROMPT "
 echo -en "¿Cómo vas a proceder?" | pv -qL20
@@ -127,9 +136,10 @@ dialog(){
     clear
     
     cat $DISCORD
-    echo -e "\n$PROMPT THemos contactado con la PVBC, Policía Virtual Bolivariana de Caracas para ayudarnos en nuestra misión."
+    echo -e "\n$PROMPT Hemos contactado con la PVBC, Policía Virtual Bolivariana de Caracas para ayudarnos en nuestra misión."
     echo -e "$PROMPT Sin embargo, su director, solo nos supo decir que cortar el cable de la fibra óptica principal de la universidad, lo cuál dejaría a la USB sin internet por 25 años.${NC}"
-    echo -e "$PROMPT Contrastando ésta información con nuestra base de datos encontramos una línea en el archivo NO_HACER_NUNCA.txt escrito por el director de la DST-USB, que dice: ${bold}Nunca debes realizar ésta acción o destruirás la universidad${NC}."
+    echo -e "$PROMPT Contrastando ésta información con nuestra base de datos encontramos una línea en el archivo ${bold}\'NO_HACER_NUNCA.txt\'${NC} escrito por el director de la DST-USB, que dice:"
+    echo -e "$PROMPT ${bold}Nunca debes realizar ésta acción o destruirás la universidad.${NC}"
     echo -e "$PROMPT ¿Cómo vas a proceder? ${bold}[Por favor, introduce el número de tu elección.]${NC}"
 }
 
@@ -144,60 +154,92 @@ begining() {
     echo -e "\t${bold}(2)${NC} Ignorar la recomendación de la PVBC"
 }
 
-finish(){
-    sleep 0.25
-    echo -e "$PROMPT ¿Dhé unprf? ${bold}[Cbe snibe, vagebqhpr ry aúzreb qr gh ryrppvóa.]${NC}"
+negativoelprocedimiento(){
+    
+    echo -en "$PROMPT "
+    echo -en "$PURPLE_BACK"
+    echo -en "%&$%&$%&$..." | pv -qL20
+    echo -en "$NC"
+    
     sleep 0.5
-    echo -e "\t${bold}(?@!#)${NC} Ohfpne ry nepuvib"
-    sleep 0.25
-    echo -e "\t${bold}(?@!#)${NC} ¿Nfhzvzbf dhr yn VC cebivrar qr Puvan?"
-    sleep 0.25
-    echo -e "\t${bold}(?@!#)${NC} ¿Nfhzvzbf dhr abf ngnpn ry SOV?"
-    sleep 0.25
-    echo -e "\t${bold}(?@!#)${NC} ¿Nfhzvzbf dhr abf ngnpna ybf ehfbf?"
-    sleep 0.25
-    echo -e "\t${bold}(?@!#)${NC} Yynzne n ybf gépavpbf"
-    sleep 3
-    echo -e "\t${bold}(Francia)${NC} %^!&@#$%^@&#^*."
-    sleep 0.25
     
-    retocompletado
+    echo -en "\n$PROMPT "
+    echo -en "Hemos podido recuperar algunas funciones del protocolo de emergencia." | pv -qL20
     
-}
-
-
-retocompletado(){
+    echo -en "\n$PROMPT "
+    echo -en "Puedo intentar recuperar un 50% de la base de datos, si se toma esa opción, el resto de los archivos se pierde, y se le enviará una notificación a DACE para recabar nuevamente la información del otro restante de los estudiantes." | pv -qL20
+    
+    echo -en "\n$PROMPT "
+    echo -en "No me queda mucho tiempo." | pv -qL20
+    
+    sleep 0.5
+    
+    echo -en "\n$PROMPT "
+    echo -e "¿Quiere hacer ésto?" | pv -qL20
+    
+    sleep 1
+    echo -e "\t${bold}(Si)${NC} Si"
+    sleep 0.25
+    echo -e "\t${bold}(No)${NC} No"
+    
     while true
     do
-        echo -en "${GREEN}${GROUPNAME}${PROMPT} "
+        echo -en "${PROMPT_PC} "
         read re
-        if [ $re = "francia" -o $re = "Francia" ]
-        then
+        if [[ $OPTION = 'si' || $OPTION = 'SI' || $OPTION = 'Si' ]]; then
             
-            ATACANTE=Francia
+            final_azul2
+            break
             
-            source $LORE_BUENO $GROUPNAME $ATACANTE
+            elif [[ $OPTION = 'no' || $OPTION = 'NO' || $OPTION = 'No' ]]; then
             
-            reto2
-            
+            phd
             break
             
         else
+            echo -en "\n$PROMPT "
+            echo -e "No puedes volver atrás. ${bold}Sí${NC} o ${bold}No.${NC}" | pv -qL20
             continue
         fi
     done
+}
+
+final_azul1(){
+    
+    echo "final positivo_azul1"
+    
     
 }
 
-# Evaluación de casos para cada opción particular
-
-
-
-dynamic() {
-    echo -en "$PROMPT " | pv -qL15
-    echo -en "Está bien. Asumiremos que el atacante es de $ATACANTE\n" | pv -qL15
+final_azul2(){
     
-    reto2
+    echo "final positivo_azul2"
+}
+
+
+elyianero() {
+    
+    echo "Final ElYianero"
+    
+    
+}
+
+phd() {
+    echo "final El PhD"
+    
+}
+
+flang() {
+    
+    echo "final Flang"
+    
+}
+
+mrcrepy() {
+    
+    echo "final Mr Creepy"
+    
+    
 }
 
 reto4_blue() {
@@ -205,7 +247,7 @@ reto4_blue() {
     while true
     do
         
-        if [[ $OPTION != 2 && $OPTION != 'a' && $OPTION != 'b' ]]; then
+        if [[ $OPTION != 2 && $OPTION != 'si' && $OPTION != 'SI' && $OPTION != 'Si' && $OPTION != 'no' && $OPTION != 'NO' && $OPTION != 'No' ]]; then
             dialog
             begining
         fi
@@ -214,76 +256,56 @@ reto4_blue() {
         
         if [ $OPTION = 1 ]; then
             
-            echo "Final ElYianero"
-	    break
+            elyianero
+            break
             
             elif [ $OPTION = 2 ]; then
-
-	    echo -en "\n$PROMPT "
-	    echo -en "Yo tampoco me sentía convencido de ésta dec....$#%#$%#$%#...d3c1s10n...$"#$"#$#%$%#$... " | pv -qL20
-	    echo -en "He descubierto mientras leías éste mensaje que existe la posibildiad de ingresar a la computadora del atacante." | pv -qL20
-
-	    echo -en "\n$PROMPT "
-	    echo -en "¿Desea hacerlo?" | pv -qL20
-	    echo -e " ${bold}[Por favor, introduce el número de tu elección.]${NC}"
-
+            
+            echo -en "$PROMPT "
+            echo -en "Yo tampoco me sentía convencido de ésta dec....${BLACK_R}${WITHE_BACK}%#$%#$%#$...d3c1s10n...$%$^#%^#@...${NC}" | pv -qL20
+            
+            echo -en "\n$PROMPT "
+            echo -en "He descubierto, mientras leías éste mensaje, que existe la posibildiad de ingresar a la computadora del atacante." | pv -qL20
+            
+            echo -en "\n$PROMPT "
+            echo -e "¿Desea hacerlo?" | pv -qL20
+            
             sleep 0.25
-    	    echo -e "\t${bold}(a)${NC} Si"
-    	    sleep 0.25
-    	    echo -e "\t${bold}(b)${NC} No"
-
+            echo -e "\t${bold}(Si)${NC} Si"
+            sleep 0.25
+            echo -e "\t${bold}(No)${NC} No"
+            
+            elif [[ $OPTION = 'si' || $OPTION = 'SI' || $OPTION = 'Si' ]]; then
+            
+            sleep 0.25
+            echo -e "\t${bold}(a)${NC} Desconectarse de la computadora del atacante"
+            sleep 0.25
+            echo -e "\t${bold}(b)${NC} Intentar suspender el ataque"
+            sleep 0.25
+            echo -e "\t${bold}(c)${NC} Apagar la computadora del atacante"
+            
+            elif [[ $OPTION = 'no' || $OPTION = 'NO' || $OPTION = 'No' ]]; then
+            
+            negativoelprocedimiento
+            
+            break
             
             elif [ $OPTION = 'a' ]; then
             
-            sleep 0.25
-    	    echo -e "\t${bold}(1.a)${NC} Desconectarse de la computadora del atacante"
-    	    sleep 0.25
-    	    echo -e "\t${bold}(1.b)${NC} Intentar suspender el ataque"
-            sleep 0.25
-    	    echo -e "\t${bold}(1.c)${NC} Apagar la computadora del atacante"
-
-
+            mrcrepy
+            break
+            
             elif [ $OPTION = 'b' ]; then
- 
-	    echo -en "\n$PROMPT "
-	    echo -en "%&$%&$%&$... Hemos podido recuperar algunas funciones del protocolo de emergencia. Puedo intentar recuperar un 50% de la base de datos, si se toma esa opción, el resto de los archivos se pierde, y se le enviará una notificación a DACE para recabar nuevamente la información del otro restante de los estudiantes." | pv -qL20
-	    echo -en "\nNo me queda mucho tiempo." | pv -qL20
-
-	    echo -en "\n$PROMPT "
-	    echo -en "¿Quiere hacer ésto?" | pv -qL20
-	    echo -e " ${bold}[Por favor, introduce el número de tu elección.]${NC}"
             
-            sleep 0.25
-    	    echo -e "\t${bold}(2.a)${NC} Si"
-    	    sleep 0.25
-    	    echo -e "\t${bold}(2.b)${NC} No"
+            final_azul1
             
-            elif [ $OPTION = '1.a' ]; then
-            
-            echo "final Mr Creepy"
             break
             
-            elif [ $OPTION = '1.b' ]; then
+            elif [ $OPTION = 'c' ]; then
             
-            echo "final positivo_azul1"
+            flang
             break
             
-	    elif [ $OPTION = '1.c' ]; then
-            
-            echo "final Flang"
-            break
-
-	    elif [ $OPTION = '2.a' ]; then
-            
-            echo "final positivo_azul2"
-            break
-
-	    elif [ $OPTION = '2.b' ]; then
-            
-            echo "final El PhD"
-            break
-
-
             elif [ $OPTION = 0 ]; then
             continue
             

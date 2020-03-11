@@ -81,6 +81,15 @@ LORE_BUENO=$LORE/lore1.sh
 # Lore malo
 LORE_MALO=$LORE/lore1_fail.sh
 
+# Carpeta de retos/acertijos
+RETOS=$DIR/retos
+
+# Pildora Azul
+PILDORA_AZUL=$RETOS/reto4_blue.sh
+
+# Pildora Roja
+PILDORA_ROJA=$RETOS/reto4_red.sh
+
 ####################################################################################################
 
 ### Variables de entorno necesarias ###
@@ -88,11 +97,20 @@ LORE_MALO=$LORE/lore1_fail.sh
 # Nombre del grupo
 GROUPNAME=$1
 
+# Nombre de los atacantes
+ATACANTES=$2
+
+# Valor de los tecnicos
+VAL_TECNICOS=$3
+
 ####################################################################################################
 
 ### Mensajes Reutilizables ###
 
 # Automata
+PROMPT_AUTOMATA=$(echo -e "${GREEN_R}automata@DACE${NC}:${CYAN_R}~${NC}\$")
+
+# JK
 PROMPT=$(echo -e "${BLUE_R}jk@MAC${NC}:${CYAN_R}~${NC}\$")
 
 # Unknow
@@ -107,6 +125,55 @@ MENSAJE_READ=$(echo -e "${bold}[Presiona enter para continuar]${NC}")
 ####################################################################################################
 
 ### MAIN ###
+
+function eleccionDePildora {
+    while true
+    do
+        echo -en "${PROMPT_PC} "
+        read re
+        if [[ $re = "azul" || $re = "Azul" || $re = "AZUL" ]]; then
+            
+            clear
+            
+            sleep 0.5
+            
+            echo -e "${GREEN}[Recuperando conexión con el servidor]${NC}"
+            
+            sleep 2
+            
+            cat $DISCORD | pv -qL2222
+            
+            sleep 2
+            
+            echo -en "\n$PROMPT_AUTOMATA "
+            echo -en "Hola. Se ha cortado el canal de información." | pv -qL20
+            
+            echo -en "\n$PROMPT_AUTOMATA "
+            echo -en "Proseguimos con el objetivo de derrotar al atacante." | pv -qL20
+            echo -e "\n"
+            
+            sleep 1
+            
+            read -p "$MENSAJE_READ"
+            
+            source $PILDORA_AZUL $GROUPNAME $ATACANTES $VAL_TECNICOS
+            
+            break
+            
+            elif [[ $re = "roja" || $re = "Roja" || $re = "ROJA" ]]; then
+            
+            source $PILDORA_ROJA $GROUPNAME $ATACANTES $VAL_TECNICOS
+            
+            break
+            
+        else
+            echo -en "$PROMPT "
+            echo -e "Roja o azul muchacho. El tiempo corre." | pv -qL20
+            continue
+        fi
+    done
+    
+}
 
 clear
 
@@ -189,7 +256,10 @@ do
         sleep 0.5
         
         echo -en "\n$PROMPT "
-        echo -e "Si la tomas, no vas saber qué se esconde detrás de este caótico escenario, y vas a seguir intentando solventar tu problema sin mucho retraso. No tomas riesgos, y sigues usando tu ingenio para manejar la situación." | pv -qL20
+        echo -en "Si la tomas, no vas saber qué se esconde detrás de este caótico escenario, y vas a seguir intentando solventar tu problema sin mucho retraso." | pv -qL20
+        
+        echo -en "\n$PROMPT "
+        echo -e "No tomas riesgos, y sigues usando tu ingenio para manejar la situación." | pv -qL20
         
         sleep 2
         
@@ -204,6 +274,15 @@ do
         
         echo -en "\n$PROMPT "
         echo -e "Si la tomas, te diré qué es lo que se oculta en ésta situación. Quizás tomar ésta opción consuma más tiempo que el que tienes, pero sabrás cuál es la verdad." | pv -qL20
+        
+        sleep 2
+        
+        echo -en "$PROMPT "
+        echo -e "¿Cuál es tu elección?" | pv -qL20
+        
+        sleep 3
+        
+        eleccionDePildora
         
         break
         
