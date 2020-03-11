@@ -202,7 +202,9 @@ function bandersnatch {
     
     
     sleep 1
-    cat $CREDITOS pv -qL1000
+    
+    echo -e "KSLASD"
+    cat $CREDITOS | pv -qL1000
 }
 
 
