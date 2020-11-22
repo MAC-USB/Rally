@@ -87,15 +87,11 @@ MENSAJE_READ=$(echo -e "${bold}[Presiona enter para continuar]${NC}")
 ### Main ###
 
 clear
-
 cat $DISCORD | pv -qL2222
-
 echo -en "\n$PROMPT "
 echo -en "Ahora hemos identificado que los atacantes son $ATACANTES." | pv -qL20
-
 echo -en "\n$PROMPT "
 echo -e "Su objetivo posiblemente sea destruir la estabilidad de la USB, y esperaron hasta su aniversario 50 para realizar este ataque." | pv -qL20
-
 echo -en "$PROMPT "
 echo -en "Lo están haciendo bien " | pv -qL20
 echo -en "$GREEN"
@@ -103,7 +99,5 @@ echo -en "$GROUPNAME" | pv -qL20
 echo -en "$NC"
 echo -en "..." | pv -qL15
 echo -e "\n"
-
 sleep 1
-
 read -p "$MENSAJE_READ"

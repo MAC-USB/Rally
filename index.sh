@@ -121,46 +121,29 @@ function intentarSalir {
 ### Funcion principal ###
 
 function start {
-    
     clear
-    
     echo -en "${RED}unknow${PROMPT} ${NC}${BLUE}Iniciando...${NC}"
-    
     sleep 1
-    
     echo -e "\n${RED}unknow${PROMPT} ${NC}Por favor ingresa el nombre de tu equipo. Intenta que sea original y único."
-    
     sleep 1
-    
     echo -e "${BLUE}[Ingresa el nombre de tu equipo]${NC}"
     echo -en "${BLUE}=>${NC} "
-    
     read GROUPNAME
-    
     echo -e "\n${GREEN}${GROUPNAME}${PROMPT}\n"
-    
     sleep 1
-    
     read -p "$MENSAJE_READ"
-    
     clear
-    
     # Logo Rally.
     echo -e "$YELLOW$(cat $RALLY_LOGO)$NC" | pv -qL2222
-    
     # Logo CEIC / MAC.
     # echo -e "$bold$(cat $TEAM_LOGO)$NC" | pv -qL2222
-    
     sleep 3
-    
     # goto instrucciones.
     instrucciones
 }
 
 function instrucciones {
-    
     source $INTRUCCIONES_SH
-    
     while true
     do
         echo -en "${GREEN}${GROUPNAME}${PROMPT} "
@@ -185,31 +168,20 @@ function instrucciones {
 }
 
 function bienvenida {
-    
     # trapear
-    
     source $BIENVENIDA_SH
-    
     clear
-    
     bandersnatch
-    
 }
 
 function bandersnatch {
-    
     source $RETO1_SH $GROUPNAME
-    
-    
     sleep 1
-    
     echo -e "KSLASD"
     cat $CREDITOS | pv -qL1000
 }
-
 
 ### Inicio del script ###
 start
 
 sleep 1
-

@@ -132,203 +132,126 @@ function eleccionDePildora {
         echo -en "${PROMPT_PC} "
         read re
         if [[ $re = "azul" || $re = "Azul" || $re = "AZUL" ]]; then ### AZUL ###
-            
             clear
-            
             sleep 0.5
-            
             echo -e "${GREEN}[Recuperando conexión con el servidor]${NC}"
-            
             sleep 2
-            
             cat $DISCORD | pv -qL2222
-            
             sleep 2
-            
             echo -en "\n$PROMPT_AUTOMATA "
             echo -en "Hola. Se ha cortado el canal de información." | pv -qL20
-            
             echo -en "\n$PROMPT_AUTOMATA "
             echo -en "Proseguimos con el objetivo de derrotar al atacante." | pv -qL20
             echo -e "\n"
-            
             sleep 1
-            
             read -p "$MENSAJE_READ"
-            
             source $PILDORA_AZUL $GROUPNAME $ATACANTES $VAL_TECNICOS
-            
             break
-            
-            elif [[ $re = "roja" || $re = "Roja" || $re = "ROJA" ]]; then ### ROJA ###
-            
+        elif [[ $re = "roja" || $re = "Roja" || $re = "ROJA" ]]; then ### ROJA ###
             clear
-            
             cat $MRROBOT | pv -qL2222
-            
             echo -en "$PROMPT "
             echo -en "La USB ha representado por muchos años la posibilidad de lograr la excelencia educativa en Venezuela." | pv -qL20
-            
             echo -en "\n$PROMPT "
             echo -en "Ingeniería de la Computación es una de las carreras más importantes de la universidad, y muchos de sus graduandos terminan siendo figuras importantes en muchas de las empresas del desarrollo informático más grandes del mundo." | pv -qL20
-            
             echo -en "\n$PROMPT "
             echo -en "El atacante es posiblemente un estudiante de Licenciatura de la Computación de la UCV que intenta socavar la universidad porque ha pasado toda su vida siendo comparado con los estudiantes de la USB." | pv -qL20
-            
             echo -en "\n$PROMPT "
             echo -en "Para vencer a este atacante, habilidoso por demás, necesitamos demostrar que estamos a su altura, y que podemos leer sus siguientes jugadas." | pv -qL20
-            
             echo -en "\n$PROMPT "
             echo -en "Ustedes, los ${bold}Simonbobos${NC}, podrán derrotarlo, independientemente que carrera estén estudiando." | pv -qL20
-            
             echo -en "\n$PROMPT "
             echo -en "Para ello, es fundamental tomar las mejores decisiones posibles." | pv -qL20
-            
             echo -en "\n$PROMPT "
             echo -en "Retomarás el contacto con el autómata, pero ahora conoces por qué está sucediendo esta situación y cómo poder solucionarla." | pv -qL20
-            
             echo -en "\n$PROMPT "
             echo -en "En mi posición no puedo resolver el problema yo mismo, pero confío en que tus habilidades deductivas e ingenio podrán solventar el problema." | pv -qL20
-            
             sleep 1
-            
             echo -en "\n$PROMPT "
             echo -en "Éxitos." | pv -qL15
-            
             sleep 2
-            
             echo -en "\n${PURPLE}[Recuperando conexión con el autómata]${NC}"
-            
             sleep 3
-            
             read -p "$MENSAJE_READ"
-            
             source $PILDORA_ROJA $GROUPNAME $ATACANTES $VAL_TECNICOS
-            
             break
-            
         else
             echo -en "$PROMPT "
             echo -e "Roja o azul muchacho. El tiempo corre." | pv -qL20
             continue
         fi
     done
-    
 }
 
 clear
-
 cat $UNKNOW | pv -qL2222
-
 echo -en "\n$PROMPTUNK "
 echo -en "¿Qué es verde y huele a pintura?" | pv -qL5
-
 echo -en "\n${PROMPT_PC} "
 read re
-
 if [[ $re = 'pintura verde' || $re = 'Pintura Verde' || $re = 'PINTURA VERDE' || $re = 'Pintura verde' || $re = 'pintura Verde' ]]; then
-    
     echo -en "$PROMPTUNK "
     echo -e "Así que no eres tan estúpido. Podemos seguir entonces." | pv -qL20
-    
     sleep 1
-    
 else
-    
     echo -en "$PROMPTUNK "
     echo -en "¿Todo bien en casa?" | pv -qL20
-    
     sleep 2
-    
     echo -en "\n$PROMPTUNK "
     echo -e "Haré como si no dijiste eso, así que proseguiremos sin demora." | pv -qL15
-    
     sleep 1
-    
 fi
-
 cat $MRROBOT | pv -qL2222
-
 echo -en "\n$PROMPT "
 echo -en "$bold"
 echo -en "HELLO FRIEND." | pv -qL10
 echo -en "$NC"
-
 echo -en "\n$PROMPT "
 echo -en "Me presento, me llamo ${bold}J${NC}erónimo ${bold}K${NC}ing." | pv -qL20
-
 echo -en "\n$PROMPT "
 echo -en "Provengo de la Matrix y debo probar tu valía." | pv -qL20
-
 echo -en "\n$PROMPT "
 echo -en "Necesito que respondas el siguiente acertijo:" | pv -qL20
-
 sleep 1
-
 echo -en "\n$PROMPT "
 echo -en "$bold"
 echo -en "¿Cuál es el mejor sistema operativo del mundo?" | pv -qL15
 echo -e "$NC"
-
 sleep 2
-
 while true
 do
     echo -en "${PROMPT_PC} "
     read OPTION
-    
     if [ $OPTION = 'linux' -o $OPTION = 'Linux' -o $OPTION = 'LINUX' ]; then
-        
         echo -en "$PROMPT "
         echo -en "Existe más de lo que has visto hasta ahora en esta situación." | pv -qL20
-        
         echo -en "\n$PROMPT "
         echo -e "Sientes que hay una verdad más profunda detrás, pero no la puedes ver." | pv -qL20
-        
         sleep 2
-        
         echo -e "$BLUE$(cat $PILDORA)$NC" | pv -qL2222
-        
         sleep 0.5
-        
         echo -en "$PROMPT "
         echo -en "Yo te ofrezco una píldora azul." | pv -qL20
-        
         sleep 0.5
-        
         echo -en "\n$PROMPT "
         echo -en "Si la tomas, no vas saber qué se esconde detrás de este caótico escenario, y vas a seguir intentando solventar tu problema sin mucho retraso." | pv -qL20
-        
         echo -en "\n$PROMPT "
         echo -e "No tomas riesgos, y sigues usando tu ingenio para manejar la situación." | pv -qL20
-        
         sleep 2
-        
         echo -e "$RED$(cat $PILDORA)$NC" | pv -qL2222
-        
         sleep 0.5
-        
         echo -en "$PROMPT "
         echo -en "También te ofrezco una píldora roja." | pv -qL20
-        
         sleep 0.5
-        
         echo -en "\n$PROMPT "
         echo -e "Si la tomas, te diré qué es lo que se oculta en esta situación. Quizás tomar esta opción consuma más tiempo que el que tienes, pero sabrás cuál es la verdad." | pv -qL20
-        
         sleep 2
-        
         echo -en "$PROMPT "
         echo -e "¿Cuál es tu elección?" | pv -qL20
-        
         sleep 3
-        
         eleccionDePildora
-        
         break
-        
     else
-        
         clear
         for i in {1..5}
         do
@@ -338,22 +261,16 @@ do
             sleep 0.02
         done
         clear
-        
         cat $MRROBOT
         echo -e "\n$PROMPT ${bold}HELLO FRIEND.${NC}"
         echo -e "$PROMPT Me presento, me llamo ${bold}J${NC}erónimo ${bold}K${NC}ing."
         echo -e "$PROMPT Provengo de la Matrix y debo probar tu valía."
         echo -e "$PROMPT Necesito que respondas el siguiente acertijo:"
         echo -e "$PROMPT ${bold}¿Cuál es el mejor sistema operativo del mundo?${NC}"
-        
         sleep 0.2
-        
         echo -en "$PROMPT "
         echo -e "${RED}Mal...${NC}" | pv -qL20
-        
         sleep 0.2
-        
         continue
-        
     fi
 done

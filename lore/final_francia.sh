@@ -96,56 +96,35 @@ FLANG=$(echo -e "${PURPLE}cr@MAC${NC}:${CYAN_R}~${NC}$")
 ### Main ###
 
 clear
-
 cat $DISCORD | pv -qL2222
-
 sleep 0.5
-
 echo -en "\n${PROMPT} "
 echo -en "${YELLOW}[Realizando ataque" | pv -qL20
 echo -en "...]${NC}" | pv -qL5
-
 sleep 1
-
 echo -en "\n${PROMPT} "
 echo -en "${YELLOW}[Ataque completado]" | pv -qL20
-
 echo -en "\n${PROMPT} "
 echo -en "${YELLOW}[Recuperando base de datos" | pv -qL20
 echo -en "...]${NC}" | pv -qL5
-
 sleep 1
-
 echo -en "\n${PROMPT} "
 echo -en "${YELLOW}[Atacando a Francia" | pv -qL20
 echo -en "...]${NC}" | pv -qL5
-
 sleep 1
-
 echo -en "\n${PROMPT} "
 echo -en "¡Esa es su ubicación!" | pv -qL20
-
 sleep 2
-
 clear
-
 echo -en "${YELLOW}[LOGRADO]${NC}" | pv -qL20
 echo -en "\n"
-
 sleep 1
-
 cat $FRANCIA | pv -qL2222
-
 echo -en "\n${PROMPT} "
 echo -en "¡Excelente! Gracias a ti hemos podido solventar el ataque de la mejor manera posible." | pv -qL20
 echo -en "\n${PROMPT} "
 echo -en "Muchas gracias por tus servicios." | pv -qL20
 echo -en "\n"
 echo -en "\n"
-
-
 sleep 2
-
 read -p "$MENSAJE_READ"
-
-#si elegiste Francia: *Realizando ataque...* *Ataque completado...* *Recuperando la base de datos...* *Atacando a Francia...¡Esa es su ubicación!* *Logrado.* ¡Excelente! Gracias a ti hemos podido solventar el ataque de la mejor manera posible. Muchas gracias por tus servicios.---Créditos---

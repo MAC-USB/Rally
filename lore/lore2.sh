@@ -87,28 +87,20 @@ MENSAJE_READ=$(echo -e "${bold}[Presiona enter para continuar]${NC}")
 ### Main ###
 
 clear
-
 echo -en "${GREEN}Recibiendo un mensaje de la Matrix${NC}" | pv -qL10
 echo -en "$GREEN"
 echo -en "..." | pv -qL5
 echo -e "$NC"
-
 sleep 1
-
 cat $DISCORD | pv -qL2222
-
 echo -en "\n${PROMPT} "
 echo -en "Estoy recibiendo unos paquetes con mensajes por un canal de información secundario." | pv -qL20
-
 echo -en "\n${PROMPT} "
 echo -en "Al parecer, el atacante no tiene acceso a este canal de información, por lo que el mensaje parece seguro..." | pv -qL20
-
 sleep 1
-
 echo -en "\n${PROMPT} "
 echo -en "Pasaré a" | pv -qL10
 echo -en "..." | pv -qL5
-
 for i in {1..5}
 do
     cat $JEFF
@@ -116,19 +108,14 @@ do
     cat $JEFF_INVERTED
     sleep 0.015
 done
-
 clear
-
 echo -e "${GREEN}Recibiendo un mensaje de la Matrix${NC}"
 cat $DISCORD
 echo -e "\n$PROMPT Estoy recibiendo unos paquetes con mensajes por un canal de información secundario."
 echo -e "$PROMPT Al parecer, el atacante no tiene acceso a este canal de información, por lo que el mensaje parece seguro..."
-
 echo -en "$PROMPT Pasaré a..."
 echo -en "$bold"
 echo -en "%#$%#$%#$....*P4s4r3 a m0str4rlo p0r p4ntall4*" | pv -qL15
 echo -e "$NC\n"
-
 sleep 1
-
 read -p "$MENSAJE_READ"

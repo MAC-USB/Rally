@@ -84,25 +84,18 @@ MENSAJE_READ=$(echo -e "${bold}[Presiona enter para continuar]${NC}")
 ### Main ###
 
 clear
-
 cat $DISCORD | pv -qL2222
-
 echo -en "\n$PROMPT "
 echo -en "${RED}¡NO PODEMOS APAGAR EL SERVIDOR!${NC}" | pv -qL20
-
 echo -en "\n$PROMPT "
 echo -en "De hacer eso la base de datos de los estudiantes sería destruida..." | pv -qL20
-
 echo -en "\n$PROMPT "
 echo -en "¿Acaso eres un atacante también?" | pv -qL20
-
 echo -en "\n$YELLOW"
 echo -en "[Activando protocolo de emer"
 echo -en "..." | pv -qL5
 echo -en "$NC\n"
-
 sleep 1
-
 for i in {1..5}
 do
     cat $FUCKYOU
@@ -110,28 +103,20 @@ do
     cat $FUCKYOU_INVERTED
     sleep 0.015
 done
-
 clear
-
 cat $DISCORD
 echo -e "\n$PROMPT ${RED}¡NO PODEMOS APAGAR EL SERVIDOR!${NC}"
 echo -e "$PROMPT De hacer eso la base de datos de los estudiantes sería destruida...${NC}"
 echo -e "$PROMPT ¿Acaso eres un atacante también?"
-
 echo -en "${YELLOW}[Activando protocolo de emer..."
 echo -en "$%^&!@#$]" | pv -qL15
 echo -e "$NC"
-
 echo -en "${RED}[ERROR]${NC}"
-
 echo -en "\n$PROMPT "
 echo -en "Por ahora, asumiré que no eres un atacante." | pv -qL20
-
 echo -en "\n$PROMPT "
 echo -e "No pareces muy inteligente." | pv -qL20
-
 sleep 1
-
 echo -en "$PROMPT "
 echo -en "Lo están haciendo mal " | pv -qL20
 echo -en "$RED"
@@ -139,7 +124,5 @@ echo -en "$GROUPNAME" | pv -qL20
 echo -en "$NC"
 echo -en "..." | pv -qL10
 echo -e "\n"
-
 sleep 1
-
 read -p "$MENSAJE_READ"

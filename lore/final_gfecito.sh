@@ -91,31 +91,19 @@ MENSAJE_READ=$(echo -e "${bold}[Presiona enter para continuar]${NC}")
 ### Main ###
 
 clear
-
 cat $GFECITO | pv -qL2222
-
 echo -e "\n${RED}[Recibiendo mensaje del Gfecito]${NC}\n"
-
 sleep 1
-
 echo -en "\n${PROMPT} "
 echo -en "${bold}¡Excelente!${NC}" | pv -qL10
-
 echo -en "\n${PROMPT} "
 echo -en "Has hecho un buen trabajo contactando con nosotros." | pv -qL20
-
 echo -en "\n${PROMPT} "
 echo -en "¡Te felicito por tu intuición y creatividad!" | pv -qL20
-
-
 echo -en "\n${PROMPT} "
 echo -en "Te saluda:" | pv -qL10
-
 sleep 2
-
 echo -en "\n${PROMPT} "
 echo -e "${BLUE}el Gfecito.${NC}\n" | pv -qL5
-
 sleep 2
-
 read -p "$MENSAJE_READ"

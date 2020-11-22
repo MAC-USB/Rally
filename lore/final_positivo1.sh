@@ -99,21 +99,14 @@ clear
 echo -en "${YELLOW}[INTENTANDO...]${NC}" | pv -qL20
 sleep 2
 cat $USBP | pv -qL2222
-
 echo -en "\n${PROMPT} "
 echo -en "${YELLOW}[Eliminando 50% de la información" | pv -qL20
 echo -en "...]${NC}" | pv -qL5
-
 echo -en "\n${PROMPT} "
 echo -en "La información ha sido eliminada, ahora quedamos con el 50% de la base de datos y hemos destruido la conexión del atacante." | pv -qL20
-
 sleep 1
-
 echo -en "\n${PROMPT} "
 echo -en "Tu trabajo no ha sido suficiente, pero has evitado un fracaso total.\n" | pv -qL20
 echo -en "\n"
-
 sleep 2
-
 read -p "${MENSAJE_READ}"
-

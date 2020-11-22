@@ -116,26 +116,19 @@ MENSAJE_READ=$(echo -e "${bold}[Presiona enter para continuar]${NC}")
 ### MAIN ###
 
 clear
-
 cat $DISCORD | pv -qL2222
-
 echo -en "\n$PROMPT "
 echo -en "Necesitamos prevenir que siga el ataque. Necesitamos desconex....(@#$%#$%#$%....d3sc0n3ct4rl0s...Tenemos varias opciones." | pv -qL20
-
 echo -en "\n$PROMPT "
 echo -en "¿Qué haces?" | pv -qL20
 echo -e " ${bold}[Por favor, introduce el número de tu elección.]${NC}"
 
 dialog(){
     clear
-    
     cat $DISCORD
     echo -e "\n$PROMPT Necesitamos prevenir que siga el ataque. Necesitamos desconex....(@#$%#$%#$%....d3sc0n3ct4rl0s...Tenemos varias opciones."
     echo -e "$PROMPT ¿Qué haces? ${bold}[Por favor, introduce el número de tu elección.]${NC}"
 }
-
-# Función de inicio (y reinicio)
-# Gracias a ella es posible regresar en el script
 
 begining() {
     sleep 0.25
@@ -149,76 +142,51 @@ begining() {
     sleep 0.25
 }
 
-
 retocompletado(){
-    
     echo -e ""
-    
     read -p "$MENSAJE_READ"
-    
     source $LORE_BUENO $GROUPNAME $ATACANTE
-    
     read -p "$MENSAJE_READ"
     reto3
-    
 }
 
 reto2() {
-    
     while true
     do
-        
         if [[ $OPTION != 1 && $OPTION != 4 ]]; then
             dialog
             begining
         fi
-        
         read -p "$PROMPT_PC " OPTION
-        
         if [ $OPTION = 1 ]; then
-            
             echo -en "$PROMPT "
             echo -e "¿Seguro que quieres apagar el SV?" | pv -qL20
-            
             sleep 0.25
             echo -e "\t${bold}(Si)${NC} Sí"
             sleep 0.25
             echo -e "\t${bold}(No)${NC} No"
             sleep 0.25
-            
-            elif [ $OPTION = 2 ]; then
-            
+        elif [ $OPTION = 2 ]; then
             source $CALL_TECNICOS $GROUPNAME
             VAL_TECNICOS=active2
             continue
-            
-            elif [ $OPTION = 3 ]; then
-            
+        elif [ $OPTION = 3 ]; then
             source $LORE_MALO_MARTILLO $GROUPNAME $ATACANTES
             break
-            
-            elif [ $OPTION = 4 ]; then
-            
+        elif [ $OPTION = 4 ]; then
             sleep 0.25
             echo -e "\t${bold}(a)${NC} Apagar la interfaz de red"
             sleep 0.25
             echo -e "\t${bold}(b)${NC} Borrar la interfaz de red"
-            
-            elif [[ $OPTION = 'si' || $OPTION = 'SI' || $OPTION = 'Si' ]]; then
-            
+        elif [[ $OPTION = 'si' || $OPTION = 'SI' || $OPTION = 'Si' ]]; then
             source $LORE_MALO_SV_SHUTDOWN $GROUPNAME $ATACANTES
             reto3
             break
-            
             elif [[ $OPTION = 'no' || $OPTION = 'NO' || $OPTION = 'No' ]]; then
-            
             continue
-            
-            elif [ $OPTION = 'a' ]; then
-            
+        elif [ $OPTION = 'a' ]; then
             echo -en "$PROMPT "
             echo -en "Intentaré apagar la interfaz..." | pv -qL20
-            
             sleep 1
             echo -en "\n$PROMPT "
             sleep 0.5
@@ -234,25 +202,18 @@ reto2() {
             sleep 0.5
             echo -en "\n$PROMPT   "
             sleep 1
-            
             echo -en "\n$PROMPT "
             echo -en "Al parecer el atacante impide que pueda desactivar la interfaz de red..." | pv -qL20
-            
             echo -en "\n$PROMPT "
             echo -en "Espera, he detectado una forma de hacerlo..." | pv -qL20
-            
             echo -en "\n$PROMPT "
             echo -e "!*^#!*&@$%, estoy recibiendo mensaje de... la...." | pv -qL20
-            
             sleep 1
             retocompletado
             break
-            
-            elif [ $OPTION = 'b' ]; then
-            
+        elif [ $OPTION = 'b' ]; then
             echo -en "$PROMPT "
             echo -en "Intentaré borrar la interfaz..." | pv -qL20
-            
             sleep 1
             echo -en "\n$PROMPT "
             sleep 0.5
@@ -268,21 +229,15 @@ reto2() {
             sleep 0.5
             echo -en "\n$PROMPT   "
             sleep 1
-            
             echo -en "\n$PROMPT "
             echo -en "Al parecer el atacante impide que pueda borrar la interfaz de red..." | pv -qL20
-            
             echo -en "\n$PROMPT "
             echo -en "Espera, he detectado una forma de hacerlo..." | pv -qL20
-            
             echo -en "\n$PROMPT "
             echo -e "*!*@#@!, estoy recibiendo un mensaje de... la...." | pv -qL20
-            
             sleep 1
             retocompletado
             break
-            
-            # Error.
         else
             echo -e "${RED}Opción inválida.${NC}"
             continue
@@ -291,8 +246,6 @@ reto2() {
 }
 
 reto3(){
-    
-    # El reto 3 es el acertijo trampa
     source $RETO3_SH $GROUPNAME $ATACANTES $VAL_TECNICOS
 }
 

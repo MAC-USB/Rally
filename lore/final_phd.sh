@@ -90,56 +90,34 @@ MENSAJE_READ=$(echo -e "${bold}[Presiona enter para continuar]${NC}")
 ### Main ###
 
 clear
-
 echo -e "${RED}[Cerrando conexión]${NC}"
-
 sleep 3
-
 cat $PHD | pv -qL2222
-
 echo -e "\n${RED}[Recibiendo mensaje de fuente desconocida...]${NC}\n"
-
 sleep 1
-
 echo -en "\n${PROMPT} "
-
 sleep 1
-
 echo -e "..." | pv -qL5
-
 sleep 1
-
 echo -en "${PROMPT} "
 echo -en "${bold} * Recibiendo ataque*... *Intentando salvar los datos...* *error...*${NC}" | pv -qL10
-
 echo -en "\n${PROMPT} "
 echo -en "\n . \n . \n . \n *apagando el servidor* .... %#$%$#%" | pv -qL20
-
 echo -en "\n${PROMPT} "
 echo -en "%$#%#$%#$%#$%%#$" | pv -qL20
-
 sleep 2
-
 echo -en "\n${PROMPT} "
 echo -en "#$%@$%@$%@%$@$#%@%$@%$@$#$%@%@$" | pv -qL20
-
 echo -en "\n${PROMPT} "
 echo -en "He visto que has fallado en tu misión de recuperar el servidor. Enhorabuena por tu fracaso." | pv -qL20
-
 echo -en "\n${PROMPT} "
 echo -en " Gracias a ti, la USB ha caído en un vacío muy difícil de solucionar. No te diré cuál era nuestro objetivo real, pero no necesitas saberlo." | pv -qL20
-
 echo -en "\n${PROMPT} "
 echo -en "  Aprende a vivir con tus errores, y sigue tu vida pensando que gracias a ti, la USB ha caído por siempre." | pv -qL20
-
 echo -en "\n${PROMPT} "
 echo -en "Mi nombre es..." | pv -qL10
-
 sleep 2
-
 echo -en "\n${PROMPT} "
 echo -e "Att: ${RED}el PhD.${NC} Ha sido un gusto conocerte...#$%#$%#$%#$%...\n" | pv -qL5
-
 sleep 2
-
 read -p "$MENSAJE_READ"

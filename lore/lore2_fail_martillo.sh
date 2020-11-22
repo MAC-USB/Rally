@@ -87,33 +87,23 @@ FINAL_KMALEON=$DIR/lore/final_kmaleon.sh
 # Funcion del final kmaleon
 
 kmaleon() {
-    
     source $FINAL_KMALEON
 }
 
 ### Main ###
 
 clear
-
 echo -e "${RED}[Recibiendo mensaje de alerta]${NC}"
-
 sleep 2
-
 cat $DISCORD | pv -qL2222
-
 sleep 1
-
 echo -en "\n$PROMPT "
 echo -en "${bold}¿Seguro quieres destruir el servidor?${NC}" | pv -qL20
-
 echo -en "\n$PROMPT "
 echo -en "¿Es que acaso tienes criterio para solventar esta situación?" | pv -qL20
-
 echo -en "\n$PROMPT "
 echo -e "...\$#\$#\$%#\$%!\$#%#\#$%#\$..." | pv -qL20
-
 sleep 1
-
 echo -en "$PROMPT "
 echo -en "Lo están haciendo mal " | pv -qL20
 echo -en "$RED"
@@ -121,11 +111,6 @@ echo -en "$GROUPNAME" | pv -qL20
 echo -en "$NC"
 echo -en "..." | pv -qL10
 echo -e "\n"
-
 sleep 1
-
 read -p "$MENSAJE_READ"
-
 kmaleon
-
-

@@ -177,7 +177,6 @@ final_tecnicos() {
 }
 
 finish(){
-    
     for i in {1..5}
     do
         cat $GLITCH
@@ -185,11 +184,8 @@ finish(){
         cat $GLITCH_INVERTED
         sleep 0.015
     done
-    
     clear
-    
     cat $DISCORD
-    
     sleep 0.25
     echo -e "\n$PROMPT ¿N pháy qrfrn npprqre? ${bold}[Cbe snibe, vagebqhpr ry aúzreb qr gh ryrppvóa.]${NC}"
     sleep 0.5
@@ -217,45 +213,33 @@ finish(){
     sleep 0.25
     echo -e "\t${bold}(^$&#)${NC} www.google.com"
     sleep 1
-    
     while true
     do
         echo -en "${PROMPT_PC} "
         read re
         if [[ $re = "hack" || $re = "Hack" || $re = "HACK" ]]; then
-            
             whiterose
-            
             break
-            
         else
             continue
         fi
     done
-    
 }
 
-
 finalErroneo() {
-    
     echo "FINAL PAGINAS ERRONEAS"
 }
 
 whiterose() {
-    
     source $CRIPTO
-    
     sleep 1
-    
 }
 
 finalFrancia(){
-    
     source $FINAL_FRANCIA
 }
 
 finalTECNICOS(){
-    
     final_tecnicos
 }
 
@@ -264,61 +248,39 @@ finalOTROS(){
 }
 
 ubicacion(){
-    
     if [ $ATACANTES = "FRANCIA" ]; then
-        
         finalFrancia
-        
-        elif [[ $VAL_TECNICOS = "active" || $VAL_TECNICOS = 'active2' ]]; then #esto pasa si seleccionaron a los tecnicos en el acertijo 2 y es un f xD
-        
+    elif [[ $VAL_TECNICOS = "active" || $VAL_TECNICOS = 'active2' ]]; then #esto pasa si seleccionaron a los tecnicos en el acertijo 2 y es un f xD
         finalTECNICOS
-        
     else
-        
         finalOTROS
     fi
-    
 }
 
 reto4_red() {
-    
     while true
     do
-        
         if [[ $OPTION != 2 && $OPTION != 'a' && $OPTION != 'b' ]]; then
             dialog
             begining
         fi
-        
         read -p "$PROMPT_PC " OPTION
-        
         if [[ $OPTION = 1 || $OPTION = 2 || $OPTION = 3 ]]; then
-            
             finalErroneo
             break
-            
-            elif [ $OPTION = 4 ]; then
-            
+        elif [ $OPTION = 4 ]; then
             finish
             break
-            
-            elif [ $OPTION = '5' ]; then
-            
+        elif [ $OPTION = '5' ]; then
             echo -en "$PROMPT "
             echo -en "*Ingresando en la página*..." | pv -qL20
-            
             echo -en "\n$PROMPT "
             echo -e "¡Esta es la página! Ahora podemos intentar hacer un ataque... La probabilidad de éxito es mayor si conocemos la ubicación del atacante..." | pv -qL20
-            
             sleep 2
             ubicacion
             break
-            
-            
-            elif [ $OPTION = 0 ]; then
+        elif [ $OPTION = 0 ]; then
             continue
-            
-            # Error.
         else
             echo -e "${RED}Opción inválida.${NC}"
             continue

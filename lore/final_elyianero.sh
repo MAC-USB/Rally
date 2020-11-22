@@ -90,82 +90,49 @@ MENSAJE_READ=$(echo -e "${bold}[Presiona enter para continuar]${NC}")
 ### Main ###
 
 clear
-
 echo -e "${RED}[Cerrando conexión]${NC}"
-
 sleep 3
-
 cat $SACO | pv -qL2222
-
 echo -en "${PROMPT_AUTOMATA} "
 echo -en ".....${bold}No responde el servidor${NC}....." | pv -qL15
-
 sleep 2
-
 echo -e "\n${PROMPT} "
-
 sleep 1
-
 echo -e "\n${RED}[Recibiendo mensaje automático]${NC}\n"
-
 sleep 1
-
 echo -en "${PROMPT_AUTOMATA} "
 echo -en "....." | pv -qL5
-
 echo -en "\n${PROMPT_AUTOMATA} "
 echo -en "Los archivos de la base de datos de los estudiantes se han borrado." | pv -qL20
-
 echo -en "\n${PROMPT_AUTOMATA} "
 echo -en "Un protocolo de emergencia del servidor ha reaccionado de mala manera y ha eliminado toda su información de los estudiantes y más documentos importantes." | pv -qL20
-
 sleep 3
-
 echo -en "\n${PROMPT} "
-
 sleep 1
-
 echo -e "..." | pv -qL5
-
 sleep 1
-
 echo -e "\n${RED}[Ejecutando script automático]${NC}\n"
-
 sleep 1
-
 echo -en "${PROMPT} "
 echo -en "${bold}%%!@#%&&#${NC} Hola. " | pv -qL10
-
 echo -en "\n${PROMPT} "
 echo -en "Al eliminarse la fibra óptica, cualquier comunicación posible de esta computadora se ve imposible de realizar." | pv -qL20
-
 echo -en "\n${PROMPT} "
 echo -en "Este script fue programado para activarse en este escenario." | pv -qL20
-
 sleep 2
-
 echo -en "\n${PROMPT} "
 echo -en "Gracias por tu ayuda." | pv -qL20
-
 echo -en "\n${PROMPT} "
 echo -en "Había colocado un ${bold}honeypot${NC} en el protocolo de emergencia para que en esta circunstancia se eliminara la base de datos completa." | pv -qL20
-
 echo -en "\n${PROMPT} "
 echo -en "La USB ahora está acabada, y sin posibilidad de restaurar el internet." | pv -qL20
-
 echo -en "\n${PROMPT} "
 echo -en "Lo más probable es que la universidad sea invadida para transformarla en la Escuela Venezolana de Música Llanera y Tradicional." | pv -qL20
-
 sleep 2
-
 echo -en "\n${PROMPT} "
 echo -en "Sin ti no hubiese podido completar mi objetivo. Muchas gracias..." | pv -qL15
-
 sleep 5
-
 echo -en "\n${PROMPT} "
 echo -e "Att: ${YELLOW}eL Yianero.${NC}\n" | pv -qL5
-
 sleep 2
-
 read -p "$MENSAJE_READ"

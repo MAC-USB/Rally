@@ -95,77 +95,46 @@ CREEPY=$(echo -e "${BLUE_R}mc@MAC${NC}:${CYAN_R}~${NC}$")
 ### Main ###
 
 clear
-
 cat $DISCORD | pv -qL2222
-
 sleep 0.5
-
 echo -en "\n${PROMPT} "
 echo -en "${BLUE_R}[RECIBIENDO SEÑAL DE COMUNICACIÓN" | pv -qL20
 echo -en "...]${NC}" | pv -qL5
-
 echo -en "\n${PROMPT} "
 echo -en "${BLUE_R}[PROCESANDO MENSAJE" | pv -qL20
 echo -en "...]${NC}" | pv -qL5
-
-
 ### Entra Carmen
-
 clear
-
 echo -e "${RED}[Cerrando conexión]${NC}"
-
 sleep 2.5
-
 cat $CARMEN | pv -qL2222
-
 echo -en "\n${CREEPY} "
 echo -en "${bold}... Hola." | pv -qL15
-
 sleep 1
-
 echo -en "\n${CREEPY} "
 echo -en "Finalmente, he conseguido acceso completo al servidor." | pv -qL20
-
 echo -en "\n${CREEPY} "
 echo -en "Después de todo, he logrado mi objetivo: ${bold}borrar la información universitaria${NC}" | pv -qL20
-
 sleep 1
-
 echo -en " excepto la perteneciente a estudiantes del orfeón de la universidad. " | pv -qL20
-
 echo -en "\n${CREEPY} "
 echo -en "Soy un ex estudiante de Ingeniería en Computación de la USB que buscaba venganza por recibir bullying por ser parte del orfeón universitario." | pv -qL20
-
 echo -en "\n${CREEPY} "
 echo -en "Ahora mi victoria está asegurada." | pv -qL20
-
 echo -en "\n${CREEPY} "
 echo -en "Gracias a tu decisión pude darme cuenta de la conexión que intentaste establecer, y al desconectarla, logré infiltrarme en tu computadora y acceder \nen el servidor." | pv -qL20
-
 echo -en "\n${CREEPY} "
 echo -en "Este era el mejor curso de acción que podía suceder para mi causa." | pv -qL20
-
 sleep 0.75
-
 echo -en "\n${CREEPY} "
 echo -en "${bold}Hasta luego.${NC}" | pv -qL15
-
 echo -en "\n${CREEPY} "
 echo -en "${PURPLE}-Atte: " | pv -qL15
 echo -en "Mister Creepy-${NC}" | pv -qL5
-
 echo -en "\n${CREEPY} "
 echo -en "${RED} ...%#$%#$%#$%#$%#$%#$%#$%..." | pv -qL15
 echo -en "\n[Apagando el servidor]${NC}" | pv -qL15
-
 echo -en "\n"
 echo -en "\n"
-
 sleep 1
-
 read -p "${MENSAJE_READ}"
-
-#Fin del juego: *Se recibe una comunicación* *Recibiendo mensaje...* H0l4. Mi nombre es Mister Creepy. Acabo de lograr acceso completo al servidor. He borrado la información universitada excepto la de los estudiantes del orfeón universitario. Soy un ex estudiante de Ingeniería en Computación de la USB que buscaba venganza por recibir bullying por ser parte del orfeón universitario. Ahora mi victoria está asegurada. Gracias a tu decisión pude darme cuenta de la conexión que intentaste establecer, y al desconectarla, logré infiltrarme en tu computadora y acceder en el servidor. Este era el mejor curso de acción que podía suceder para mi causa. Hasta luego ...%#$%#$%#$%#$%#$%#$%#$%....*Apagando el servidor* ---Créditos---
-
-

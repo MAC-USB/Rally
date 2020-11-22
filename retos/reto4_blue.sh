@@ -106,30 +106,21 @@ MENSAJE_READ=$(echo -e "${bold}[Presiona enter para continuar]${NC}")
 ### MAIN ###
 
 clear
-
 cat $DISCORD | pv -qL2222
-
 echo -en "\n$PROMPT "
 echo -en "Hemos contactado con la PVBC, Policía Virtual Bolivariana de Caracas, para ayudarnos en nuestra misión." | pv -qL20
-
 echo -en "\n$PROMPT "
 echo -en "Sin embargo, su director, solo nos supo decir que cortar el cable de la fibra óptica principal de la universidad, lo cuál dejaría a la USB sin internet por 25 años." | pv -qL20
-
 echo -en "\n$PROMPT "
 echo -en "Contrastando esta información con nuestra base de datos encontramos una línea en el archivo ${bold}\'NO_HACER_NUNCA.txt\'${NC} escrito por el director de la DST-USB, que dice:" | pv -qL20
-
 echo -en "\n$PROMPT "
 echo -en "${bold}Nunca debes realizar esta acción o destruirás la universidad.${NC}" | pv -qL20
-
 echo -en "\n$PROMPT "
 echo -en "¿Cómo vas a proceder?" | pv -qL20
 echo -e " ${bold}[Por favor, introduce el número de tu elección.]${NC}"
 
-
-
 dialog(){
     clear
-    
     cat $DISCORD
     echo -e "\n$PROMPT Hemos contactado con la PVBC, Policía Virtual Bolivariana de Caracas para ayudarnos en nuestra misión."
     echo -e "$PROMPT Sin embargo, su director, solo nos supo decir que cortar el cable de la fibra óptica principal de la universidad, lo cuál dejaría a la USB sin internet por 25 años.${NC}"
@@ -137,10 +128,6 @@ dialog(){
     echo -e "$PROMPT ${bold}Nunca debes realizar esta acción o destruirás la universidad.${NC}"
     echo -e "$PROMPT ¿Cómo vas a proceder? ${bold}[Por favor, introduce el número de tu elección.]${NC}"
 }
-
-
-# Función de inicio (y reinicio)
-# Gracias a ella es posible regresar en el script
 
 begining() {
     sleep 0.25
@@ -150,47 +137,34 @@ begining() {
 }
 
 negativoelprocedimiento(){
-    
     echo -en "$PROMPT "
     echo -en "$PURPLE_BACK"
     echo -en "%&$%&$%&$..." | pv -qL20
     echo -en "$NC"
-    
     sleep 0.5
-    
     echo -en "\n$PROMPT "
     echo -en "Hemos podido recuperar algunas funciones del protocolo de emergencia." | pv -qL20
-    
     echo -en "\n$PROMPT "
     echo -en "Puedo intentar recuperar un 50% de la base de datos, si se toma esa opción, el resto de los archivos se pierde, y se le enviará una notificación a DACE para recabar nuevamente la información del otro restante de los estudiantes." | pv -qL20
-    
     echo -en "\n$PROMPT "
     echo -en "No me queda mucho tiempo." | pv -qL20
-    
     sleep 0.5
-    
     echo -en "\n$PROMPT "
     echo -e "¿Quiere hacer esto?" | pv -qL20
-    
     sleep 1
     echo -e "\t${bold}(Si)${NC} Si"
     sleep 0.25
     echo -e "\t${bold}(No)${NC} No"
-    
     while true
     do
         echo -en "${PROMPT_PC} "
         read re
         if [[ $OPTION = 'si' || $OPTION = 'SI' || $OPTION = 'Si' ]]; then
-            
             final_azul2
             break
-            
             elif [[ $OPTION = 'no' || $OPTION = 'NO' || $OPTION = 'No' ]]; then
-            
             phd
             break
-            
         else
             echo -en "\n$PROMPT "
             echo -e "No puedes volver atrás. ${bold}Sí${NC} o ${bold}No.${NC}" | pv -qL20
@@ -200,127 +174,83 @@ negativoelprocedimiento(){
 }
 
 final_azul1(){
-    
     sleep 1
-    
     source $FINAL_POSITIVO1
-    
-    
 }
 
 final_azul2(){
-    
     sleep 1
     source $FINAL_POSITIVO2
 }
 
 
 elyianero() {
-    
     sleep 1
-    
     source $FINAL_ELYIANERO
-    
 }
 
 phd() {
-
     sleep 1
-
     source $FINAL_PHD
-    
 }
 
 flang() {
-    
     sleep 1
-    
     source $FINAL_FLANG
-    
 }
 
 mrcrepy() {
-    
     sleep 1
-
     $FINAL_MISTER
-    
-    
 }
 
 reto4_blue() {
-    
     while true
     do
-        
         if [[ $OPTION != 2 && $OPTION != 'si' && $OPTION != 'SI' && $OPTION != 'Si' && $OPTION != 'no' && $OPTION != 'NO' && $OPTION != 'No' ]]; then
             dialog
             begining
         fi
-        
         read -p "$PROMPT_PC " OPTION
-        
         if [ $OPTION = 1 ]; then
-            
             elyianero
             break
-            
-            elif [ $OPTION = 2 ]; then
-            
+        elif [ $OPTION = 2 ]; then
             echo -en "$PROMPT "
             echo -en "Yo tampoco me sentía convencido de esta dec....${BLACK_R}${WITHE_BACK}%#$%#$%#$...d3c1s10n...$%$^#%^#@...${NC}" | pv -qL20
-            
             echo -en "\n$PROMPT "
             echo -en "He descubierto, mientras leías este mensaje, que existe la posibildiad de ingresar a la computadora del atacante." | pv -qL20
-            
             echo -en "\n$PROMPT "
             echo -e "¿Desea hacerlo?" | pv -qL20
-            
             sleep 0.25
             echo -e "\t${bold}(Si)${NC} Sí"
             sleep 0.25
             echo -e "\t${bold}(No)${NC} No"
-            
-            elif [[ $OPTION = 'si' || $OPTION = 'SI' || $OPTION = 'Si' ]]; then
-            
+        elif [[ $OPTION = 'si' || $OPTION = 'SI' || $OPTION = 'Si' ]]; then
             sleep 0.25
             echo -e "\t${bold}(a)${NC} Desconectarse de la computadora del atacante"
             sleep 0.25
             echo -e "\t${bold}(b)${NC} Intentar suspender el ataque"
             sleep 0.25
             echo -e "\t${bold}(c)${NC} Apagar la computadora del atacante"
-            
-            elif [[ $OPTION = 'no' || $OPTION = 'NO' || $OPTION = 'No' ]]; then
-            
+        elif [[ $OPTION = 'no' || $OPTION = 'NO' || $OPTION = 'No' ]]; then
             negativoelprocedimiento
-            
             break
-            
-            elif [ $OPTION = 'a' ]; then
-            
+        elif [ $OPTION = 'a' ]; then
             mrcrepy
             break
-            
-            elif [ $OPTION = 'b' ]; then
-            
+        elif [ $OPTION = 'b' ]; then
             final_azul1
-            
             break
-            
-            elif [ $OPTION = 'c' ]; then
-            
+        elif [ $OPTION = 'c' ]; then
             flang
             break
-            
-            elif [ $OPTION = 0 ]; then
+        elif [ $OPTION = 0 ]; then
             continue
-            
-            # Error.
         else
             echo -e "${RED}Opción invalida.${NC}"
             continue
         fi
     done
 }
-
 reto4_blue

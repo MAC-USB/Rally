@@ -106,37 +106,25 @@ MENSAJE_READ=$(echo -e "${bold}[Presiona enter para continuar]${NC}")
 ### MAIN ###
 
 clear
-
 cat $DISCORD | pv -qL2222
-
 echo -en "\n$PROMPT "
 echo -en "Te recuerdo que una dirección IP es un identificador que necesita cualquier computador para acceder a la red." | pv -qL20
-
 echo -en "\n$PROMPT "
 echo -en "Usualmente, los países tienen rangos de direcciones IP que pueden utilizar. La dirección del atacante es ${bold}163.172.162.101.${NC}" | pv -qL20
-
 echo -en "\n$PROMPT "
 echo -en "Es primordial identificar el país de donde proviene el ataque. El archivo ${bold}\"paises_ip\"${NC} tiene las direcciones IP de cada país." | pv -qL20
-
 echo -en "\n$PROMPT "
 echo -en "¿Qué haces?" | pv -qL20
 echo -e " ${bold}[Por favor, introduce el número de tu elección.]${NC}"
 
-
-
 dialog(){
     clear
-    
     cat $DISCORD
     echo -e "\n$PROMPT Te recuerdo que una dirección IP es un identificador que necesita cualquier computador para acceder a la red."
     echo -e "$PROMPT Usualmente, los países tienen rangos de direcciones IP que pueden utilizar. La dirección del atacante es ${bold}163.172.162.101.${NC}"
     echo -e "$PROMPT Es primordial identificar el país de donde proviene el ataque. El archivo ${bold}\"paises_ip\"${NC} tiene las direcciones IP de cada país."
     echo -e "$PROMPT ¿Qué haces? ${bold}[Por favor, introduce el número de tu elección.]${NC}"
 }
-
-
-# Función de inicio (y reinicio)
-# Gracias a ella es posible regresar en el script
 
 begining() {
     sleep 0.25
@@ -168,11 +156,8 @@ finish(){
     sleep 1
     echo -e "\t${GREEN_BACK}(Francia)${NC} %^!&@#$%^@&#^*."
     sleep 0.25
-    
     retocompletado
-    
 }
-
 
 retocompletado(){
     while true
@@ -180,109 +165,75 @@ retocompletado(){
         echo -en "${PROMPT_PC} "
         read re
         if [[ $re = "francia" || $re = "Francia" || $re = "FRANCIA" ]]; then
-            
             ATACANTE=FRANCIA
-            
             source $LORE_BUENO $GROUPNAME $ATACANTE
-            
             reto2
-            
             break
-            
         else
             continue
         fi
     done
-    
 }
-
-# Evaluación de casos para cada opción particular
-
-
 
 dynamic() {
     echo -en "$PROMPT " | pv -qL15
     echo -en "Está bien. Asumiremos que el atacante es de $ATACANTE\n" | pv -qL20
-    
     ATACANTE=NA
-    
     reto2
 }
 
 reto1() {
-    
     while true
     do
-        
         if [[ $OPTION != 1 ]]; then
             dialog
             begining
         fi
-        
         read -p "$PROMPT_PC " OPTION
-        
         if [ $OPTION = 1 ]; then
-            
             echo -e "\t\t${bold}(a)${NC} Leer el archivo"
             sleep 0.25
             echo -e "\t\t${bold}(b)${NC} Eliminar el archivo"
             sleep 0.25
             echo -e "\t\t${bold}(0)${NC} Volver al menú anterior"
             sleep 0.25
-            
-            elif [ $OPTION = 2 ]; then
-            
+        elif [ $OPTION = 2 ]; then
             ATACANTE=CHINA
             dynamic
             break
-            
-            elif [ $OPTION = 3 ]; then
-            
+        elif [ $OPTION = 3 ]; then
             ATACANTE=FBI
             dynamic
             break
-            
             elif [ $OPTION = 4 ]; then
-            
             ATACANTE=RUSIA
             dynamic
             break
-            
-            elif [ $OPTION = 5 ]; then
-            
+        elif [ $OPTION = 5 ]; then
             source $CALL_TECNICOS $GROUPNAME
             VAL_TECNICOS=active
             continue
-            
             elif [ $OPTION = 'a' ]; then
-            
             cat $PAISES_IP
             sleep 10
             echo -e ""
             read -p "$MENSAJE_READ"
             finish
             break
-            
             elif [ $OPTION = 'b' ]; then
-            
             source $LORE_MALO $GROUPNAME
             ATACANTE=NA
             reto2
             break
-            
             elif [ $OPTION = 0 ]; then
             continue
-            
-            # Error.
         else
             echo -e "${RED}Opción inválida.${NC}"
             continue
         fi
     done
 }
-
 reto2(){
     source $RETO2_SH $GROUPNAME $ATACANTE $VAL_TECNICOS
 }
-
 reto1

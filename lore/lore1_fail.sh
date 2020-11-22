@@ -84,21 +84,15 @@ MENSAJE_READ=$(echo -e "${bold}[Presiona enter para continuar]${NC}")
 ### Main ###
 
 clear
-
 cat $DISCORD | pv -qL2222
-
 echo -en "\n$PROMPT "
 echo -en "${RED_R}¡El archivo de las IP se ha eliminado!${NC}" | pv -qL20
-
 echo -en "\n$PROMPT "
 echo -en "${RED}¡Ahora nunca sabremos de donde procede la fuente! ¿Estoy ante unos usuarios inteligentes?${NC}" | pv -qL20
-
 echo -en "\n$PROMPT "
 echo -en "Ahora solo nos queda intentar frenar el ataque, pero las esperanzas de lograrlo acaban de bajar significativamente" | pv -qL20
 echo -en "..." | pv -qL5
-
 sleep 1
-
 for i in {1..5}
 do
     cat $FUCKYOU
@@ -106,17 +100,13 @@ do
     cat $FUCKYOU_INVERTED
     sleep 0.015
 done
-
 clear
-
 cat $DISCORD
 echo -e "\n$PROMPT ${RED_R}¡El archivo de las IP se ha eliminado!${NC}"
 echo -e "$PROMPT ${RED}¡Ahora nunca sabremos de donde procede la fuente! ¿Estoy ante unos usuarios inteligentes?${NC}"
 echo -e "$PROMPT Ahora solo nos queda intentar frenar el ataque, pero las esperanzas de lograrlo acaban de bajar significativamente..."
-
 echo -en "$PROMPT "
 echo -e "$%^&!@#$..." | pv -qL15
-
 echo -en "$PROMPT "
 echo -en "Lo están haciendo mal " | pv -qL20
 echo -en "$RED"
@@ -124,7 +114,5 @@ echo -en "$GROUPNAME" | pv -qL20
 echo -en "$NC"
 echo -en "..." | pv -qL10
 echo -e "\n"
-
 sleep 1
-
 read -p "$MENSAJE_READ"

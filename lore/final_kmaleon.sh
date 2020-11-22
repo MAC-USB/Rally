@@ -90,53 +90,32 @@ MENSAJE_READ=$(echo -e "${bold}[Presiona enter para continuar]${NC}")
 ### Main ###
 
 clear
-
 echo -e "${RED}[Cerrando conexión]${NC}"
-
 sleep 3
-
 cat $KMALEON | pv -qL2222
-
 echo -e "\n${RED}[Recibiendo mensaje de fuente desconocida...]${NC}\n"
-
 sleep 1
-
 echo -en "\n${PROMPT} "
-
 sleep 1
-
 echo -e "..." | pv -qL5
-
 sleep 1
-
 echo -en "${PROMPT} "
 echo -en "${bold}Hola. ${NC}" | pv -qL10
-
 echo -en "\n${PROMPT} "
 echo -en "Soy el atacante. Acabas de ayudarme a lograr mi objetivo." | pv -qL20
-
 echo -en "\n${PROMPT} "
 echo -en "Realmente no tenía las herramientas para destruir por completo el servidor." | pv -qL20
-
 sleep 2
-
 echo -en "\n${PROMPT} "
 echo -en "Si no hubieses actuado, no habría podido terminar mi misión." | pv -qL20
-
 echo -en "\n${PROMPT} "
 echo -en "Gracias a ti he logrado mis objetivos de destruir a la USB." | pv -qL20
-
 echo -en "\n${PROMPT} "
 echo -en "Y podré seguir durmiendo en paz." | pv -qL20
-
 echo -en "\n${PROMPT} "
 echo -en "Se despide ..." | pv -qL10
-
 sleep 2
-
 echo -en "\n${PROMPT} "
 echo -e "Att: ${CYAN}el Kmaleon.${NC}\n" | pv -qL5
-
 sleep 2
-
 read -p "$MENSAJE_READ"

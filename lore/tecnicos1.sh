@@ -84,18 +84,12 @@ MENSAJE_READ=$(echo -e "${bold}[Presiona enter para continuar]${NC}")
 ### Main ###
 
 clear
-
 cat $PHONE | pv -qL2222
-
 echo -en "\n$PROMPT "
 echo -e "${YELLOW}Llamando a los técnicos...${NC}" | pv -qL10
-
 sleep 1
-
 echo -e "${CYAN}[Activando protocolo de comunicación segura con la oficina de los técnicos]${NC}"
-
 sleep 2
-
 echo -e "${bold}OpenSSH_8.2p1, OpenSSL 1.1.1d  10 Sep 2019${NC}"
 echo -e "${bold}debug1:${NC} Reading configuration data /home/manuel/.ssh/config"
 echo -e "${bold}debug1:${NC} /home/${GROUPNAME}/.ssh/config line 1: Applying options for *"
@@ -140,7 +134,5 @@ sleep 1
 echo -en "$PROMPT "
 echo -en "${YELLOW}No contestan...${NC}" | pv -qL10
 echo -e "\n"
-
 sleep 1
-
 read -p "$MENSAJE_READ"

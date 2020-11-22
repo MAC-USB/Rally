@@ -87,33 +87,20 @@ MENSAJE_READ=$(echo -e "${bold}[Presiona enter para continuar]${NC}")
 ### Main ###
 
 clear
-
 echo -e "${YELLOW}[*Realizando ataque...*...%#$%#$%#%#$%#$%...%#$%#$%#$%#$%...%#$%#$%#%#$...]${NC}"
-
 sleep 3
-
 cat $POSITIVO1 | pv -qL2222
-
 echo -en "\n${PROMPT} "
-
 sleep 1
-
 echo -e "..." | pv -qL5
-
 sleep 1
-
 echo -en "${PROMPT} "
 echo -en "${bold} Se ha logrado acabar con la comunicación del atacante. ${NC} " | pv -qL10
-
 echo -en "\n${PROMPT} "
 echo -en "¡La base de datos está salvada!" | pv -qL20
-
 echo -en "\n${PROMPT} "
 echo -en "Gracias a ti podemos permanecer con la base de datos intacta, y al parecer, ya se pueden realizar los protocolos de emergencia." | pv -qL20
-
 echo -en "\n${PROMPT} "
 echo -e "${bold}¡Lo has conseguido! ¡Enhorabuena! ${NC}\n"
-
 sleep 2
-
 read -p "$MENSAJE_READ"
